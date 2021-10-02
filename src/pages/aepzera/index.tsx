@@ -6,7 +6,6 @@ import Button from '../../components/Form/Button';
 import Layout from '../../components/Layout';
 import { AepzeraLogo } from '../../components/Logos/aepzera_logo';
 import { VideoPlyr } from '../../components/VideoPlyr';
-import { useAuth } from '../../contexts/auth';
 import { fetchPostJSON } from '../../helpers/api';
 import getStripe from '../../helpers/stripe/stripe-stripejs';
 import { useProducts } from '../../hooks/useProducts';
@@ -22,9 +21,7 @@ interface IProps {
 }
 
 const Aepzera = ({ content, currency }) => {
-  const { user } = useAuth();
-
-  console.log({ id: user?.id });
+  const user = { email: '', id: '' };
   // get list of products from api ( disabled until product is on sale):
   const {
     data: prices,
@@ -247,7 +244,7 @@ const Aepzera = ({ content, currency }) => {
   );
 };
 
-export async function getStaticProps({ locale = 'pt-BR' }) {
+export async function getStaticProps({ locale }) {
   // get the locale text for the selected language:
   const contentAepzera = (await import(`../../locales/${locale}/aepzera.js`))
     .default;

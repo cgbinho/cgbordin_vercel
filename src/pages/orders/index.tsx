@@ -1,19 +1,15 @@
-import { withSSRContext } from 'aws-amplify';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
-import { GetOrdersByUserIDQuery, ListOrdersQuery } from '../../API';
 import Layout from '../../components/Layout';
 import { OrderCard } from '../../components/Orders/OrderCard';
-import { useAuth } from '../../contexts/auth';
-import { getOrdersByUserID, listOrders } from '../../graphql/queries';
-import { getCurrentAuthenticatedUser } from '../../helpers/users';
 import { Container } from '../../styles/home';
-import { GRAPHQL_AUTH_MODE } from '@aws-amplify/api';
 import { EmptyCard } from '../../components/Orders/EmptyCard';
+import { getSession } from 'next-auth/client';
 
+// import {signIn, Si}
 const Orders = ({ content, orders, err }) => {
-  const { user, isLoading, isError, signUp } = useAuth();
+  // const { user, isLoading, isError, signUp } = useAuth();
 
   const hasItems = orders?.items?.[0];
   console.log({ orders });
@@ -61,12 +57,13 @@ userID: "3da452be-ee78-4954-b1a0-fbcff9c3619a"
 };
 
 // We are getting the project with an authenticated user, serverside. Beautiful:
-export async function getServerSideProps({ req, res, locale = 'pt-BR' }) {
-  const user = await getCurrentAuthenticatedUser(req);
-  if (!user) {
+export async function getServerSideProps({ req, params, locale }) {
+  const session = await getSession({ req });
+
+  if (!session) {
     return {
       redirect: {
-        destination: '/',
+        destination: `/`,
         permanent: false,
       },
     };
@@ -74,34 +71,36 @@ export async function getServerSideProps({ req, res, locale = 'pt-BR' }) {
 
   const content = (await import(`../../locales/${locale}/orders.js`)).default;
 
-  // get orders:
-  const SSR = withSSRContext({ req });
+  return { props: { content } };
 
-  try {
-    const orders = (await SSR.API.graphql({
-      query: getOrdersByUserID,
-      authMode: GRAPHQL_AUTH_MODE.AMAZON_COGNITO_USER_POOLS,
-      variables: {
-        userID: user.id,
-      },
-    })) as { data: GetOrdersByUserIDQuery };
+  // // get orders:
+  // const SSR = withSSRContext({ req });
 
-    return {
-      props: {
-        orders: orders.data.getOrdersByUserID,
-        content,
-      },
-    };
-  } catch (err) {
-    console.log(err);
-    return {
-      props: {
-        orders: null,
-        err,
-        content,
-      },
-    };
-  }
+  // try {
+  //   const orders = (await SSR.API.graphql({
+  //     query: getOrdersByUserID,
+  //     authMode: GRAPHQL_AUTH_MODE.AMAZON_COGNITO_USER_POOLS,
+  //     variables: {
+  //       userID: user.id,
+  //     },
+  //   })) as { data: GetOrdersByUserIDQuery };
+
+  //   return {
+  //     props: {
+  //       orders: orders.data.getOrdersByUserID,
+  //       content,
+  //     },
+  //   };
+  // } catch (err) {
+  //   console.log(err);
+  //   return {
+  //     props: {
+  //       orders: null,
+  //       err,
+  //       content,
+  //     },
+  //   };
+  // }
 }
 
 export default Orders;

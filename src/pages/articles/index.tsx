@@ -40,7 +40,7 @@ export default function Articles({ allArticles, content }) {
   );
 }
 
-export async function getStaticProps({ locale = 'pt-BR' }) {
+export async function getStaticProps({ locale }) {
   const allArticles = getAllArticles([
     'title',
     'date',

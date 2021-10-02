@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import Link from 'next/link';
-import { useAuth } from '../../contexts/auth';
 import { Container, BurguerContainer, SignedContainer } from './styles';
 import Logo from '../Logos';
 import Button from '../Form/Button';
@@ -10,11 +9,14 @@ import { HamburguerMenu } from './HamburguerMenu';
 import { useRouter } from 'next/router';
 import { GoSignOut } from 'react-icons/go';
 import { DropdownUserMenu } from '../Form/DropdownUserMenu';
+import { useSession, signIn } from 'next-auth/client';
 
 const NavBar = () => {
+  const [session] = useSession();
+
   const router = useRouter();
 
-  const { locale = 'pt-BR' } = router;
+  const { locale } = router;
 
   const contentNavbar = {
     en: {
@@ -42,20 +44,17 @@ const NavBar = () => {
   };
 
   const content = contentNavbar[locale];
-  // console.log(content);
 
   const [openBurguer, setOpenBurguer] = useState<boolean>(false);
-  const { user, signOut } = useAuth();
-  const email = user?.email;
+  // const email = user?.email;
 
   const node = useRef<HTMLDivElement>(null);
   useOnClickOutside(node, () => setOpenBurguer(false));
 
   const close = () => setOpenBurguer(false);
 
-  const handleSignOut = async () => {
-    await signOut();
-    router.push('/');
+  const handleSignIn = async () => {
+    await signIn('google');
   };
 
   return (
@@ -88,31 +87,23 @@ const NavBar = () => {
               <a>{content.about}</a>
             </Link>
           </li>
-          {/* <div className="vertical_line" /> */}
-          {/* {!user ? (
+          {/* {!session?.user ? (
             <>
               <li>
-                <Link href="/sign-in">
-                  <a>{content.sign_in}</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/sign-up">
-                  <a>
-                    <Button
-                      primary
-                      width="100%"
-                      height="40px"
-                      padding="0.5rem 2rem"
-                    >
-                      {content.sign_up}
-                    </Button>
-                  </a>
-                </Link>
+                <Button
+                  primary
+                  width="100%"
+                  height="40px"
+                  padding="0.5rem 2rem"
+                  onClick={handleSignIn}
+                >
+                  {content.sign_in}
+                </Button>
               </li>
             </>
           ) : (
             <SignedContainer>
+              <div className="vertical_line" />
               <li>
                 <DropdownUserMenu {...{ content }} />
               </li>

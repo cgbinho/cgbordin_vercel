@@ -8,7 +8,7 @@ import Button from '../Form/Button';
 export function AepzeraComponent() {
   const router = useRouter();
 
-  const { locale = 'pt-BR' } = router;
+  const { locale } = router;
 
   const description =
     locale !== 'en'

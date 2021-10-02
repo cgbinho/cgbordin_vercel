@@ -12,6 +12,7 @@ import {
 import { FaNodeJs } from 'react-icons/fa';
 import { ExtendScriptLogo } from '../Logos/extendscript_logo';
 import { AboutContainer } from './styles';
+import Image from 'next/image';
 
 export function AboutComponent({ content }) {
   return (
@@ -19,11 +20,18 @@ export function AboutComponent({ content }) {
       <h1 id="about">{content.title}</h1>
       <section className="about_description">
         <p>{content.description}</p>
-        <img
+        <Image
+          src="/images/cgbordin_profile_02.jpg"
+          alt="Picture of the author"
+          width="200px"
+          height="200px"
+          className="about_img"
+        />
+        {/* <img
           className="about_img"
           src="/images/cgbordin_profile_02.jpg"
           alt="Cleber Galves Bordin"
-        />
+        /> */}
       </section>
       <h4>{content.experience.title}</h4>
       <p>{content.experience.description_01}</p>

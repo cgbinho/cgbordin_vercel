@@ -9,16 +9,12 @@ import { FiLock, FiMail } from 'react-icons/fi';
 import Button from '../components/Form/Button';
 import Input from '../components/Form/Input';
 import Layout from '../components/Layout';
-import { useAuth } from '../contexts/auth';
-import { getCurrentAuthenticatedUser } from '../helpers/users';
 import { forgotPasswordSchema } from '../schemas';
 import { Container } from '../styles/home';
 import { ModalContainer } from '../styles/modal';
 import { FormContainer } from '../styles/form';
 
 const ForgotPassword = ({ content }) => {
-  const { user, forgotPassword, isLoading, isError, signIn } = useAuth();
-
   const router = useRouter();
 
   const {
@@ -33,10 +29,7 @@ const ForgotPassword = ({ content }) => {
   });
 
   const onSubmit = handleSubmit(async ({ email }) => {
-    try {
-      await forgotPassword(email);
-      router.push('/reset-password');
-    } catch {}
+    router.push('/reset-password');
   });
 
   return (
@@ -61,25 +54,22 @@ const ForgotPassword = ({ content }) => {
             <Button
               type="submit"
               primary
-              isLoading={isLoading}
+              isLoading={false}
               width="100%"
               height="40px"
               padding="1em"
             >
               {content.action_button}
             </Button>
-            {isError && <p className="error_message">{isError}</p>}
+            {/* {isError && <p className="error_message">{isError}</p>} */}
           </FormContainer>
-          <pre>{JSON.stringify(user, null, 2)}</pre>
-          <pre>{JSON.stringify(isLoading, null, 2)}</pre>
-          <pre>{JSON.stringify(isError, null, 2)}</pre>
         </form>
       </Container>
     </Layout>
   );
 };
 
-export async function getStaticProps({ locale = 'pt-BR' }) {
+export async function getStaticProps({ locale }) {
   // get the locale text for the selected language:
   const content = (await import(`../locales/${locale}/forgot_password.js`))
     .default;

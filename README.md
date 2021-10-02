@@ -4,7 +4,7 @@ This is the repository for my personal website to showcase my latest projects.
 [cgbordin.com](https://www.cgbordin.com)
 
 I decided to create my own website from the ground up to practice and learn more about Next.js, Aws Amplify.
-This website is made with Next.js using api routes, Aws Amplify, StyledComponents, Markdown for the Articles and soon to be fully implemented: Stripe payment.
+This website is made with Next.js using api routes, StyledComponents, Markdown for the Articles and soon to be fully implemented: Stripe payment.
 
 First install all dependencies
 ```bash

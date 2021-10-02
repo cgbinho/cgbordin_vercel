@@ -5,6 +5,7 @@ import { Container } from '../../styles/home';
 import { VideoPlyr } from '../VideoPlyr';
 import { ProjectsContent } from './styles';
 import { VideoCard } from './VideoCard';
+import Image from 'next/image';
 
 export function ProjectsComponent({ content }) {
   return (
@@ -16,7 +17,7 @@ export function ProjectsComponent({ content }) {
             <a>
               <img
                 src="images/articles/chocoanimato/chocoanimato_cover.jpg"
-                alt={'Choco Animato Cover'}
+                alt="Choco Animato Cover"
                 width="100%"
               />
             </a>

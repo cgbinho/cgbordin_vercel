@@ -1,25 +1,25 @@
 import React from 'react';
-import { Menu, MenuItem, MenuButton, MenuDivider } from '@szhsin/react-menu';
+import {
+  Menu,
+  MenuItem,
+  MenuButton,
+  SubMenu,
+  MenuDivider,
+} from '@szhsin/react-menu';
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/theme-dark.css';
 import { DropdownContainer } from './styles';
 import Button from '../Button';
 import { useRouter } from 'next/router';
-import { useAuth } from '../../../contexts/auth';
 import { HiChevronDown } from 'react-icons/hi';
+import { signOut, useSession } from 'next-auth/client';
 
 export function DropdownUserMenu({ content }) {
+  const [session] = useSession();
   const router = useRouter();
-
-  const { user, signOut } = useAuth();
 
   const handleOrderPage = () => {
     router.push('/orders');
-  };
-
-  const handleSignOut = async () => {
-    await signOut();
-    router.push('/');
   };
 
   return (
@@ -27,7 +27,7 @@ export function DropdownUserMenu({ content }) {
       <Menu
         menuButton={
           <a className="dropdown_button">
-            <p>{user.email}</p>
+            <p>{session.user.email}</p>
             <HiChevronDown />
           </a>
         }
@@ -37,7 +37,7 @@ export function DropdownUserMenu({ content }) {
           {content.orders}
         </MenuItem>
         <MenuDivider />
-        <MenuItem onClick={handleSignOut} value="SignOut">
+        <MenuItem onClick={() => signOut()} value="SignOut">
           {content.sign_out}
         </MenuItem>
       </Menu>

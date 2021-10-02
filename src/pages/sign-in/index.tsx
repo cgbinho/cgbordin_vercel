@@ -9,15 +9,13 @@ import { FiLock, FiMail } from 'react-icons/fi';
 import Button from '../../components/Form/Button';
 import Input from '../../components/Form/Input';
 import Layout from '../../components/Layout';
-import { useAuth } from '../../contexts/auth';
-import { getCurrentAuthenticatedUser } from '../../helpers/users';
 import { signInSchema } from '../../schemas';
 import { Container } from '../../styles/home';
 import { ModalContainer } from '../../styles/modal';
 import { FormContainer } from '../../styles/form';
 
 const SignIn = ({ content }) => {
-  const { user, isLoading, isError, signIn } = useAuth();
+  // const { user, isLoading, isError, signIn } = useAuth();
 
   const router = useRouter();
 
@@ -34,10 +32,8 @@ const SignIn = ({ content }) => {
   });
 
   const onSubmit = handleSubmit(async ({ email, password }) => {
-    try {
-      await signIn({ email, password });
-      router.push('/');
-    } catch {}
+    // await signIn({ email, password });
+    router.push('/');
   });
 
   return (
@@ -73,14 +69,14 @@ const SignIn = ({ content }) => {
             <Button
               type="submit"
               primary
-              isLoading={isLoading}
+              isLoading={false}
               width="100%"
               height="40px"
               padding="1em"
             >
               {content.action_button}
             </Button>
-            {isError && <p className="error_message">{isError}</p>}
+            {/* {isError && <p className="error_message">{isError}</p>} */}
           </FormContainer>
           {/* <pre>{JSON.stringify(user, null, 2)}</pre>
           <pre>{JSON.stringify(isLoading, null, 2)}</pre>
@@ -93,15 +89,15 @@ const SignIn = ({ content }) => {
 
 // We are getting the project with an authenticated user, serverside. Beautiful:
 export async function getServerSideProps({ req, res, locale = 'pt-BR' }) {
-  const user = await getCurrentAuthenticatedUser(req);
-  if (user) {
-    return {
-      redirect: {
-        destination: '/',
-        permanent: false,
-      },
-    };
-  }
+  // const user = await getCurrentAuthenticatedUser(req);
+  // if (user) {
+  //   return {
+  //     redirect: {
+  //       destination: '/',
+  //       permanent: false,
+  //     },
+  //   };
+  // }
 
   const content = (await import(`../../locales/${locale}/sign_in.js`)).default;
 

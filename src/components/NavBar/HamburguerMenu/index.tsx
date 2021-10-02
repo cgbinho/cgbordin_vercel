@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import React, { useRef, useState } from 'react';
-import { useAuth } from '../../../contexts/auth';
 import { useOnClickOutside } from '../../../hooks/useOnClickOutside';
 import HamburgerButton from '../HamburguerButton';
 import { StyledButton, StyledLink, StyledMenu } from './styles';
@@ -8,7 +7,6 @@ import { useRouter } from 'next/router';
 
 export function HamburguerMenu({ content }) {
   const router = useRouter();
-  const { user, signOut } = useAuth();
 
   const [openBurguer, setOpenBurguer] = useState<boolean>(false);
   const node = useRef<HTMLDivElement>(null);
@@ -17,7 +15,7 @@ export function HamburguerMenu({ content }) {
   const close = () => setOpenBurguer(false);
 
   const handleSignOut = async () => {
-    await signOut();
+    // await signOut();
     router.push('/');
   };
 

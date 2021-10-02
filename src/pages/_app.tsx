@@ -2,7 +2,11 @@ import React, { useEffect } from 'react';
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import AppProvider from '../contexts';
+import { Provider as NextAuthProvider } from 'next-auth/client';
+import { ThemeProvider } from 'styled-components';
+import theme from '../styles/theme';
+import GlobalStyle from '../styles/global';
+
 import * as gtag from '../helpers/googleAnalytics';
 
 const queryClient = new QueryClient();
@@ -21,9 +25,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <AppProvider>
-        <Component {...pageProps} />
-      </AppProvider>
+      <NextAuthProvider session={pageProps.session}>
+        <GlobalStyle />
+        <ThemeProvider theme={theme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </NextAuthProvider>
     </QueryClientProvider>
   );
 }

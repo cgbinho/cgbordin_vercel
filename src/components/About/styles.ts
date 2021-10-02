@@ -44,7 +44,7 @@ export const AboutContainer = styled.div`
   }
 
   .about_img {
-    width: 200px;
+    /* width: 200px; */
     border-radius: 50%;
   }
 `;
