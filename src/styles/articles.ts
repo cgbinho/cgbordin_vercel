@@ -22,6 +22,7 @@ export const ArticlesContent = styled.div`
     padding: 2rem;
     background-color: var(--gray-170);
     border-radius: 4px;
+    grid-auto-rows: 1fr;
   }
 
   .article_list {

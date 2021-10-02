@@ -1,6 +1,6 @@
 ---
 title: 'ScriptTimer'
-excerpt: 'Como estimar o tempo de duração do vídeo ainda em fase de roteiro?'
+excerpt: 'Aplicativo Javascript que estima o tempo de duração do vídeo com apenas o roteiro.'
 coverImage: '/images/articles/scripttimer/scripttimer_cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 ---

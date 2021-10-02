@@ -1,6 +1,6 @@
 ---
 title: 'FlippingBook'
-excerpt: 'Como eu criei um script que gera um livro em After Effects.'
+excerpt: 'Como eu criei uma aplicação em Javascript que gera um livro em After Effects.'
 coverImage: '/images/articles/flippingbook/flippingbook_cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 ---

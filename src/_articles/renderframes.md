@@ -1,6 +1,6 @@
 ---
 title: 'RenderFrames'
-excerpt: 'Como salvar vários frames de uma composição de uma só vez.'
+excerpt: 'Aplicação em Javascript que salva vários frames de uma composição de uma só vez.'
 coverImage: '/images/articles/renderframes/renderframes_cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 ---

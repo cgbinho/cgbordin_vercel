@@ -1,6 +1,6 @@
 ---
 title: 'AudioSync'
-excerpt: 'Como manter o audio dentro de uma precomp, sincronizado com o tempo da comp principal.'
+excerpt: 'Script em Javascript que mantem o audio dentro de uma precomp, sincronizado com o tempo da comp principal.'
 coverImage: '/images/articles/audiosync/audiosync_cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 ---

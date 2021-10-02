@@ -19,7 +19,7 @@ export default function Articles({ allArticles, content }) {
           {allArticles.map(
             ({ slug, date, title, excerpt, coverImage }, index) => (
               // <Link href={`/articles/${slug}`} key={index} locale="pt-BR">
-              <Link href={`/articles/${slug}`} key={index}>
+              <Link href={`/articles/${slug}`} key={index} locale={false}>
                 <a>
                   <section>
                     <img src={coverImage} alt={title} width="100%" />
