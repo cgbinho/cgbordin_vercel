@@ -7,7 +7,16 @@ date: '2020-03-16T05:35:07.322Z'
 
 Essa ferramenta é o resultado de um processo de Pesquisa e Desenvolvimento para um projeto que eu precisei representar uma conversa entre dois usuários, como um aplicativo de mensagens estilo Whatsapp.
 
-![alt text](/images/articles/whatsafter/whatsafter_print.png#width_auto "Print da composição finalizada.")
+<a href="https://www.cgbordin.com/images/articles/whatsafter/whatsafter_interface.png#width_auto" target="_blank">
+<img src="/images/articles/whatsafter/whatsafter_interface.png#width_auto" alt="WhatsAfter Interface" />
+</a>
+
+*WhatsAfter Interface*
+
+<a href="https://www.cgbordin.com/images/articles/whatsafter/whatsafter_print.png#width_auto" target="_blank">
+<img src="/images/articles/whatsafter/whatsafter_print.png#width_auto" alt="Print da composição finalizada." />
+</a>
+
 *Print da composição finalizada.*
 
 **Antes de me aprofundar, eu gostaria de esclarecer que o intuito deste artigo é mostrar um pouco do meu processo de criação, não é um tutorial passo-a-passo e o script não está disponível comercialmente pra download.**
@@ -30,31 +39,43 @@ Existem ferramentas online de geração de diálogos de WhatsApp que são usadas
 
 Comecei criando duas composições de mensagem de usuários, com a foto e o balão de conversa: estas composições serviriam de template para todas as outras mensagens.
 
-![alt text](/images/articles/whatsafter/whatsafter_template_user01.png#width_auto "Mensagem do usuário principal")
+<a href="https://www.cgbordin.com/images/articles/whatsafter/whatsafter_template_user01.png#width_auto" target="_blank">
+<img src="/images/articles/whatsafter/whatsafter_template_user01.png#width_auto" alt="Mensagem do usuário principal" />
+</a>
+
 *Mensagem do usuário principal.*
 
-![alt text](/images/articles/whatsafter/whatsafter_template_user02.png#width_auto  "Mensagem do segundo usuário ou demais participantes do grupo.")
+<a href="https://www.cgbordin.com/images/articles/whatsafter/whatsafter_template_user02.png#width_auto" target="_blank">
+<img src="/images/articles/whatsafter/whatsafter_template_user02.png#width_auto" alt="Mensagem do segundo usuário ou demais participantes do grupo" />
+</a>
+
 *Mensagem do segundo usuário ou demais participantes do grupo.*
 
-![alt text](/images/articles/whatsafter/whatsafter_user_typing.png#width_auto  "Mensagem de 'usuário digitando'...")
+<a href="https://www.cgbordin.com/images/articles/whatsafter/whatsafter_user_typing.png#width_auto" target="_blank">
+<img src="/images/articles/whatsafter/whatsafter_user_typing.png#width_auto" alt="Mensagem de 'usuário digitando'..." />
+</a>
+
 *Mensagem de 'usuário digitando'...*
 
 Alguns detalhes como cores de texto, balão e cores dos nomes, linkei por meio de expressão em um composição de controle.
 
 Caso houvesse a necessidade de alterar algum parâmetro mais tarde, ficaria fácil.
 
-![alt text](/images/articles/whatsafter/whatsafter_config_colors.png#width_auto  "Composição de controle de cores")
+<a href="https://www.cgbordin.com/images/articles/whatsafter/whatsafter_config_colors.png#width_auto" target="_blank">
+<img src="/images/articles/whatsafter/whatsafter_config_colors.png#width_auto" alt="Composição de controle de cores" />
+</a>
+
 *Composição de controle de cores*
 
 Criei uma composição principal com o aspecto de retrato ( 9:16 ) em full HD, com o background imitando a janela do aplicativo de mensagens.
 
-![alt text](/images/articles/whatsafter/whatsafter_bg.png#width_auto  "Imagem de fundo")
+<a href="https://www.cgbordin.com/images/articles/whatsafter/whatsafter_bg.png#width_auto" target="_blank">
+<img src="/images/articles/whatsafter/whatsafter_bg.png#width_auto" alt="Imagem de fundo" />
+</a>
+
 *Imagem de fundo*
 
 A partir deste ponto, eu já tinha o necessário para começar a criar a sequência de diálogo, então comecei a escrever um script que foi evoluindo, se transformando e depois de várias revisões, ajustes, bugs esmagados e incrementos... funciona da seguinte forma:
-
-![alt text](/images/articles/whatsafter/whatsafter_interface.png#width_auto  "WhatsAfter Interface")
-*WhatsAfter Interface*
 
 ### Input do diálogo via XML
 Formatei um XML para o script fazer a leitura das informações de cada mensagem, como exemplo abaixo:
@@ -86,7 +107,10 @@ Antes de inserir a mensagem do usuário na composição principal, o script inse
 
 O script cria a composição de “Usuário está digitando uma mensagem...” e insere na composição principal.
 
-![alt text](/images/articles/whatsafter/whatsafter_julestyping.png#width_auto  "Jules está digitando...")
+<a href="https://www.cgbordin.com/images/articles/whatsafter/whatsafter_julestyping.png#width_auto" target="_blank">
+<img src="/images/articles/whatsafter/whatsafter_julestyping.png#width_auto" alt="Jules está digitando..." />
+</a>
+
 *Jules está digitando...*
 
 O tempo que esta mensagem fica visível é proporcional ao tamanho da mensagem que o usuário está digitando, assim temos a impressão de que alguém está digitando mesmo a mensagem.
@@ -95,7 +119,10 @@ O tempo que esta mensagem fica visível é proporcional ao tamanho da mensagem q
 
 Na sequência, com os templates de cada usuário feitos, o script cria a composição da mensagem e preenche os campos de nome do usuário e o seu texto.
 
-![alt text](/images/articles/whatsafter/whatsafter_message01.png#width_80 "Composição da mensagem 01")
+<a href="https://www.cgbordin.com/images/articles/whatsafter/whatsafter_message01.png#width_80" target="_blank">
+<img src="/images/articles/whatsafter/whatsafter_message01.png#width_80" alt="Composição da mensagem 01" />
+</a>
+
 *Composição da mensagem 01*
 
 Ao adicionar a mensagem na composição principal, o script calcula o tempo que passou desde o início da conversa e atualiza o relógio da mensagem, incrementando os minutos que se passaram.
@@ -140,14 +167,20 @@ Com tudo testado e funcionando, formatei o diálogo dos usuários no xml e imple
 
 Então ao rodar o script, o diálogo entre os usuários se constrói sozinho na composição principal:
 
-![alt text](/images/articles/whatsafter/whatsafter_comp.png#width_auto "Composição de todas as mensagens")
+<a href="https://www.cgbordin.com/images/articles/whatsafter/whatsafter_comp.png#width_auto" target="_blank">
+<img src="/images/articles/whatsafter/whatsafter_comp.png#width_auto" alt="Composição de todas as mensagens1" />
+</a>
+
 *Composição de todas as mensagens*
 
-![alt text](/images/articles/whatsafter/whatsafter_timeline.png#width_80 "Timeline com todas as mensagens")
+<a href="https://www.cgbordin.com/images/articles/whatsafter/whatsafter_timeline.png#width_80" target="_blank">
+<img src="/images/articles/whatsafter/whatsafter_timeline.png#width_80" alt="Timeline com todas as mensagens" />
+</a>
+
 *Timeline com todas as mensagens*
 
 ### Conclusão
 
 Uma vez com a ferramenta finalizada, passei o período de produção apenas acertando os diálogos do XML e inserindo o caminho das imagens e emojis.
 
-Se você se interessou pelo meu trabalho e quiser conversar comigo, me escreva em *cleber @ cgbordin.com*.
+Se você se interessou pelo meu trabalho e quiser conversar comigo, me escreva em *cleber @ cgbordin.com*

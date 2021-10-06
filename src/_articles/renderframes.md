@@ -7,7 +7,10 @@ date: '2020-03-16T05:35:07.322Z'
 
 Para salvar um frame da sua composição, você precisa deixar a agulha da timeline no ponto em que deseja, e então acessar o menu '**Composition > Save Frame As > File**' ou simplesmente usar o atalho '**Ctrl + Alt + S**'. Fazendo isto, o Render Queue se abre, e nele você pode escolher onde salvar o frame e então renderizá-lo.
 
-![alt text](/images/articles/renderframes/renderframes_save.png "Efeito CC Page Turn e Drop Shadow.")
+<a href="https://www.cgbordin.com/images/articles/renderframes/renderframes_save.png" target="_blank">
+<img src="/images/articles/renderframes/renderframes_save.png" alt="Efeito CC Page Turn e Drop Shadow" />
+</a>
+
 *Caminho para salvar um frame da composição.*
 
 Este processo é simples e prático, caso precise salvar apenas 1 ou 2 frames da composição.
@@ -20,14 +23,20 @@ Sentei um dia que estava mais tranquilo e escrevi o script RenderFrames para aut
 
 O script RenderFrames salva vários frames de forma rápida e simples.
 
-![alt text](/images/articles/renderframes/renderframes_interface.png#width_auto "RenderFrames interface.")
+<a href="https://www.cgbordin.com/images/articles/renderframes/renderframes_interface.png#width_auto" target="_blank">
+<img src="/images/articles/renderframes/renderframes_interface.png#width_auto" alt="RenderFrames interface" />
+</a>
+
 *RenderFrames interface.*
 
 ### Como funciona
 
 Crio um null layer e posiciono markers nos tempos em que preciso salvar os frames.
 
-![alt text](/images/articles/renderframes/renderframes_layer.png "Null Layer com os markers posicionados onde preciso dos frames.")
+<a href="https://www.cgbordin.com/images/articles/renderframes/renderframes_layer.png" target="_blank">
+<img src="/images/articles/renderframes/renderframes_layer.png" alt="Null Layer com os markers posicionados onde preciso dos frames." />
+</a>
+
 *Null Layer com os markers posicionados onde preciso dos frames.*
 
 Escrevo o nome do arquivo e seleciono então, no botão “...” uma pasta onde eu quero salvar estes frames.

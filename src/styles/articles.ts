@@ -81,7 +81,8 @@ export const ArticleContainer = styled.div`
     }
   }
 
-  img {
+  img,
+  figure {
     width: 100%;
     display: block;
     margin: 1rem auto;
@@ -108,7 +109,7 @@ export const ArticleContainer = styled.div`
     border: 2px solid var(--gray-100);
   }
 
-  img + em {
+  em {
     padding-bottom: 0.5rem;
     display: block;
     text-align: center;

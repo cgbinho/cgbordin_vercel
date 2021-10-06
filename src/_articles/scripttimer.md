@@ -33,17 +33,26 @@ Para me certificar, gravo um teste de leitura do roteiro com meu próprio microf
 
 Com esta lógica de tempo de leitura acertada, escrevi um script chamado ScriptTimer que automatiza este processo dentro do After Effects:
 
-![alt text](/images/articles/scripttimer/scripttimer_interface.png#width_auto "ScriptTimer Interface")
+<a href="https://www.cgbordin.com/images/articles/scripttimer/scripttimer_interface.png#width_auto" target="_blank">
+<img src="/images/articles/scripttimer/scripttimer_interface.png#width_auto" alt="ScriptTimer Interface" />
+</a>
+
 *ScriptTimer Interface*
 
 ### Como funciona
 
 Ele pega o roteiro de locução que está em um arquivo de texto e cria uma timeline no After Effects com um layer de texto projetando o tempo de leitura de cada frase, marcando também os inícios com markers.
 
-![alt text](/images/articles/scripttimer/scripttimer_preview.png#width_100% "ScriptTimer Preview")
+<a href="https://www.cgbordin.com/images/articles/scripttimer/scripttimer_preview.png#width_100%" target="_blank">
+<img src="/images/articles/scripttimer/scripttimer_preview.png#width_100%" alt="ScriptTimer Preview" />
+</a>
+
 *ScriptTimer Preview*
 
-![alt text](/images/articles/scripttimer/scripttimer_timeline.png#width_100% "ScriptTimer Timeline")
+<a href="https://www.cgbordin.com/images/articles/scripttimer/scripttimer_timeline.png#width_100%" target="_blank">
+<img src="/images/articles/scripttimer/scripttimer_timeline.png#width_100%" alt="Resultado do ScriptTimer na timeline." />
+</a>
+
 *Resultado do ScriptTimer na timeline.*
 
 Com esta marcação de tempo já na timeline, fica mais fácil editar o storyboard animado e alinhar este tempo de leitura com o locutor profissional e assim, diminuindo a margem de erro de ajuste de cenas.

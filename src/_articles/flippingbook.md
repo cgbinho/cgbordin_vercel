@@ -13,12 +13,18 @@ Então comecei a estudar uma forma de criar um livro inteiramente no After Effec
 
 Depois de alguns testes, a melhor forma que encontrei de simular as páginas virando, foi com o efeito **"CC Page Turn"** e o **"Drop Shadow"**, nativos do After Effects.
 
-![alt text](/images/articles/flippingbook/flippingbook_ccpageturn.png "Efeito CC Page Turn e Drop Shadow.")
+<a href="https://www.cgbordin.com/images/articles/flippingbook/flippingbook_ccpageturn.png" target="_blank">
+<img src="/images/articles/flippingbook/flippingbook_ccpageturn.png" alt="Efeito CC Page Turn e Drop Shadow" />
+</a>
+
 *Efeito CC Page Turn e Drop Shadow.*
 
 Não fica uma solução igual a uma página 3D, mas é o mais perto que eu consegui chegar. Fiz algumas páginas virando, separei elas em composições, estudei a lógica de como elas são sobrepostas da melhor forma ( o CC Page Turn tem opções de página de frente e verso, etc. ) e depois de uns testes, fiquei com um 'rascunho' de um livro que me deixou satisfeito.
 
-![alt text](/images/articles/flippingbook/flippingbook_test.gif "Página virando com o efeito 'CC Page Turn.")
+<a href="https://www.cgbordin.com/images/articles/flippingbook/flippingbook_test.gif" target="_blank">
+<img src="/images/articles/flippingbook/flippingbook_test.gif" alt="Página virando com o efeito 'CC Page Turn" />
+</a>
+
 *Página virando com o efeito 'CC Page Turn*
 
 Com este 'rascunho', comecei a escrever o script que iria automatizar este processo e gerar quantas páginas eu precisar, numa composição principal.
@@ -27,19 +33,28 @@ Daí surgiu o **Flipping Book**.
 
 ## Flipping Book
 
-![alt text](/images/articles/flippingbook/flippingbook_create.png#width_auto "Flipping Book User Interface")
+<a href="https://www.cgbordin.com/images/articles/flippingbook/flippingbook_create.png#width_auto" target="_blank">
+<img src="/images/articles/flippingbook/flippingbook_create.png#width_auto" alt="Flipping Book User Interface" />
+</a>
+
 *Flipping Book User Interface*
 
 Na aba **'Create'**, o usuário escolhe a quantidade de páginas que o livro terá e o recorte de canto de página: reto ou arredondado.
 
 Ao clicar no **'Create'**, uma composição chamada **'Flipping Book'** é criada, bem como as composições de cada página alinhadas, sendo folheadas num intervalo de tempo de 1 segundo.
 
-![alt text](/images/articles/flippingbook/flippingbook_timeline.png "Composição gerada pelo Flipping Book")
+<a href="https://www.cgbordin.com/images/articles/flippingbook/flippingbook_timeline.png" target="_blank">
+<img src="/images/articles/flippingbook/flippingbook_timeline.png alt="Composição gerada pelo Flipping Book" />
+</a>
+
 *Composição gerada pelo Flipping Book*
 
 Como um livro pode ter várias páginas, fica fácil se perder em meio a tantas composições na timeline, portanto para isso criei uma aba 'Edit' onde o usuário pode aumentar ou diminuir o tempo de duração da página que desejar.
 
-![alt text](/images/articles/flippingbook/flippingbook_edit.png#width_auto "Aba Edit permite ajustar o tempo de duração de cada página")
+<a href="https://www.cgbordin.com/images/articles/flippingbook/flippingbook_edit.png#width_auto" target="_blank">
+<img src="/images/articles/flippingbook/flippingbook_edit.png#width_auto alt="Aba Edit permite ajustar o tempo de duração de cada página" />
+</a>
+
 *Aba Edit permite ajustar o tempo de duração de cada página*
 
 Enfim, foi um desafio interessante criar esta ferramenta, e com ela aprendi a trabalhar melhor alguns aspectos do After Effects. Estou satisfeito com o resultado porque ela pode ser útil em qualquer outro projeto que envolva livro animado.

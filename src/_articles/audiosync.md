@@ -5,6 +5,12 @@ coverImage: '/images/articles/audiosync/audiosync_cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 ---
 
+<a href="https://www.cgbordin.com/images/articles/audiosync/audiosync_interface.png#width_auto" target="_blank">
+<img src="/images/articles/audiosync/audiosync_interface.png#width_auto alt="AudioSync Interface" />
+</a>
+
+*AudioSync Interface*
+
 É muito bom para a organização de um projeto de After Effects, criar pre-composições e quebrar cenas, elementos complexos em partes separadas. 
 
 Esta prática facilita bastante uma leitura da timeline, entender suas masks, fazer ajustes de tempo de cenas... porém, nesta organização de pre-composições eu sempre tive problema com o áudio. 
@@ -13,7 +19,10 @@ O áudio da composição principal é a referência para a animação das cenas 
 
 Isto sempre me gerou um desconforto porque eu sabia que, uma vez que eu precisasse editar a posição destas pre-composições na composição principal, todos estes áudios que estão nas pré-composições iriam ficar fora de sincronia.
 
-![alt text](/images/articles/audiosync/audiosync_precomp.gif "Audio da pre-composição fora de sincronia com a composição principal.")
+<a href="https://www.cgbordin.com/images/articles/audiosync/audiosync_precomp.gif" target="_blank">
+<img src="/images/articles/audiosync/audiosync_precomp.gif" alt="Audio da pre-composição fora de sincronia com a composição principal" />
+</a>
+
 *Audio da pre-composição fora de sincronia com a composição principal.*
 
 E realmente, 99% das vezes eu tinha que esticar o tempo de uma pre-composição aqui e ali... e todos os áudios dentro das pre-composições perdiam a sincronia.
@@ -30,24 +39,25 @@ MainT = time + L.startTime;
 
 Curta e eficiente, esta expressão garante que o áudio da pre-composição estará sempre alinhado com o áudio da composição principal.
 
-![alt text](/images/articles/audiosync/audiosync_precomp_com_expression.png "Audio dentro da Pre-Composição com a expressão aplicada.")
+<a href="https://www.cgbordin.com/images/articles/audiosync/audiosync_precomp_com_expression.png" target="_blank">
+<img src="/images/articles/audiosync/audiosync_precomp_com_expression.png" alt="Audio dentro da Pre-Composição com a expressão aplicada" />
+</a>
+
 *Audio dentro da Pre-Composição com a expressão aplicada.*
 
 Resolvido este problema, eu escrevi um script chamado SyncAudio para facilitar o processo de criação desta expressão.
-
-O script ainda é um work-in-progress, espero em breve torná-lo disponível para download.
-
-![alt text](/images/articles/audiosync/audiosync_interface.png#width_auto "AudioSync Interface.")
-*AudioSync Interface*
 
 Basta fazer uma cópia do audio da composição principal para dentro da pre-composição e, com este áudio selecionado, rodar o script.
 Nele é só selecionar qual é a composição principal no menu dropdown e apertar o botão SyncAudio.
 
 Pronto, agora o áudio da pré-composição permanece sincronizado com o audio da composição principal, facilitando qualquer trabalho de ajuste de edição das pre-composições.
 
-![alt text](/images/articles/audiosync/audiosync_precomp_finalizada.gif "Audio da pre-composição em sincronia com a composição principal.")
+<a href="https://www.cgbordin.com/images/articles/audiosync/audiosync_precomp_finalizada.gif" target="_blank">
+<img src="/images/articles/audiosync/audiosync_precomp_finalizada.gif" alt="Audio da pre-composição em sincronia com a composição principal" />
+</a>
+
 *Audio da pre-composição em sincronia com a composição principal.*
 
-Espero futuramente preparar este script para disponibilizá-lo online.
+O script ainda é um work-in-progress, espero em breve torná-lo disponível para download.
 
-Se você se interessou pelo meu trabalho e quiser conversar comigo, me escreva em *cleber @ cgbordin.com*.
+Se você se interessou pelo meu trabalho e quiser conversar comigo, me escreva em *cleber @ cgbordin.com*
