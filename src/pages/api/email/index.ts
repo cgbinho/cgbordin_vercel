@@ -1,7 +1,6 @@
 // TESTING PURPOSES
 import Amplify, { API } from 'aws-amplify';
 import { NextApiRequest, NextApiResponse } from 'next';
-import { createOrder } from '../../../graphql/mutations';
 import { sendMail } from '../../../helpers/email';
 
 export default async function handler(

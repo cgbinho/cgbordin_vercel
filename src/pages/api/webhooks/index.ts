@@ -5,8 +5,6 @@ import Stripe from 'stripe';
 import { generateProductCode } from '../../../helpers/products';
 import { sendMail } from '../../../helpers/email';
 import { API } from 'aws-amplify';
-// import { createOrder, updateOrder } from '../../../graphql/mutations';
-import { postOrder, updateOrder } from '../../../helpers/db';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   // https://github.com/stripe/stripe-node#configuration
@@ -67,24 +65,24 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
       // set create date ( can't read createdAt / updatedAt from AWS):
       const createdOn = Date.now();
       // create Order:
-      const [dataIntent, errIntent] = await postOrder({
-        id: paymentIntent.id,
-        userID: paymentIntent.metadata.user_id,
-        userEmail: email,
-        product: paymentIntent.metadata.product_name,
-        code: null,
-        amount: paymentIntent.amount_received,
-        currency: paymentIntent.currency,
-        orderStatus: 'pending',
-        createdOn,
-        updatedOn: createdOn,
-      });
+      // const [dataIntent, errIntent] = await postOrder({
+      //   id: paymentIntent.id,
+      //   userID: paymentIntent.metadata.user_id,
+      //   userEmail: email,
+      //   product: paymentIntent.metadata.product_name,
+      //   code: null,
+      //   amount: paymentIntent.amount_received,
+      //   currency: paymentIntent.currency,
+      //   orderStatus: 'pending',
+      //   createdOn,
+      //   updatedOn: createdOn,
+      // });
 
-      if (errIntent) {
-        res.status(500).json({ statusCode: 500, message: errIntent.message });
-        res.end();
-        return;
-      }
+      // if (errIntent) {
+      //   res.status(500).json({ statusCode: 500, message: errIntent.message });
+      //   res.end();
+      //   return;
+      // }
       // Inform user about the successfull purchase:
       const mailData = {
         name,
@@ -101,7 +99,7 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
         res.end();
         return;
       }
-      console.log(dataIntent);
+      // console.log(dataIntent);
     } else if (event.type === 'payment_intent.payment_failed') {
       const paymentIntent = event.data.object as Stripe.PaymentIntent;
       console.log(
@@ -120,18 +118,18 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
       // set updatedOn value:
       const updatedOn = Date.now();
 
-      const [dataCharge, errCharge] = await updateOrder({
-        id: charge.payment_intent,
-        code,
-        orderStatus: 'paid',
-        updatedOn,
-      });
+      // const [dataCharge, errCharge] = await updateOrder({
+      //   id: charge.payment_intent,
+      //   code,
+      //   orderStatus: 'paid',
+      //   updatedOn,
+      // });
 
-      if (errCharge) {
-        res.status(500).json({ statusCode: 500, message: errCharge.message });
-        res.end();
-        return;
-      }
+      // if (errCharge) {
+      //   res.status(500).json({ statusCode: 500, message: errCharge.message });
+      //   res.end();
+      //   return;
+      // }
       // Deliver the goods to customer:
       const mailData = {
         name,
