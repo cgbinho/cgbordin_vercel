@@ -11,7 +11,7 @@ export const AboutContainer = styled.div`
   gap: 2rem;
   padding: 2rem;
 
-  h3 {
+  h2 {
     text-align: center;
   }
 `;

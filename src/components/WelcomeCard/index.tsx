@@ -12,7 +12,10 @@ export function WelcomeCard() {
 
   const { locale } = router;
 
-  const title = locale !== 'en' ? `Hi, I'm ` : `Olá, eu sou o `;
+  const title =
+    locale !== 'en'
+      ? `Olá, eu sou o Cleber Galves Bordin.`
+      : `Hi, I'm Cleber Galves Bordin.`;
 
   const excerpt =
     locale !== 'en'
@@ -28,7 +31,7 @@ export function WelcomeCard() {
         height="180px"
         className="border_radius_50"
       />
-      <h1>Olá, eu sou o Cleber Galves Bordin.</h1>
+      <h1>{title}</h1>
       <p>{excerpt}</p>
       <HorizontalLine />
       <WelcomeCardFooter>

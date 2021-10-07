@@ -7,7 +7,11 @@ import { WelcomeCard } from '../components/WelcomeCard';
 import { ExperienceCard } from '../components/ExperienceCard';
 import { Container } from '../styles/home';
 
-export default function Home({ contentProjects, contentAbout }) {
+export default function Home({
+  contentProjects,
+  contentAbout,
+  contentExperience,
+}) {
   return (
     <Layout>
       <Head>
@@ -16,7 +20,7 @@ export default function Home({ contentProjects, contentAbout }) {
       </Head>
       <Container id="home">
         <WelcomeCard />
-        <ExperienceCard />
+        <ExperienceCard {...{ content: contentExperience }} />
         <ProjectsComponent {...{ content: contentProjects }} />
         <AboutComponent {...{ content: contentAbout }} />
       </Container>
@@ -29,11 +33,14 @@ export async function getStaticProps({ locale }) {
   const contentProjects = (await import(`../locales/${locale}/projects.js`))
     .default;
   const contentAbout = (await import(`../locales/${locale}/about.js`)).default;
+  const contentExperience = (await import(`../locales/${locale}/experience.js`))
+    .default;
 
   return {
     props: {
       contentProjects,
       contentAbout,
+      contentExperience,
     },
   };
 }

@@ -9,7 +9,7 @@ import { AboutContainer } from './styles';
 export function AboutComponent({ content }) {
   return (
     <AboutContainer>
-      <h3 id="about">{content.title}</h3>
+      <h2 id="about">{content.title}</h2>
       <p>{content.description}</p>
       <AboutCardRightContainer>
         <Image
