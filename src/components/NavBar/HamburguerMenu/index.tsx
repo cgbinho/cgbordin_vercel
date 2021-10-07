@@ -54,12 +54,14 @@ export function HamburguerMenu({ content }) {
   return (
     <div ref={node}>
       <StyledMenu open={openBurguer}>
-        <MenuItem {...{ label: `${content.home}`, path: '/' }} />
+        <MenuItem {...{ label: `${content.home}`, path: '/#home' }} />
         {/* {!user && <GuestMenu />} */}
-        <MenuItem {...{ label: `${content.about}`, path: '/about' }} />
+        <MenuItem
+          {...{ label: `${content.experience}`, path: '/#experience' }}
+        />
+        <MenuItem {...{ label: `${content.projects}`, path: '/#projects' }} />
         <MenuItem {...{ label: `${content.articles}`, path: '/articles' }} />
-        <MenuItem {...{ label: `${content.projects}`, path: '/projects' }} />
-        <MenuItem {...{ label: `${content.aepzera}`, path: '/aepzera' }} />
+        <MenuItem {...{ label: `${content.about}`, path: '/#about' }} />
         {/* {user && <LoggedMenu />} */}
       </StyledMenu>
       <HamburgerButton {...{ openBurguer, setOpenBurguer }} />

@@ -14,7 +14,7 @@ export default function Home({ contentProjects, contentAbout }) {
         <title>CGBORDIN - Cleber Galves Bordin</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container>
+      <Container id="home">
         <WelcomeCard />
         <ExperienceCard />
         <ProjectsComponent {...{ content: contentProjects }} />

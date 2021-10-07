@@ -64,7 +64,7 @@ const NavBar = () => {
       <nav>
         <ul className="navbar_desktop">
           <li>
-            <Link href="/">
+            <Link href="/#home">
               <a>{content.home}</a>
             </Link>
           </li>
