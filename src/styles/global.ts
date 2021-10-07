@@ -119,4 +119,30 @@ li {
 .border_radius_50 {
     border-radius: 50%;
   }
+  /* scrollbar */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px var(--dark_gray);
+  box-shadow: inset 0 0 6px var(--dark_gray);
+  border-radius: 0px;
+  background-color: hsl(0, 0%, 15%);
+  /* background-color: var(--gray-150); */
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  /* border-radius: 4px; */
+  -webkit-box-shadow: inset 0 0 6px var(--dark_gray);
+  box-shadow: inset 0 0 1px var(--dark_gray);
+  background-color: hsl(0, 0%, 33%);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 50%);
+  /* background: var(--scent-750); */
+}
 `;
