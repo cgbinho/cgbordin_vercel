@@ -1,83 +1,12 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import React, { useState } from 'react';
-import Stripe from 'stripe';
-import Button from '../../components/Form/Button';
+import React from 'react';
 import Layout from '../../components/Layout';
 import { AepzeraLogo } from '../../components/Logos/aepzera_logo';
 import { VideoPlyr } from '../../components/VideoPlyr';
-import { fetchPostJSON } from '../../helpers/api';
-import getStripe from '../../helpers/stripe/stripe-stripejs';
-import { useProducts } from '../../hooks/useProducts';
 import { AepzeraCard, AepzeraContent } from '../../styles/aepzera';
 import { Container } from '../../styles/home';
 
-interface IPrice extends Stripe.Price {
-  product: Stripe.Product;
-}
-
-interface IProps {
-  prices: IPrice[];
-}
-
 const Aepzera = ({ content, currency }) => {
-  const user = { email: '', id: '' };
-  // get list of products from api ( disabled until product is on sale):
-  const {
-    data: prices,
-    isLoading,
-    isError,
-  } = useProducts({ currency, product: 'Aepzera', enabled: false });
-
-  const [showRedirect, setShowRedirect] = useState(false);
-
-  const handleBuyProduct = async (price) => {
-    const stripe = await getStripe();
-
-    // const session = await response.json();
-    const response = await fetchPostJSON('/api/checkout_session', {
-      price_id: price.id,
-      customer_email: user.email,
-      product_name: 'Aepzera',
-      user_id: user.id,
-    });
-    if (response.statusCode === 500) {
-      console.error(response.message);
-      return;
-    }
-    // console.log({ session });
-    // When the customer clicks on the button, redirect them to Checkout.
-    const result = await stripe.redirectToCheckout({
-      sessionId: response.id,
-    });
-
-    if (result.error) {
-      console.log(result.error);
-      // If `redirectToCheckout` fails due to a browser or network
-      // error, display the localized error message to your customer
-      // using `result.error.message`.
-    }
-  };
-
-  const handleSubmit = async (price) => {
-    // if no user is logged, show alert message
-    if (!user) {
-      setShowRedirect(true);
-      return null;
-    }
-    await handleBuyProduct(price);
-  };
-
-  function AlertComponent({ title }) {
-    return (
-      <>
-        <Link href="/sign-up">
-          <a>{title}</a>
-        </Link>
-      </>
-    );
-  }
-
   return (
     <Layout>
       <Head>
@@ -86,27 +15,9 @@ const Aepzera = ({ content, currency }) => {
       <Container>
         <AepzeraCard>
           <AepzeraLogo />
-          {/* <VideoPlyr {...{ src: 'ysz5S6PUM-U' }} /> */}
           <VideoPlyr {...{ src: '7ks2E_FAjhE' }} />
           <aside>
             <p>{content.description}</p>
-            {/* {isLoading && <p>Loading...</p>} */}
-            {/* {isError && <p>Error loading products.</p>} */}
-            {/* {prices && (
-              <Button
-                primary
-                width="100%"
-                height="40px"
-                padding=".8rem 2rem"
-                onClick={() => handleSubmit(prices)}
-              >
-                {content.action_button}
-                {((prices?.unit_amount as number) / 100).toFixed(2)}
-              </Button>
-            )}
-            {showRedirect && (
-              <AlertComponent title={content.alert_to_register} />
-            )} */}
           </aside>
         </AepzeraCard>
 
