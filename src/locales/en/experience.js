@@ -1,6 +1,6 @@
 export default {
   title: 'Experience',
-  excerpt: `Working since 2003, for several advertising agencies from Brazil and from around the world, I am constantly seeking to expand my knowledge and keep studying solutions and ideas for problems in web development. Below are some technologies I have experience:`,
+  excerpt: `Working in Motion Design since 2003, for several advertising agencies from Brazil and from around the world, I started Programming scripts and expressions in Javascript / ExtendScript in 2013 - since then I keep seeking to expand my knowledge and studying solutions and ideas for problems. I started learning React.js in 2019 and today I work with all things related to Design, Motion Design and Front-end development. Below are some technologies I have experience:`,
   coding: {
     title: 'Coding',
     img: '/images/cgbordin_experience_code.svg',
