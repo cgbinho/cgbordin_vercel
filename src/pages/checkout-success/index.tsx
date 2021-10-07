@@ -13,7 +13,6 @@ import Head from 'next/head';
 import { Container } from '../../styles/home';
 import { SuccessCard } from '../../components/Orders/SuccessCard';
 import { EmptyCard } from '../../components/Orders/EmptyCard';
-import { getCurrentAuthenticatedUser } from '../../helpers/users';
 
 interface PropsData {
   session: any;
@@ -69,7 +68,7 @@ export async function getServerSideProps({ req, query, locale = 'pt-BR' }) {
   };
 }
 
-/* 
+/*
 {
   "id": "cs_test_a1Hw4ZFtupInZU1YzNspPASaGkkTcx8CNueIhODERIOdIkDPajjUtU14KJ",
   "object": "checkout.session",

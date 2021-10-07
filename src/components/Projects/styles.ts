@@ -8,7 +8,7 @@ export const ProjectsContent = styled.div`
   width: 100%;
   max-width: 850px;
 
-  > h1 {
+  > h2 {
     text-align: center;
   }
 

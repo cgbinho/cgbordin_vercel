@@ -2,7 +2,7 @@
 title: 'RenderFrames'
 excerpt: 'Aplicação em Javascript que salva vários frames de uma composição de uma só vez.'
 coverImage: '/images/articles/renderframes/renderframes_cover.jpg'
-date: '2020-03-16T05:35:07.322Z'
+date: '2020-03-15T05:35:07.322Z'
 ---
 
 Para salvar um frame da sua composição, você precisa deixar a agulha da timeline no ponto em que deseja, e então acessar o menu '**Composition > Save Frame As > File**' ou simplesmente usar o atalho '**Ctrl + Alt + S**'. Fazendo isto, o Render Queue se abre, e nele você pode escolher onde salvar o frame e então renderizá-lo.

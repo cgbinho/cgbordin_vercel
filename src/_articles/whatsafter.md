@@ -2,7 +2,7 @@
 title: 'WhatsAfter'
 excerpt: 'Aplicação que simula uma conversa no estilo WhatsApp, com Javascript e After Effects.'
 coverImage: '/images/articles/whatsafter/whatsafter_cover.jpg'
-date: '2020-03-16T05:35:07.322Z'
+date: '2020-03-17T05:35:07.322Z'
 ---
 
 Essa ferramenta é o resultado de um processo de Pesquisa e Desenvolvimento para um projeto que eu precisei representar uma conversa entre dois usuários, como um aplicativo de mensagens estilo Whatsapp.

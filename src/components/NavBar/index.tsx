@@ -23,6 +23,7 @@ const NavBar = () => {
       home: 'Home',
       articles: 'Articles',
       projects: 'Projects',
+      experience: 'Experience',
       aepzera: 'Aepzera',
       about: 'About',
       sign_in: 'Sign In',
@@ -33,6 +34,7 @@ const NavBar = () => {
     'pt-BR': {
       home: 'Início',
       articles: 'Artigos',
+      experience: 'Experiência',
       projects: 'Projetos',
       aepzera: 'Aepzera',
       about: 'Sobre',
@@ -46,7 +48,6 @@ const NavBar = () => {
   const content = contentNavbar[locale];
 
   const [openBurguer, setOpenBurguer] = useState<boolean>(false);
-  // const email = user?.email;
 
   const node = useRef<HTMLDivElement>(null);
   useOnClickOutside(node, () => setOpenBurguer(false));
@@ -68,6 +69,11 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
+            <Link href="/#experience">
+              <a>{content.experience}</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/articles">
               <a>{content.articles}</a>
             </Link>
@@ -75,11 +81,6 @@ const NavBar = () => {
           <li>
             <Link href="/#projects">
               <a>{content.projects}</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/aepzera">
-              <a>{content.aepzera}</a>
             </Link>
           </li>
           <li>

@@ -1,96 +1,74 @@
-import React from 'react';
-import { AboutCard } from './AboutCard';
-import {
-  SiJavascript,
-  SiReact,
-  SiAdobeaftereffects,
-  SiHtml5,
-  SiCss3,
-  SiAdobeillustrator,
-} from 'react-icons/si';
-
-import { FaNodeJs } from 'react-icons/fa';
-import { ExtendScriptLogo } from '../Logos/extendscript_logo';
-import { AboutContainer } from './styles';
 import Image from 'next/image';
+import React from 'react';
+import {
+  AboutCardLeftContainer,
+  AboutCardRightContainer,
+} from './AboutCard/styles';
+import { AboutContainer } from './styles';
 
 export function AboutComponent({ content }) {
   return (
     <AboutContainer>
-      <h1 id="about">{content.title}</h1>
-      <section className="about_description">
-        <p>{content.description}</p>
+      <h3 id="about">{content.title}</h3>
+      <p>{content.description}</p>
+      <AboutCardRightContainer>
         <Image
-          src="/images/cgbordin_profile_02.jpg"
+          src="/images/cgbordin_about_starwars.svg"
           alt="Picture of the author"
-          width="200px"
-          height="200px"
-          className="about_img"
+          width="64px"
+          height="64px"
         />
-        {/* <img
-          className="about_img"
-          src="/images/cgbordin_profile_02.jpg"
-          alt="Cleber Galves Bordin"
-        /> */}
-      </section>
-      <h4>{content.experience.title}</h4>
-      <p>{content.experience.description_01}</p>
-      <p>{content.experience.description_02}</p>
-      <p>{content.experience.description_03}</p>
-      <p>{content.experience.description_04}</p>
-      <p>{content.experience.description_05}</p>
-      <h4>{content.technologies.title}</h4>
-      <div className="about_tecnologies">
-        <AboutCard
-          {...{
-            text: 'Adobe After Effects',
-            icon: SiAdobeaftereffects,
-          }}
+        <aside>
+          <p>{content.experience.paragraph01}</p>
+          <p>{content.experience.paragraph02}</p>
+        </aside>
+      </AboutCardRightContainer>
+      <AboutCardLeftContainer>
+        <aside>
+          <p>{content.experience.paragraph03}</p>
+        </aside>
+        <Image
+          src="/images/cgbordin_about_graduation.svg"
+          alt="Picture of the author"
+          width="64px"
+          height="64px"
         />
-        <AboutCard
-          {...{
-            text: 'Adobe Illustrator',
-            icon: SiAdobeillustrator,
-          }}
+      </AboutCardLeftContainer>
+      <AboutCardRightContainer>
+        <Image
+          src="/images/cgbordin_about_motion.svg"
+          alt="Picture of the author"
+          width="64px"
+          height="64px"
         />
-        <AboutCard
-          {...{
-            text: 'Adobe ExtendScript',
-            icon: ExtendScriptLogo,
-          }}
+        <aside>
+          <p>{content.experience.paragraph04}</p>
+        </aside>
+      </AboutCardRightContainer>
+      <AboutCardLeftContainer>
+        <aside>
+          <p>{content.experience.paragraph05}</p>
+          <p>{content.experience.paragraph06}</p>
+        </aside>
+        <Image
+          src="/images/cgbordin_about_javascript.svg"
+          alt="Picture of the author"
+          width="64px"
+          height="64px"
         />
-        <AboutCard
-          {...{
-            text: 'Javascript',
-            icon: SiJavascript,
-          }}
+      </AboutCardLeftContainer>
+      <AboutCardRightContainer>
+        <Image
+          src="/images/cgbordin_about_apps.svg"
+          alt="Picture of the author"
+          width="64px"
+          height="64px"
         />
-        <AboutCard
-          {...{
-            text: 'React',
-            icon: SiReact,
-          }}
-        />
-        <AboutCard
-          {...{
-            text: 'Node.js',
-            icon: FaNodeJs,
-          }}
-        />
-        <AboutCard
-          {...{
-            text: 'Html',
-            icon: SiHtml5,
-          }}
-        />
-        <AboutCard
-          {...{
-            text: 'Css',
-            icon: SiCss3,
-          }}
-        />
-      </div>
-      <p>{content.technologies.description}</p>
+        <aside>
+          <p>{content.experience.paragraph07}</p>
+        </aside>
+      </AboutCardRightContainer>
+      <p>{content.contact.title}</p>
       <p>
         Cleber Galves Bordin - <i>cgbordin@gmail.com</i> -
         <a href="https://github.com/cgbinho" target="_blank" rel="noreferrer">

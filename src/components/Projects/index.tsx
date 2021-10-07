@@ -10,7 +10,7 @@ import Image from 'next/image';
 export function ProjectsComponent({ content }) {
   return (
     <ProjectsContent>
-      <h1 id="projects">{content.title}</h1>
+      <h2 id="projects">{content.title}</h2>
       <div className="projects_list">
         <section>
           <Link href={`/articles/chocoanimato`}>

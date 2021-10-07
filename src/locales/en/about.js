@@ -3,19 +3,18 @@ export default {
   description: `My name is Cleber Galves Bordin, I'm from São Paulo, Capital – Brazil. I graduated in Industrial Design with specialization in Visual Programming at Universidade Presbiteriana Mackenzie.`,
   experience: {
     title: 'Experience',
-    description_01: `I've been working with computer graphics since 2003, creating motion graphics,
-    characters, scenarios and animation in general for the Brazilian advertising market using 2d.`,
-    description_02:
-      'In this field I had the pleasure of working with several agencies, primarily using the software package Adobe Photoshop, Adobe Illustrator, Adobe After Effects and also Autodesk 3dsMax.',
-    description_03:
-      'In 2011, I created Pictovalley Studio, expecialized in creating explainer / institutional animated videos aimed at companies that want to explain their ideas and share them on the internet.',
-    description_04:
-      ' During pre-production and project production, I do research and development on some ideas that can speed up production. This practice led me to my first contact with ExtendScript / Javascript programming, with the creation of tools that help manipulate files, send renders to Adobe Media Encoder, create character rigs, scenarios, lights and speed up the workflow in general. Driven by this, my mind opened up for more possibilities: to learn Node.js and React, when I decided to expand my knowledge for web development.',
-    description_05:
-      'Since then my work is a mixture of programming logic and artistic creativity. This website is a reflection of my study in web development, where I created it with Next.js framework, using Aws Amplify and Aws Cognito.',
+    paragraph01: `I was fascinated with cartoons and Star Wars as a kid. That universe of fiction and special effects fascinated me, without having any knowledge of the technical side of a video production.`,
+    paragraph02: `Later in my life, watching Toy Story for the first time, I understood what was the reason for my interest in all these fictional universes... computer graphics fascinated me.`,
+    paragraph03:
+      'Fast forward, I graduated in Industrial Design with a specialization in Visual Programming (2003), where I learned about Design, Motion Graphics and 3D Animation, which led me to work with several advertising agencies, creating advertising pieces for big brands from Brazil and some world wide.',
+    paragraph04:
+      'I studied the basics of entrepreneurship and created Pictovalley Studio (2011), a Motion Graphics Studio focused on Explainer and Institutional Videos, where I experiment with new techniques and concepts within After Effects.',
+    paragraph05: `That's where I had my first contact with expressions in Javascript / Extendscript (2013) - when I automated a layer's opacity state. I was instantly hooked.`,
+    paragraph06: `From there, my interest in Programming reached new levels - creating scripts and expressions to organize scenes, build characters, control lights, save video files, and also improve workflow in general.`,
+    paragraph07:
+      'I was motivated to pursue more knowledge and create applications outside the Motion Design realm, so started learning about Node.js, React.js, Next.js (2019) and this is my continuous, moldable state where I keep learning more to complement my skills, seeking for ways to incorporate creativity and problem solving along the way in my day to day work.',
   },
-  technologies: {
-    title: 'Technologies',
-    description: `I'm always looking for new projects and challenges, learning, studying and seeking to evolve my knowledge, being inspired, perhaps inspiring other professionals and promoting the exchange of experiences. If my work interested you, please contact me.`,
+  contact: {
+    title: `I'm always looking for new projects and challenges, being inspired, perhaps inspiring other professionals and promoting the exchange of experiences.`,
   },
 };

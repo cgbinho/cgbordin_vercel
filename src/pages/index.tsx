@@ -4,6 +4,7 @@ import { AboutComponent } from '../components/About';
 import Layout from '../components/Layout';
 import { ProjectsComponent } from '../components/Projects';
 import { WelcomeCard } from '../components/WelcomeCard';
+import { ExperienceCard } from '../components/ExperienceCard';
 import { Container } from '../styles/home';
 
 export default function Home({ contentProjects, contentAbout }) {
@@ -15,6 +16,7 @@ export default function Home({ contentProjects, contentAbout }) {
       </Head>
       <Container>
         <WelcomeCard />
+        <ExperienceCard />
         <ProjectsComponent {...{ content: contentProjects }} />
         <AboutComponent {...{ content: contentAbout }} />
       </Container>

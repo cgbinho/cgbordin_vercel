@@ -50,8 +50,9 @@ p {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  letter-spacing: 1.2px;
-  line-height: 2.5;
+  /* letter-spacing: 1.2px; */
+  letter-spacing: 0.1rem;
+  line-height: 2;
 }
 
 a {
@@ -74,5 +75,48 @@ li {
 .error_message {
     color: var(--error_color);
     padding-top: 0.2rem;
-  } 
+  }
+
+  .underline {
+  text-decoration: none;
+  position: relative;
+}
+
+.underline:after {
+  position: absolute;
+  content: '';
+  height: 8px;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+  bottom: -6px;
+
+  /****** 
+     optional values below 
+     ******/
+
+  /* center - (optional) use with adjusting width   */
+  margin: 0 0;
+  left: 0;
+  right: 0;
+  width: 105%;
+  background: var(--scent-450);
+
+  /* optional animation */
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+
+  border-radius: 2rem;
+}
+
+/* optional hover classes used with anmiation */
+.underline:hover:after {
+  width: 100%;
+  background: var(--scent-450);
+}
+
+.border_radius_50 {
+    border-radius: 50%;
+  }
 `;

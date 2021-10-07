@@ -14,18 +14,6 @@ const Orders = ({ content, orders, err }) => {
   const hasItems = orders?.items?.[0];
   console.log({ orders });
   console.log({ err });
-  /* 
-amount: 10
-code: "ae28ea19-a367-4365-86c9-ceb014bce9b0"
-createdAt: "2021-07-20T13:24:05.690Z"
-currency: null
-id: "121212"
-orderStatus: "pending"
-product: "Aepzera"
-updatedAt: "2021-07-20T13:24:05.690Z"
-userEmail: "cgbordin@gmail.com"
-userID: "3da452be-ee78-4954-b1a0-fbcff9c3619a"
-*/
 
   return (
     <Layout>

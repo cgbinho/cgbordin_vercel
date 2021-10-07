@@ -2,7 +2,7 @@
 title: 'AudioSync'
 excerpt: 'Script em Javascript que mantem o audio dentro de uma precomp, sincronizado com o tempo da comp principal.'
 coverImage: '/images/articles/audiosync/audiosync_cover.jpg'
-date: '2020-03-16T05:35:07.322Z'
+date: '2020-03-14T05:35:07.322Z'
 ---
 
 <a href="https://www.cgbordin.com/images/articles/audiosync/audiosync_interface.png#width_auto" target="_blank">
