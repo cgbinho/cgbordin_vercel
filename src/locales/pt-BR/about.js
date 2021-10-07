@@ -5,20 +5,18 @@ export default {
   pela Universidade Presbiteriana Mackenzie.`,
   experience: {
     title: 'Experiência',
-    description_01: `Trabalho com computação gráfica desde 2003, diretamente com criação de
-  personagens, cenários e animação para o mercado publicitário brasileiro.`,
-    description_02:
-      'No Mercado Publicitário tive o prazer de trabalhar com diversas produtoras, usando primariamente o pacote de softwares Adobe Photoshop,Adobe Illustrator, Adobe After Effects e também o Autodesk 3dsMax.',
-    description_03:
-      'Em 2011, criei a Pictovalley Studio, uma empresa de vídeos animados explicativos e institucionais direcionada a empresas que queiram explicar suas idéias e compartilha-las na internet. Durante a pré-produção e a produção dos projetos, eu faço uma pesquisa e desenvolvimento de algumas idéias que podem acelerar a produção.',
-    description_04:
-      'Esta prática me levou ao primeiro contato com programação em ExtendScript / Javascript, com a criação de ferramentas que auxiliam abrir, salvar arquivos, enviar renders para o Adobe Media Encoder, criar rigs de personagens, cenários, luzes e acelerar o fluxo de trabalho em geral. Impulsionado com esta base de conhecimento de Javascript, me abriu maiores possibilidades de aprendizado em Node.js e React, quando resolvi expandir meu conhecimento para desenvolvimento web.',
-    description_05:
-      'Desde então meu trabalho envolve uma mistura de lógica de programação e criatividade artística. Este website é um reflexo do meu estudo em desenvolvimento web, onde criei sua base em React com o framework Next.js, com uso do Aws Amplify e o Aws Cognito.',
+    paragraph01: `Eu era fascinado com desenhos animados e Star Wars quando criança. O universo de ficção e efeitos especiais me fascinavam, sem compreender todo o lado técnico de uma produção de vídeo.`,
+    paragraph02: `Já mais maduro, assistindo Toy Story, entendi qual era o motivo do meu interesse.. a computação gráfica me fascinava.`,
+    paragraph03:
+      'Anos a frente, graduei em Programação Visual, onde aprendi Motion Graphics e Animação 3D, que me credenciou a trabalhar com várias agências de publicidade, do Brasil e do mundo, criando peças publicitárias para grandes marcas.',
+    paragraph04:
+      'Estudei o básico de empreendedorismo e criei uma produtora de vídeos explicativos, a Pictovalley Studio (2011), um estúdio de Motion Graphics Studio focado em Vídeos Explicativos e Institucionais, onde posso experimentar novas técnicas e conceitos dentro do After Effects.',
+    paragraph05: `Foi aí onde tive meu primeiro contato com expressões em Javascript / Extendscript (2013) - quando automatizei a opacidade de um layer. Nasceu ali mais uma paixão.`,
+    paragraph06: `Dali em diante, meu interesse por Programação alcançava novos patamares - criando scripts e expressões para organizar cenas, construir personagens, orientar luzes, salvar arquivos de vídeo, etc.`,
+    paragraph07:
+      'Eu estava motivado em buscar mais conhecimento e criar aplicações fora do universo do Motion Graphics, então comecei a estudar Node.js, React.js, Next.js (2019) e este é o meu estado contínuo, moldável, onde sempre estou buscando incorporar criatividade e a habilidade de resolver problemas no meu trabalho do dia a dia.',
   },
-  technologies: {
-    title: 'Tecnologias',
-    description: `Estou sempre em busca de novas propostas e projetos, aprendendo, estudando e buscando evoluir meus conhecimentos, sendo inspirado e quem sabe inspirar outros profissionais promovendo a troca de experiências.
-    Se o meu trabalho te interessou, entre em contato comigo.`,
+  contact: {
+    title: `I'm always looking for new projects and challenges, being inspired, perhaps inspiring other professionals and promoting the exchange of experiences.`,
   },
 };
