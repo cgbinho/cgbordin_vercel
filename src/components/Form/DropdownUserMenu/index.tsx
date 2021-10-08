@@ -14,31 +14,32 @@ import { useRouter } from 'next/router';
 import { HiChevronDown } from 'react-icons/hi';
 import { signOut, useSession } from 'next-auth/client';
 
-export function DropdownUserMenu({ content }) {
-  const [session] = useSession();
+export function DropdownUserMenu() {
   const router = useRouter();
-
-  const handleOrderPage = () => {
-    router.push('/orders');
-  };
 
   return (
     <DropdownContainer>
       <Menu
         menuButton={
           <a className="dropdown_button">
-            <p>{session.user.email}</p>
+            <p>{router.locale}</p>
             <HiChevronDown />
           </a>
         }
         theming="dark"
       >
-        <MenuItem onClick={handleOrderPage} value="orders">
-          {content.orders}
+        <MenuItem
+          onClick={() => router.push('./', './', { locale: 'pt-BR' })}
+          value="pt-BR"
+        >
+          Portuguese (pt-BR)
         </MenuItem>
         <MenuDivider />
-        <MenuItem onClick={() => signOut()} value="SignOut">
-          {content.sign_out}
+        <MenuItem
+          onClick={() => router.push('./', './', { locale: 'en' })}
+          value="en"
+        >
+          English (en-Us)
         </MenuItem>
       </Menu>
     </DropdownContainer>

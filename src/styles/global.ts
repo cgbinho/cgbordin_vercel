@@ -72,6 +72,11 @@ li {
   list-style-type: none;
 }
 
+.vertical_line {
+  border-left: 2px solid var(--gray-200);
+  height: 28px;
+}
+
 .error_message {
     color: var(--error_color);
     padding-top: 0.2rem;

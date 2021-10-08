@@ -19,11 +19,6 @@ export const Container = styled.nav`
     list-style: none;
     gap: 2rem;
 
-    .vertical_line {
-      border-left: 2px solid var(--gray-200);
-      height: 28px;
-    }
-
     li {
       display: grid;
       grid-template-rows: auto;
@@ -42,6 +37,7 @@ export const BurguerContainer = styled.div`
   display: grid;
   grid-auto-flow: column;
   align-items: center;
+  gap: 4rem;
 
   @media (min-width: 921px) {
     display: none;

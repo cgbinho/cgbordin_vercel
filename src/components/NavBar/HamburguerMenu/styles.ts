@@ -32,7 +32,7 @@ export const StyledMenu = styled.nav<{ open: boolean }>`
 `;
 
 export const StyledLink = styled.a`
-  padding: 0 3rem;
+  padding: 0 2rem;
   font-size: 1.5rem;
   color: var(--primary);
   text-decoration: none;

@@ -1,10 +1,11 @@
 export default {
   title: 'Experience',
-  excerpt: `Working in Motion Design since 2003, for several advertising agencies from Brazil and from around the world, I started Programming scripts and expressions in Javascript / ExtendScript in 2013 - since then I keep seeking to expand my knowledge and studying solutions and ideas for problems. I started learning React.js in 2019 and today I work with all things related to Design, Motion Design and Front-end development. Below are some technologies I have experience:`,
+  excerpt: `Working in Motion Design since 2003 for several advertising agencies from Brazil and from around the world, I started Programming scripts and expressions in Javascript / ExtendScript in 2013, creating applications and expressions focused in Motion design, using web development technologies. I took a deep dive in web development in 2019 and today I work with all things related to Design, Motion Design and Front-end development. Below are some technologies I have experience:`,
   coding: {
     title: 'Coding',
     img: '/images/cgbordin_experience_code.svg',
-    excerpt: `• Javascript ES6
+    excerpt: `• Javascript
+    • ES6
     • Typescript
     • ExtendScript
     • Node.js

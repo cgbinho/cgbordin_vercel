@@ -88,31 +88,16 @@ const NavBar = () => {
               <a>{content.about}</a>
             </Link>
           </li>
-          {/* {!session?.user ? (
-            <>
-              <li>
-                <Button
-                  primary
-                  width="100%"
-                  height="40px"
-                  padding="0.5rem 2rem"
-                  onClick={handleSignIn}
-                >
-                  {content.sign_in}
-                </Button>
-              </li>
-            </>
-          ) : (
-            <SignedContainer>
-              <div className="vertical_line" />
-              <li>
-                <DropdownUserMenu {...{ content }} />
-              </li>
-            </SignedContainer>
-          )} */}
+          <div className="vertical_line" />
+          <li>
+            <DropdownUserMenu />
+          </li>
         </ul>
       </nav>
       <BurguerContainer>
+        <li>
+          <DropdownUserMenu />
+        </li>
         <HamburgerButton {...{ openBurguer, setOpenBurguer }} />
         <HamburguerMenu {...{ content }} />
       </BurguerContainer>
