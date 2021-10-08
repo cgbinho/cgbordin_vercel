@@ -17,6 +17,6 @@ export default {
       'Eu estava motivado em buscar mais conhecimento e criar aplicações fora do universo do Motion Graphics, então comecei a estudar Node.js, React.js, Next.js (2019) e este é o meu estado contínuo, moldável, onde sempre estou buscando incorporar criatividade e a habilidade de resolver problemas no meu trabalho do dia a dia.',
   },
   contact: {
-    title: `I'm always looking for new projects and challenges, being inspired, perhaps inspiring other professionals and promoting the exchange of experiences.`,
+    title: `Estou sempre buscando novos projetos e desafios, me inspirar e também inspirar outros profissionais, promovendo a troca de experiências e conhecimento.`,
   },
 };
