@@ -15,6 +15,6 @@ export default {
       'I was motivated to pursue more knowledge and create applications outside the Motion Design realm, so started learning about Node.js, React.js, Next.js (2019) and this is my continuous, moldable state where I keep learning more to complement my skills, seeking for ways to incorporate creativity and problem solving along the way in my day to day work.',
   },
   contact: {
-    title: `I'm always looking for new projects and challenges, being inspired, perhaps inspiring other professionals and promoting the exchange of knowledge and experiences.`,
+    title: `I'm always looking for new projects and challenges, being inspired, perhaps inspiring other professionals and promoting the exchange of knowledge and experiences. Feel free to contact me!`,
   },
 };

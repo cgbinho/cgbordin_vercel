@@ -1,10 +1,11 @@
-import Image from 'next/image';
 import React from 'react';
+import Image from 'next/image';
 import {
+  AboutContainer,
   AboutCardLeftContainer,
   AboutCardRightContainer,
-} from './AboutCard/styles';
-import { AboutContainer } from './styles';
+  AboutCardFooter,
+} from './styles';
 
 export function AboutComponent({ content }) {
   return (
@@ -12,11 +13,9 @@ export function AboutComponent({ content }) {
       <h2 id="about">{content.title}</h2>
       <p>{content.description}</p>
       <AboutCardRightContainer>
-        <Image
+        <img
           src="/images/cgbordin_about_starwars.svg"
           alt="Picture of the author"
-          width="64px"
-          height="64px"
         />
         <aside>
           <p>{content.experience.paragraph01}</p>
@@ -27,19 +26,15 @@ export function AboutComponent({ content }) {
         <aside>
           <p>{content.experience.paragraph03}</p>
         </aside>
-        <Image
+        <img
           src="/images/cgbordin_about_graduation.svg"
           alt="Picture of the author"
-          width="64px"
-          height="64px"
         />
       </AboutCardLeftContainer>
       <AboutCardRightContainer>
-        <Image
+        <img
           src="/images/cgbordin_about_motion.svg"
           alt="Picture of the author"
-          width="64px"
-          height="64px"
         />
         <aside>
           <p>{content.experience.paragraph04}</p>
@@ -50,31 +45,24 @@ export function AboutComponent({ content }) {
           <p>{content.experience.paragraph05}</p>
           <p>{content.experience.paragraph06}</p>
         </aside>
-        <Image
+        <img
           src="/images/cgbordin_about_javascript.svg"
           alt="Picture of the author"
-          width="64px"
-          height="64px"
         />
       </AboutCardLeftContainer>
       <AboutCardRightContainer>
-        <Image
+        <img
           src="/images/cgbordin_about_apps.svg"
           alt="Picture of the author"
-          width="64px"
-          height="64px"
         />
         <aside>
           <p>{content.experience.paragraph07}</p>
         </aside>
       </AboutCardRightContainer>
-      <p>{content.contact.title}</p>
-      <p>
-        Cleber Galves Bordin - <i>cgbordin@gmail.com</i> -
-        <a href="https://github.com/cgbinho" target="_blank" rel="noreferrer">
-          <i> github.com/cgbinho</i>
-        </a>
-      </p>
+      <AboutCardFooter>
+        <p>{content.contact.title}</p>
+        <h3>cgbordin @ gmail.com</h3>
+      </AboutCardFooter>
     </AboutContainer>
   );
 }

@@ -44,14 +44,14 @@ export function WelcomeCard() {
           />
           <span>github.com/cgbinho</span>
         </a>
-        <a href="mailto:cgbordin@gmail.com">
+        <a href="mailto:cgbordin@gmail.com" target="_blank" rel="noreferrer">
           <Image
             src="/images/cgbordin_email.svg"
             alt="Picture of the author"
             width="24px"
             height="24px"
           />
-          <span>cgbordin @gmail.com</span>
+          <span>cgbordin@gmail.com</span>
         </a>
       </WelcomeCardFooter>
     </WelcomeCardContainer>

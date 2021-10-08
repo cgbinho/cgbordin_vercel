@@ -1,17 +1,78 @@
 import styled from 'styled-components';
 
+export const AboutCardFooter = styled.div`
+  text-align: center;
+  margin: 3rem 0;
+`;
+
 export const AboutContainer = styled.div`
   display: grid;
   grid-auto-flow: row;
   align-items: center;
-  /* justify-items: flex-start; */
-  align-items: flex-start;
-  width: 90%;
-  max-width: 950px;
+  margin: 0 2rem;
+  max-width: 850px;
   gap: 2rem;
-  padding: 2rem;
 
   h2 {
     text-align: center;
+  }
+
+  @media (max-width: 800px) {
+    gap: 1rem;
+  }
+`;
+
+export const AboutCardRightContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* gap: 2rem; */
+
+  img {
+    flex: 1;
+    margin: 2rem;
+  }
+
+  aside {
+    padding: 2rem;
+    background-color: var(--gray-170);
+    border-radius: 4px;
+  }
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const AboutCardLeftContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  /* gap: 2rem; */
+  align-items: center;
+
+  aside {
+    padding: 2rem;
+    background-color: var(--gray-170);
+    border-radius: 4px;
+  }
+
+  img {
+    flex: 1;
+    margin: 2rem;
+  }
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      margin: 2rem;
+      order: 2;
+    }
+
+    aside {
+      order: 3;
+    }
   }
 `;
