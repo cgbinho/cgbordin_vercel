@@ -5,7 +5,7 @@ export const ExperienceCardContainer = styled.div`
   grid-auto-flow: row;
   justify-items: center;
   max-width: 780px;
-  margin: 3rem 2rem;
+  margin: 2rem;
   gap: 2rem;
 
   h3 {
@@ -18,9 +18,20 @@ export const ExperienceCardContainer = styled.div`
     padding: 2rem;
     background-color: var(--gray-170);
     border-radius: 4px;
+    overflow: visible;
+    margin-bottom: 1rem;
   }
 
   img {
     margin-top: -3rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin: 1rem;
+
+    section {
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
   }
 `;

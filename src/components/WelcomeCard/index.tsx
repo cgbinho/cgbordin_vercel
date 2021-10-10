@@ -14,8 +14,9 @@ export function WelcomeCard() {
 
   const title =
     locale !== 'en'
-      ? `Olá, eu sou o Cleber Galves Bordin.`
-      : `Hi, I'm Cleber Galves Bordin.`;
+      ? `Olá, eu sou o \n
+      Cleber Galves Bordin.`
+      : `Hi, I'm \n Cleber Galves Bordin.`;
 
   const excerpt =
     locale !== 'en'

@@ -6,4 +6,9 @@ export const Container = styled.div`
   gap: 1rem;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 920px) {
+    /* width: 90%; */
+    gap: 0.6rem;
+  }
 `;

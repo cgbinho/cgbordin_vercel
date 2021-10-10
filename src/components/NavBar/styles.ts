@@ -6,11 +6,16 @@ export const Container = styled.nav`
   grid-auto-flow: column;
   grid-area: header;
   justify-content: space-between;
-  grid-gap: 1rem;
   align-items: center;
+  grid-gap: 1rem;
   padding: 0 2rem;
   background-color: var(--gray-100);
   height: 80px;
+
+  @media (max-width: 920px) {
+    grid-gap: 0.5rem;
+    padding: 0 1rem;
+  }
 
   .navbar_desktop {
     display: grid;

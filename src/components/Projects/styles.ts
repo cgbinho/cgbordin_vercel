@@ -36,7 +36,7 @@ export const ProjectsContent = styled.div`
 
   .projects_list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     align-items: center;
     justify-items: flex-start;
     align-items: flex-start;
@@ -44,5 +44,18 @@ export const ProjectsContent = styled.div`
     gap: 2rem;
     padding: 2rem;
     border-radius: 4px;
+  }
+
+  @media screen and (max-width: 800px) {
+    padding: 1rem;
+
+    section {
+      padding: 1.5rem;
+    }
+
+    .projects_list {
+      padding: 0rem;
+      gap: 1rem;
+    }
   }
 `;

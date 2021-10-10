@@ -2,7 +2,10 @@ import styled from 'styled-components';
 
 export const AboutCardFooter = styled.div`
   text-align: center;
-  margin: 3rem 0;
+  margin: 2rem 0;
+  h3 {
+    margin-top: 1rem;
+  }
 `;
 
 export const AboutContainer = styled.div`
@@ -19,6 +22,7 @@ export const AboutContainer = styled.div`
 
   @media (max-width: 800px) {
     gap: 1rem;
+    margin: 0 1rem;
   }
 `;
 

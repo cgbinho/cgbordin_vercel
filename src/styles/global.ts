@@ -34,6 +34,7 @@ export default createGlobalStyle`
   box-sizing: border-box;
   outline: 0;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 body {
