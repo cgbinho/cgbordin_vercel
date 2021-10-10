@@ -8,7 +8,6 @@ export const Container = styled.div`
   align-items: center;
 
   @media only screen and (max-width: 920px) {
-    /* width: 90%; */
     gap: 0.6rem;
   }
 `;

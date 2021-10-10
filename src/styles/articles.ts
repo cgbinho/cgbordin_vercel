@@ -5,7 +5,8 @@ export const ArticlesContent = styled.div`
   grid-auto-flow: row;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  max-width: 850px;
+  margin: 2rem auto;
 
   > h1 {
     text-align: center;
@@ -27,12 +28,16 @@ export const ArticlesContent = styled.div`
 
   .article_list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     align-items: center;
     justify-items: flex-start;
     align-items: flex-start;
     gap: 2rem;
     padding: 2rem;
+
+    @media screen and (max-width: 800px) {
+      padding: 1rem;
+    }
   }
 `;
 
@@ -59,7 +64,8 @@ export const ArticleContainer = styled.div`
   }
 
   h2 {
-    line-height: 1.4;
+    line-height: 1.35;
+    margin-bottom: 1rem;
   }
 
   p {

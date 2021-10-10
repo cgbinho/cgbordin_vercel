@@ -80,37 +80,37 @@ Aqui estão algumas telas dos layouts que produzi tanto para desktop, quanto par
 *Choco Animato - Categorias*
 
 <a href="https://www.cgbordin.com/images/articles/chocoanimato/chocoanimato_video_custom.jpg" target="_blank">
-<img src="/images/articles/chocoanimato/chocoanimato_video_custom.jpg alt="Choco Animato - Interface da Customização de Vídeo" />
+<img src="/images/articles/chocoanimato/chocoanimato_video_custom.jpg" alt="Choco Animato - Interface da Customização de Vídeo" />
 </a>
 
 *Choco Animato - Interface da Customização de Vídeo*
 
 <a href="https://www.cgbordin.com/images/articles/chocoanimato/chocoanimato_order_address.jpg" target="_blank">
-<img src="/images/articles/chocoanimato/chocoanimato_order_address.jpg alt="Choco Animato - Formulário de Pagamento" />
+<img src="/images/articles/chocoanimato/chocoanimato_order_address.jpg" alt="Choco Animato - Formulário de Pagamento" />
 </a>
 
 *Choco Animato - Formulário de Pagamento*
 
 <a href="https://www.cgbordin.com/images/articles/chocoanimato/chocoanimato_order_confirm.jpg" target="_blank">
-<img src="/images/articles/chocoanimato/chocoanimato_order_confirm.jpg alt="Choco Animato - Confirmação de pedido" />
+<img src="/images/articles/chocoanimato/chocoanimato_order_confirm.jpg" alt="Choco Animato - Confirmação de pedido" />
 </a>
 
 *Choco Animato - Confirmação de pedido*
 
 <a href="https://www.cgbordin.com/images/articles/chocoanimato/chocoanimato_order_delivered.jpg" target="_blank">
-<img src="/images/articles/chocoanimato/chocoanimato_order_delivered.jpg alt="Choco Animato - Pedido entregue" />
+<img src="/images/articles/chocoanimato/chocoanimato_order_delivered.jpg" alt="Choco Animato - Pedido entregue" />
 </a>
 
 *Choco Animato - Pedido entregue*
 
 <a href="https://www.cgbordin.com/images/articles/chocoanimato/chocoanimato_mobile_02.jpg" target="_blank">
-<img src="/images/articles/chocoanimato/chocoanimato_mobile_02.jpg alt="Choco Animato - Layouts mobile do Menu Logado, Convidado e página de contato" />
+<img src="/images/articles/chocoanimato/chocoanimato_mobile_02.jpg" alt="Choco Animato - Layouts mobile do Menu Logado, Convidado e página de contato" />
 </a>
 
 *Choco Animato - Layouts mobile do Menu Logado, Convidado e página de contato*
 
 <a href="https://www.cgbordin.com/images/articles/chocoanimato/chocoanimato_mobile_03.jpg" target="_blank">
-<img src="/images/articles/chocoanimato/chocoanimato_mobile_03.jpg alt="Choco Animato - Layouts mobile dos Videos Explicativos, Filtros e Projetos do usuário" />
+<img src="/images/articles/chocoanimato/chocoanimato_mobile_03.jpg" alt="Choco Animato - Layouts mobile dos Videos Explicativos, Filtros e Projetos do usuário" />
 </a>
 
 *Choco Animato - Layouts mobile dos Videos Explicativos, Filtros e Projetos do usuário*
