@@ -1,19 +1,14 @@
-import React, { useRef, useState } from 'react';
 import Link from 'next/link';
-import { Container, BurguerContainer, SignedContainer } from './styles';
-import Logo from '../Logos';
-import Button from '../Form/Button';
-import HamburgerButton from './HamburguerButton';
-import { useOnClickOutside } from '../../hooks/useOnClickOutside';
-import { HamburguerMenu } from './HamburguerMenu';
 import { useRouter } from 'next/router';
-import { GoSignOut } from 'react-icons/go';
+import React, { useRef, useState } from 'react';
+import { useOnClickOutside } from '../../hooks/useOnClickOutside';
 import { DropdownUserMenu } from '../Form/DropdownUserMenu';
-import { useSession, signIn } from 'next-auth/client';
+import Logo from '../Logos';
+import HamburgerButton from './HamburguerButton';
+import { HamburguerMenu } from './HamburguerMenu';
+import { BurguerContainer, Container } from './styles';
 
 const NavBar = () => {
-  const [session] = useSession();
-
   const router = useRouter();
 
   const { locale } = router;
@@ -53,10 +48,6 @@ const NavBar = () => {
   useOnClickOutside(node, () => setOpenBurguer(false));
 
   const close = () => setOpenBurguer(false);
-
-  const handleSignIn = async () => {
-    await signIn('google');
-  };
 
   return (
     <Container>

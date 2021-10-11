@@ -1,18 +1,10 @@
-import React from 'react';
-import {
-  Menu,
-  MenuItem,
-  MenuButton,
-  SubMenu,
-  MenuDivider,
-} from '@szhsin/react-menu';
+import { Menu, MenuDivider, MenuItem } from '@szhsin/react-menu';
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/theme-dark.css';
-import { DropdownContainer } from './styles';
-import Button from '../Button';
 import { useRouter } from 'next/router';
+import React from 'react';
 import { HiChevronDown } from 'react-icons/hi';
-import { signOut, useSession } from 'next-auth/client';
+import { DropdownContainer } from './styles';
 
 export function DropdownUserMenu() {
   const router = useRouter();

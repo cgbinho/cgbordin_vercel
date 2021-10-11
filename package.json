@@ -27,7 +27,6 @@
     "micro": "^9.3.4",
     "micro-cors": "^0.1.1",
     "next": "^11.1.2",
-    "next-auth": "^3.29.0",
     "next-mdx-remote": "^3.0.2",
     "nodemailer": "^6.6.2",
     "plyr-react": "^3.0.8",
