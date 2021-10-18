@@ -6022,9 +6022,9 @@ react-refresh@0.8.3:
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
 react-transition-state@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-transition-state/-/react-transition-state-1.0.1.tgz#0f03b6836ff5d59b74c416c8c9e871f0821be529"
-  integrity sha512-6oALImF8NVgFXrXVvtsTJ4TvgLR/qpPMXNHaAmyG1V385Lo/LnPVtp5Qz+/yDLzDJQNcy9L4uqmpKE+PGvCY3A==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-transition-state/-/react-transition-state-1.1.0.tgz#11644d26eaddd4a5412afbba577930a8db69f097"
+  integrity sha512-UkG71uug93YdkiFmSZ02wJ/U3TzxmSqoaEAJdLfAtSZ7rqON7A/Fhq2UGX/VUYJsO59lqce2JltuJr0Ztluu+g==
 
 react-use-clipboard@^1.0.7:
   version "1.0.7"

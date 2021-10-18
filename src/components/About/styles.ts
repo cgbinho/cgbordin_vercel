@@ -27,13 +27,13 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutCardRightContainer = styled.div`
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 140px 1fr;
   align-items: center;
-  /* gap: 2rem; */
+  justify-content: center;
+  justify-items: center;
 
   img {
-    flex: 1;
     margin: 2rem;
   }
 
@@ -44,16 +44,17 @@ export const AboutCardRightContainer = styled.div`
   }
 
   @media (max-width: 800px) {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 `;
 
 export const AboutCardLeftContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  /* gap: 2rem; */
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  justify-content: center;
+  justify-items: center;
 
   aside {
     padding: 2rem;
@@ -62,13 +63,13 @@ export const AboutCardLeftContainer = styled.div`
   }
 
   img {
-    flex: 1;
     margin: 2rem;
   }
 
   @media (max-width: 800px) {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
 
     img {
       margin: 2rem;

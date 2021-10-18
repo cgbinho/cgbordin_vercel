@@ -40,20 +40,21 @@ export function DropdownUserMenu() {
         className="rc-menu-container--theme-dark"
         menuButton={
           <a className="dropdown_button">
-            <p>{router.locale}</p>
+            <p>
+              {content.title} ({router.locale})
+            </p>
             <HiChevronDown />
           </a>
         }
         theming="dark"
       >
-        <MenuHeader>{content.title}</MenuHeader>
-        <MenuDivider />
         <MenuItem
           onClick={() => router.push('./', './', { locale: 'pt-BR' })}
           value="pt-BR"
         >
           {content.language01}
         </MenuItem>
+        <MenuDivider />
         <MenuItem
           onClick={() => router.push('./', './', { locale: 'en' })}
           value="en"
