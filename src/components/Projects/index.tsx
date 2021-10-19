@@ -13,7 +13,7 @@ export function ProjectsComponent({ content }) {
       <h2 id="projects">{content.title}</h2>
       <div className="projects_list">
         <section>
-          <Link href={`/articles/chocoanimato`}>
+          <Link href={`/articles/chocoanimato`} locale={false}>
             <a>
               <img
                 src="images/articles/chocoanimato/chocoanimato_cover.jpg"
@@ -29,7 +29,7 @@ export function ProjectsComponent({ content }) {
           </aside>
         </section>
         <section>
-          <Link href={`/aepzera`}>
+          <Link href={`/aepzera`} locale={false}>
             <a>
               <img
                 src="images/aepzera/aepzera_cover.jpg"
