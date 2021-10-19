@@ -17,6 +17,7 @@ export const ExperienceCardContainer = styled.div`
     grid-auto-flow: row;
     padding: 2rem;
     background-color: var(--gray-170);
+    backdrop-filter: blur(20px);
     border-radius: 4px;
     overflow: visible;
     margin-bottom: 1rem;

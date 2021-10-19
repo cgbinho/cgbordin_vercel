@@ -41,6 +41,7 @@ export const AboutCardRightContainer = styled.div`
     padding: 2rem;
     background-color: var(--gray-170);
     border-radius: 4px;
+    backdrop-filter: blur(20px);
   }
 
   @media (max-width: 800px) {
@@ -60,6 +61,7 @@ export const AboutCardLeftContainer = styled.div`
     padding: 2rem;
     background-color: var(--gray-170);
     border-radius: 4px;
+    backdrop-filter: blur(20px);
   }
 
   img {

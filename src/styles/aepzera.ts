@@ -13,6 +13,7 @@ export const AepzeraCard = styled.div`
   width: 90%;
 
   background-color: var(--gray-170);
+  backdrop-filter: blur(20px);
   border-radius: 8px;
 
   aside {
@@ -62,6 +63,7 @@ export const AepzeraContent = styled.div`
     row-gap: 1rem;
     column-gap: 3rem;
     background-color: var(--gray-170);
+    backdrop-filter: blur(20px);
     border-radius: 4px;
   }
 `;
