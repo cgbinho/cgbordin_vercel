@@ -23,6 +23,10 @@ export const AepzeraCard = styled.div`
     justify-items: center;
     align-items: center;
   }
+
+  @media screen and (max-width: 800px) {
+    backdrop-filter: unset;
+  }
 `;
 
 export const AepzeraContent = styled.div`
@@ -65,5 +69,11 @@ export const AepzeraContent = styled.div`
     background-color: var(--gray-170);
     backdrop-filter: blur(20px);
     border-radius: 4px;
+  }
+
+  @media screen and (max-width: 800px) {
+    section {
+      backdrop-filter: unset;
+    }
   }
 `;

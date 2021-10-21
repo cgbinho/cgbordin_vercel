@@ -49,6 +49,10 @@ export const AboutCardRightContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+
+    aside {
+      backdrop-filter: unset;
+    }
   }
 `;
 
@@ -81,6 +85,7 @@ export const AboutCardLeftContainer = styled.div`
 
     aside {
       order: 3;
+      backdrop-filter: unset;
     }
   }
 `;

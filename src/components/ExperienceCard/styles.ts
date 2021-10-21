@@ -33,6 +33,7 @@ export const ExperienceCardContainer = styled.div`
     section {
       padding: 1.5rem;
       margin-bottom: 1rem;
+      backdrop-filter: unset;
     }
   }
 `;

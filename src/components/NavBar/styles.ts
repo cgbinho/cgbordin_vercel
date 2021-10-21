@@ -3,13 +3,16 @@ import styled from 'styled-components';
 export const Container = styled.nav`
   display: grid;
   grid-auto-flow: column;
-  grid-area: header;
+  /* grid-area: header; */
   justify-content: space-between;
   align-items: center;
   grid-gap: 1rem;
   padding: 0 2rem;
   background-color: var(--gray-100);
   height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 
   @media (max-width: 920px) {
     grid-gap: 0.5rem;

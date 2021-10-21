@@ -52,6 +52,7 @@ export const ProjectsContent = styled.div`
 
     section {
       padding: 1.5rem;
+      backdrop-filter: unset;
     }
 
     .projects_list {

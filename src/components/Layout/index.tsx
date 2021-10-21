@@ -6,11 +6,13 @@ import { Container, Content } from './styles';
 
 const Layout = (props) => {
   return (
-    <Container>
+    <>
       <NavBar />
-      <Content>{props.children}</Content>
-      <Footer />
-    </Container>
+      <Container>
+        <Content>{props.children}</Content>
+        <Footer />
+      </Container>
+    </>
   );
 };
 
