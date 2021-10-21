@@ -12,6 +12,7 @@ export const AboutContainer = styled.div`
   display: grid;
   grid-auto-flow: row;
   align-items: center;
+  justify-items: center;
   margin: 0 2rem;
   max-width: 850px;
   gap: 2rem;

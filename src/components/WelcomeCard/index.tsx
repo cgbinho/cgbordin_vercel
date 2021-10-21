@@ -26,11 +26,10 @@ export function WelcomeCard() {
   return (
     <WelcomeCardContainer>
       <Image
-        src="/images/cgbordin_profile_02.jpg"
-        alt="Picture of the author"
-        width="180px"
-        height="180px"
-        className="border_radius_50"
+        src="/images/cgbordin_avatar.svg"
+        alt="Cleber Galves Bordin"
+        width="200px"
+        height="200px"
       />
       <h1>{title}</h1>
       <p>{excerpt}</p>

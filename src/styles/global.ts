@@ -125,6 +125,12 @@ li {
 .border_radius_50 {
     border-radius: 50%;
   }
+
+  /* .image {
+  aspect-ratio: 1;
+  margin: 0 auto;
+} */
+
   /* scrollbar */
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px var(--dark_gray);
@@ -151,4 +157,5 @@ li {
   background: hsl(0, 0%, 50%);
   /* background: var(--scent-750); */
 }
+
 `;
