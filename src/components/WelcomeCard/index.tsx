@@ -6,7 +6,7 @@ import {
   HorizontalLine,
 } from './styles';
 import Image from 'next/image';
-import { useLottie, Lottie } from 'react-lottie-hook';
+import { useLottie, Lottie, Renderer } from 'react-lottie-hook';
 import animationData from '../../../public/cgbordin_avatar_data_v01.json';
 
 export function WelcomeCard() {
@@ -26,7 +26,8 @@ export function WelcomeCard() {
       : `My passion and work lives between creativity and logic: Code & Design.`;
 
   const [lottieRef, { isPaused, isStopped }, controls] = useLottie({
-    renderer: 'svg',
+    renderer: Renderer.svg,
+    // renderer: 'svg',
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
       progressiveLoad: false,
