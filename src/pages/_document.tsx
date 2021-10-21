@@ -39,7 +39,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
             rel="stylesheet"
           />
-          <meta name="theme-color" content="hsl(200, 100%, 25%)" />
+          <meta name="theme-color" content="hsl(200, 100%, 35%)" />
           <link
             rel="icon"
             type="image/svg+xml"

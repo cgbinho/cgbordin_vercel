@@ -6,6 +6,8 @@ import {
   HorizontalLine,
 } from './styles';
 import Image from 'next/image';
+import { useLottie, Lottie } from 'react-lottie-hook';
+import animationData from '../../../public/cgbordin_avatar_data_v01.json';
 
 export function WelcomeCard() {
   const router = useRouter();
@@ -23,14 +25,24 @@ export function WelcomeCard() {
       ? `Minha paixão e trabalho se dividem entre criatividade e lógica: Código & Design`
       : `My passion and work lives between creativity and logic: Code & Design.`;
 
+  const [lottieRef, { isPaused, isStopped }, controls] = useLottie({
+    renderer: 'svg',
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+      progressiveLoad: false,
+    },
+    animationData,
+  });
+
   return (
     <WelcomeCardContainer>
-      <Image
+      <Lottie lottieRef={lottieRef} width={250} height={250} />
+      {/* <Image
         src="/images/cgbordin_avatar.svg"
         alt="Cleber Galves Bordin"
         width="200px"
         height="200px"
-      />
+      /> */}
       <h1>{title}</h1>
       <p>{excerpt}</p>
       <HorizontalLine />
