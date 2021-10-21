@@ -6,7 +6,7 @@ import { CgbordinText } from './cgbordin_text';
 export default function Logo() {
   return (
     <Container>
-      <CgbordinIcon />
+      {/* <CgbordinIcon /> */}
       <CgbordinText />
     </Container>
   );
