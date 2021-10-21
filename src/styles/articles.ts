@@ -27,6 +27,12 @@ export const ArticlesContent = styled.div`
     grid-auto-rows: 1fr;
   }
 
+  @media screen and (max-width: 800px) {
+    section {
+      backdrop-filter: unset;
+    }
+  }
+
   .article_list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
