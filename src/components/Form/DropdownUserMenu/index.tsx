@@ -46,6 +46,7 @@ export function DropdownUserMenu() {
             <HiChevronDown />
           </a>
         }
+        transition
         theming="dark"
       >
         <MenuItem

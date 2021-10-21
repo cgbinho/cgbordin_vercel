@@ -10,7 +10,7 @@ import {
 export function AboutComponent({ content }) {
   return (
     <AboutContainer>
-      <h2 id="about">{content.title}</h2>
+      <h2>{content.title}</h2>
       <Image
         src="/images/cgbordin_profile_02.jpg"
         alt="Cleber Galves Bordin"

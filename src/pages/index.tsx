@@ -18,10 +18,14 @@ export default function Home({
         <title>CGBORDIN - Cleber Galves Bordin</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container id="home">
+      <Container>
+        <a className="anchor" id="home" />
         <WelcomeCard />
+        <a className="anchor" id="experience" />
         <ExperienceCard {...{ content: contentExperience }} />
+        <a className="anchor" id="projects" />
         <ProjectsComponent {...{ content: contentProjects }} />
+        <a className="anchor" id="about" />
         <AboutComponent {...{ content: contentAbout }} />
       </Container>
     </Layout>

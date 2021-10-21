@@ -34,7 +34,7 @@ export default createGlobalStyle`
   box-sizing: border-box;
   outline: 0;
   scroll-behavior: smooth;
-  /* overflow: hidden; */
+
 }
 
 body {
@@ -126,10 +126,13 @@ li {
     border-radius: 50%;
   }
 
-  /* .image {
-  aspect-ratio: 1;
-  margin: 0 auto;
-} */
+  .anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+  }
+  
 
   /* scrollbar */
 ::-webkit-scrollbar-track {

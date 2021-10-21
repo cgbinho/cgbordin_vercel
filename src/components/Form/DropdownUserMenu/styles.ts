@@ -28,6 +28,12 @@ export const DropdownContainer = styled.div`
   .rc-menu-container--theme-dark .rc-menu__item--active {
     background-color: var(--gray-100);
   }
+
+  .szh-menu__item--hover {
+    color: var(--scent-450);
+    background-color: var(--gray-100);
+  }
+
   .rc-menu-container--theme-dark .rc-menu__item--focusable {
     background-color: inherit;
     background-color: #fff;
