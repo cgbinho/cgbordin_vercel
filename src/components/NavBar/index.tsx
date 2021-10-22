@@ -86,9 +86,9 @@ const NavBar = () => {
         </ul>
       </nav>
       <BurguerContainer>
-        {/* <li>
+        <li>
           <DropdownUserMenu />
-        </li> */}
+        </li>
         <HamburgerButton {...{ openBurguer, setOpenBurguer }} />
         <HamburguerMenu {...{ content }} />
       </BurguerContainer>

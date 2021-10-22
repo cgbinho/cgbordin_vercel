@@ -40,7 +40,7 @@ export function DropdownUserMenu() {
   return (
     <DropdownContainer>
       <Menu
-        className="rc-menu-container--theme-dark"
+        menuClassName="dropdown_menu"
         menuButton={
           <a className="dropdown_button">
             <Image
@@ -60,7 +60,7 @@ export function DropdownUserMenu() {
         <MenuItem
           onClick={() => router.push('./', './', { locale: 'pt-BR' })}
           value="pt-BR"
-          className="menu_item"
+          className="dropdown_menu_item"
         >
           <Image
             src="/images/flag_pt-br.svg"
@@ -76,6 +76,7 @@ export function DropdownUserMenu() {
         <MenuItem
           onClick={() => router.push('./', './', { locale: 'en' })}
           value="en"
+          className="dropdown_menu_item"
         >
           <Image
             src="/images/flag_en.svg"
