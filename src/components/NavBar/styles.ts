@@ -28,10 +28,12 @@ export const Container = styled.nav`
 
     li {
       display: grid;
-      grid-template-rows: auto;
+      grid-auto-flow: column;
       justify-items: center;
+      justify-content: start;
       align-items: center;
-      gap: 0.2rem;
+      align-content: center;
+      gap: 0.5rem;
     }
 
     @media (max-width: 920px) {

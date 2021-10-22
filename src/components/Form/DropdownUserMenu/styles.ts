@@ -5,6 +5,12 @@ export const DropdownContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 4px;
+  }
+
+  .szh-menu--dir-bottom {
+    background-color: var(--gray-100);
+    top: 16px !important;
   }
 
   .rc-menu-container--theme-dark .rc-menu {
@@ -43,9 +49,5 @@ export const DropdownContainer = styled.div`
   }
   .rc-menu-container--theme-dark .rc-menu__divider {
     background-color: #3a3a3a;
-  }
-  .szh-menu--dir-bottom {
-    background-color: var(--gray-100);
-    top: 16px !important;
   }
 `;

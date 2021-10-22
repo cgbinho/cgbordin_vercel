@@ -6,7 +6,7 @@ import {
   HorizontalLine,
 } from './styles';
 import Image from 'next/image';
-import { useLottie, Lottie, Renderer } from 'react-lottie-hook';
+import { useLottie, Lottie, Renderer, EventListener } from 'react-lottie-hook';
 import animationData from '../../../public/cgbordin_avatar_data_v01.json';
 
 export function WelcomeCard() {
@@ -27,7 +27,6 @@ export function WelcomeCard() {
 
   const [lottieRef, { isPaused, isStopped }, controls] = useLottie({
     renderer: Renderer.svg,
-    // renderer: 'svg',
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
       progressiveLoad: false,
@@ -38,12 +37,6 @@ export function WelcomeCard() {
   return (
     <WelcomeCardContainer>
       <Lottie lottieRef={lottieRef} width={250} height={250} />
-      {/* <Image
-        src="/images/cgbordin_avatar.svg"
-        alt="Cleber Galves Bordin"
-        width="200px"
-        height="200px"
-      /> */}
       <h1>{title}</h1>
       <p>{excerpt}</p>
       <HorizontalLine />
@@ -51,7 +44,7 @@ export function WelcomeCard() {
         <a href="http://github.com/cgbinho" target="_blank" rel="noreferrer">
           <Image
             src="/images/cgbordin_github.svg"
-            alt="Picture of the author"
+            alt="Cleber Galves Bordin GitHub"
             width="24px"
             height="24px"
           />
@@ -60,7 +53,7 @@ export function WelcomeCard() {
         <a href="mailto:cgbordin@gmail.com" target="_blank" rel="noreferrer">
           <Image
             src="/images/cgbordin_email.svg"
-            alt="Picture of the author"
+            alt="Cleber Galves Bordin email"
             width="24px"
             height="24px"
           />
