@@ -4,7 +4,7 @@ export const WelcomeCardContainer = styled.div`
   display: grid;
   grid-auto-flow: row;
   justify-items: center;
-  margin: 3rem 2rem;
+  margin-top: 3rem;
   gap: 1rem;
   max-width: 780px;
   padding: 1rem;

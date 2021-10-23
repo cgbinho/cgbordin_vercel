@@ -31,6 +31,10 @@ export const ProjectsContent = styled.div`
     margin: 1rem 0;
   }
 
+  strong {
+    font-size: 1.2rem;
+  }
+
   img {
     border-radius: 8px;
   }

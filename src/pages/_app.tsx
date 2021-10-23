@@ -6,6 +6,8 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { ThemeProvider } from 'styled-components';
 import theme from '../styles/theme';
 import GlobalStyle from '../styles/global';
+import { ModalProvider } from 'styled-react-modal';
+import { SpecialModalBackground } from '../components/ModalPlayer/styles';
 
 import * as gtag from '../helpers/googleAnalytics';
 
@@ -25,12 +27,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* <NextAuthProvider session={pageProps.session}> */}
-      <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
-      {/* </NextAuthProvider> */}
+      <ModalProvider backgroundComponent={SpecialModalBackground}>
+        <GlobalStyle />
+        <ThemeProvider theme={theme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </ModalProvider>
     </QueryClientProvider>
   );
 }

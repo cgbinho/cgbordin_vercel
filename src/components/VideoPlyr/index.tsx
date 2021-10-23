@@ -17,6 +17,7 @@ export function VideoPlyr({ src }) {
           ],
         }}
         options={{
+          autoplay: true,
           controls: [
             'play',
             'progress',

@@ -47,8 +47,6 @@ const NavBar = () => {
   const node = useRef<HTMLDivElement>(null);
   useOnClickOutside(node, () => setOpenBurguer(false));
 
-  const close = () => setOpenBurguer(false);
-
   return (
     <Container>
       <Logo />
@@ -56,7 +54,7 @@ const NavBar = () => {
         <ul className="navbar_desktop">
           <li>
             <Link href="/#home">
-              <a>{content.home}</a>
+              <a data-cy="nav-home">{content.home}</a>
             </Link>
           </li>
           <li>
@@ -86,9 +84,7 @@ const NavBar = () => {
         </ul>
       </nav>
       <BurguerContainer>
-        <li>
-          <DropdownUserMenu />
-        </li>
+        <DropdownUserMenu />
         <HamburgerButton {...{ openBurguer, setOpenBurguer }} />
         <HamburguerMenu {...{ content }} />
       </BurguerContainer>

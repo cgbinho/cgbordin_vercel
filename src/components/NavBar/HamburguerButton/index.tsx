@@ -9,6 +9,7 @@ const Hamburger = (props: Props) => (
   <StyledHamburger
     open={props.openBurguer}
     onClick={() => props.setOpenBurguer(!props.openBurguer)}
+    aria-label="Burguer menu"
   >
     <div />
     <div />
