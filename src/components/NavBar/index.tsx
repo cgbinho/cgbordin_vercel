@@ -51,43 +51,42 @@ const NavBar = () => {
     <Container>
       <Logo />
       <nav data-cy="nav-home">
-        <ul className="navbar_desktop">
-          <li>
+        <ul className="navbar">
+          <li className="navbar_desktop">
             <Link href="/#home">
               <a>{content.home}</a>
             </Link>
           </li>
-          <li>
+          <li className="navbar_desktop">
             <Link href="/#experience">
               <a>{content.experience}</a>
             </Link>
           </li>
-          <li>
+          <li className="navbar_desktop">
             <Link href="/articles">
               <a>{content.articles}</a>
             </Link>
           </li>
-          <li>
+          <li className="navbar_desktop">
             <Link href="/#projects">
               <a>{content.projects}</a>
             </Link>
           </li>
-          <li>
+          <li className="navbar_desktop">
             <Link href="/#about">
               <a>{content.about}</a>
             </Link>
           </li>
-          <div className="vertical_line" />
           <li>
             <DropdownUserMenu />
           </li>
+          {/* <div className="vertical_line" /> */}
+          <BurguerContainer className="navbar_mobile">
+            <HamburgerButton {...{ openBurguer, setOpenBurguer }} />
+            <HamburguerMenu {...{ content }} />
+          </BurguerContainer>
         </ul>
       </nav>
-      <BurguerContainer>
-        <DropdownUserMenu />
-        <HamburgerButton {...{ openBurguer, setOpenBurguer }} />
-        <HamburguerMenu {...{ content }} />
-      </BurguerContainer>
     </Container>
   );
 };

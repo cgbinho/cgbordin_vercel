@@ -19,7 +19,7 @@ export const Container = styled.nav`
     padding: 0 1rem;
   }
 
-  .navbar_desktop {
+  .navbar {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
@@ -37,26 +37,29 @@ export const Container = styled.nav`
     }
 
     @media (max-width: 920px) {
-      display: none;
+      gap: 4rem;
+    }
+
+    .navbar_desktop {
+      @media (max-width: 920px) {
+        display: none;
+      }
+    }
+    .navbar_mobile {
+      @media (min-width: 921px) {
+        display: none;
+      }
     }
   }
 `;
 
-export const BurguerContainer = styled.div`
+export const BurguerContainer = styled.li`
   display: grid;
   grid-auto-flow: column;
   align-items: center;
   gap: 4rem;
 
-  @media (min-width: 921px) {
+  /* @media (min-width: 921px) {
     display: none;
-  }
-`;
-
-export const SignedContainer = styled.div`
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  } */
 `;
