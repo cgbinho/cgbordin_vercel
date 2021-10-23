@@ -55,4 +55,9 @@ export const SpecialModalBackground = styled.div`
   height: 100vh;
   z-index: 30;
   background-color: hsl(200, 50%, 8%, 0.8);
+  backdrop-filter: blur(4px);
+
+  @media screen and (max-width: 950px) {
+    backdrop-filter: none;
+  }
 `;
