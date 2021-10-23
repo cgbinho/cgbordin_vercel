@@ -50,11 +50,11 @@ const NavBar = () => {
   return (
     <Container>
       <Logo />
-      <nav>
+      <nav data-cy="nav-home">
         <ul className="navbar_desktop">
           <li>
             <Link href="/#home">
-              <a data-cy="nav-home">{content.home}</a>
+              <a>{content.home}</a>
             </Link>
           </li>
           <li>
