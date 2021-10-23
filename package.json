@@ -9,8 +9,8 @@
     "start": "next start",
     "cypress": "cypress open",
     "cypress:headless": "cypress run",
-    "e2e": "start-server-and-test dev http://localhost:3000 cypress",
-    "e2e:headless": "start-server-and-test dev http://localhost:3000 cypress:headless"
+    "e2e": "start-server-and-test 'yarn dev' http://localhost:3000 'yarn cypress'",
+    "e2e:headless": "start-server-and-test 'yarn dev' http://localhost:3000 cypress:headless"
   },
   "keywords": [],
   "author": "",
