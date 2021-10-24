@@ -6,7 +6,7 @@ export const ArticlesContent = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 850px;
-  margin: 2rem auto;
+  margin: 6rem auto;
 
   > h1 {
     text-align: center;
@@ -51,7 +51,7 @@ export const ArticlesContent = styled.div`
 export const ArticleContainer = styled.div`
   display: grid;
   grid-auto-flow: row;
-  margin: 0 2rem;
+  margin: 5rem 1rem;
   justify-content: center;
   align-items: center;
   max-width: 650px;
