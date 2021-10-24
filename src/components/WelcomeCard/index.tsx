@@ -20,16 +20,19 @@ export function WelcomeCard() {
       Cleber Galves Bordin.`
       : `Hi, I'm \n Cleber Galves Bordin.`;
 
-  const excerpt =
+  const excerpt01 =
     locale !== 'en'
-      ? `Minha paixão e trabalho se dividem entre criatividade e lógica: Código & Design`
-      : `My passion and work lives between creativity and logic: Code & Design.`;
+      ? `Minha paixão e trabalho se dividem entre criatividade e lógica:`
+      : `My passion and work lives between creativity and logic:`;
+
+  const excerpt02 =
+    locale !== 'en' ? `Código & Motion Design` : `Code & Motion Design.`;
 
   const [lottieRef, { isPaused, isStopped }, controls] = useLottie({
     renderer: Renderer.svg,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
-      progressiveLoad: false,
+      progressiveLoad: true,
     },
     animationData,
   });
@@ -38,7 +41,8 @@ export function WelcomeCard() {
     <WelcomeCardContainer>
       <Lottie lottieRef={lottieRef} width={250} height={250} />
       <h1>{title}</h1>
-      <p>{excerpt}</p>
+      <h3>{excerpt01}</h3>
+      <h3>{excerpt02}</h3>
       <HorizontalLine />
       <WelcomeCardFooter>
         <a href="http://github.com/cgbinho" target="_blank" rel="noreferrer">

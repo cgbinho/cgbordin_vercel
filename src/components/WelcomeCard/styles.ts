@@ -9,14 +9,16 @@ export const WelcomeCardContainer = styled.div`
   max-width: 780px;
   padding: 1rem;
 
-  p {
-    text-align: center;
-  }
-
   h1 {
     text-align: center;
     letter-spacing: 0.15rem;
     line-height: 1.5;
+  }
+
+  h3 {
+    text-align: center;
+    line-height: 1.25;
+    font-weight: 300;
   }
 
   @media screen and (max-width: 800px) {
@@ -32,7 +34,7 @@ export const WelcomeCardFooter = styled.div`
   display: grid;
   gap: 0.5rem;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  width: 80%;
+  width: 70%;
   justify-items: center;
 
   img {
@@ -56,4 +58,5 @@ export const HorizontalLine = styled.div`
   width: 100%;
   background: var(--scent-450);
   border-radius: 50%;
+  margin: 1rem 0;
 `;

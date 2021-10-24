@@ -36,7 +36,7 @@ export default class MyDocument extends Document {
           {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
           {/* <link rel="preconnect" href="https://fonts.gstatic.com" /> */}
           <link
-            href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
             rel="stylesheet"
           />
           <meta name="theme-color" content="hsl(200, 100%, 35%)" />

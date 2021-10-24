@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
 
 :root {
-  --main-font: 400 16px Cabin, sans-serif;
+  --main-font: 400 16px Nunito, sans-serif;
   --font-size: 16px;
   --base-font-size:1rem;
   --base-line-height: 1.25 * --base-font-size;
