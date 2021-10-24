@@ -69,4 +69,4 @@ Aqui está um exemplo de aplicação que eu montei rapidamente, simulando uma re
 
 Espero que tenha aprendido alguma coisa interessante sobre programação para After Effects.
 
-Se você se interessou pelo meu trabalho e quiser conversar comigo, me escreva em *cleber @ cgbordin.com*.
+Se você se interessou pelo meu trabalho e quiser conversar comigo, me escreva em *cleber @ cgbordin.com*

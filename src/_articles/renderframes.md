@@ -49,4 +49,4 @@ Dessa forma economizo tempo e evito salvar frames errados, com nomes diferentes,
 
 Espero futuramente preparar este script para disponibilizá-lo online.
 
-Se você se interessou pelo meu trabalho e quiser conversar comigo, me escreva em *cleber @ cgbordin.com*.
+Se você se interessou pelo meu trabalho e quiser conversar comigo, me escreva em *cleber @ cgbordin.com*

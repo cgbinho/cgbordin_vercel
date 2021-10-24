@@ -115,4 +115,4 @@ Aqui estão algumas telas dos layouts que produzi tanto para desktop, quanto par
 
 *Choco Animato - Layouts mobile dos Videos Explicativos, Filtros e Projetos do usuário*
 
-Se você se interessou pelo meu trabalho e quiser conversar comigo, me escreva em *cleber @ cgbordin.com*.
+Se você se interessou pelo meu trabalho e quiser conversar comigo, me escreva em *cleber @ cgbordin.com*

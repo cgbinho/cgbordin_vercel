@@ -59,4 +59,4 @@ Com esta marcação de tempo já na timeline, fica mais fácil editar o storyboa
 
 Espero futuramente preparar este script para disponibilizá-lo online.
 
-Se você se interessou pelo meu trabalho e quiser conversar comigo, me escreva em *cleber @ cgbordin.com*.
+Se você se interessou pelo meu trabalho e quiser conversar comigo, me escreva em *cleber @ cgbordin.com*
