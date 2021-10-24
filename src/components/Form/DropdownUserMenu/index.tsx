@@ -22,21 +22,6 @@ export function DropdownUserMenu() {
   const { locale } = router;
   const imageName = `flag_${locale}.svg`.toLowerCase();
 
-  const contentLanguage = {
-    en: {
-      title: 'Language',
-      language01: 'pt-Br',
-      language02: 'en-Us',
-    },
-    'pt-BR': {
-      title: 'Linguagem',
-      language01: 'pt-Br',
-      language02: 'en-Us',
-    },
-  };
-
-  const content = contentLanguage[locale];
-
   return (
     <DropdownContainer>
       <Menu
@@ -61,6 +46,7 @@ export function DropdownUserMenu() {
           onClick={() => router.push('./', './', { locale: 'pt-BR' })}
           value="pt-BR"
           className="dropdown_menu_item"
+          data-cy="language_pt-Br"
         >
           <Image
             src="/images/flag_pt-br.svg"
@@ -70,13 +56,14 @@ export function DropdownUserMenu() {
             objectFit="cover"
             className="border_radius_50"
           />
-          {content.language01}
+          pt-Br
         </MenuItem>
         <MenuDivider />
         <MenuItem
           onClick={() => router.push('./', './', { locale: 'en' })}
           value="en"
           className="dropdown_menu_item"
+          data-cy="language_en-Us"
         >
           <Image
             src="/images/flag_en.svg"
@@ -86,7 +73,7 @@ export function DropdownUserMenu() {
             objectFit="cover"
             className="border_radius_50"
           />
-          {content.language02}
+          en-Us
         </MenuItem>
       </Menu>
     </DropdownContainer>
