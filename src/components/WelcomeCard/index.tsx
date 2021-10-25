@@ -41,8 +41,8 @@ export function WelcomeCard() {
     <WelcomeCardContainer>
       <Lottie lottieRef={lottieRef} width={250} height={250} />
       <h1>{title}</h1>
-      <h3>{excerpt01}</h3>
-      <h3>{excerpt02}</h3>
+      <h2>{excerpt01}</h2>
+      <h2>{excerpt02}</h2>
       <HorizontalLine />
       <WelcomeCardFooter>
         <a href="http://github.com/cgbinho" target="_blank" rel="noreferrer">

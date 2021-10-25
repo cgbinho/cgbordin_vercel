@@ -6,7 +6,23 @@ export const DropdownContainer = styled.div`
     flex-direction: row;
     align-items: center;
     gap: 4px;
+    background: none;
+    border: none;
+    color: var(--primary);
+
+    &:hover {
+      color: var(--scent-550);
+    }
+
+    &:focus {
+      color: var(--scent-550);
+      background-color: black;
+      padding: 0.2rem;
+      border-radius: 4px;
+      border: 2px solid var(--scent-450);
+    }
   }
+
   // CSS classes
   .dropdown_menu {
     /* border: 2px solid #dc3545; */

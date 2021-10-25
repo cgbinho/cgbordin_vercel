@@ -15,9 +15,10 @@ export const WelcomeCardContainer = styled.div`
     line-height: 1.5;
   }
 
-  h3 {
+  h2 {
     text-align: center;
-    line-height: 1.25;
+    line-height: 1;
+    font-size: 1.2rem;
     font-weight: 300;
   }
 

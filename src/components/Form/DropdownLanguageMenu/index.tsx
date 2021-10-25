@@ -16,7 +16,7 @@ import '@szhsin/react-menu/dist/theme-dark.css';
 
 import Image from 'next/image';
 
-export function DropdownUserMenu() {
+export function DropdownLanguageMenu() {
   const router = useRouter();
 
   const { locale } = router;
@@ -27,7 +27,12 @@ export function DropdownUserMenu() {
       <Menu
         menuClassName="dropdown_menu"
         menuButton={
-          <a className="dropdown_button">
+          // <a
+          //   // href="#language_dropdown"
+          //   // id="#language_dropdown"
+          //   className="dropdown_button"
+          // >
+          <MenuButton className="dropdown_button">
             <Image
               src={`/images/${imageName}`}
               alt="Language flag"
@@ -37,7 +42,8 @@ export function DropdownUserMenu() {
               className="border_radius_50"
             />
             <HiChevronDown />
-          </a>
+          </MenuButton>
+          // </a>
         }
         transition
         theming="dark"

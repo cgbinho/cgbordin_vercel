@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useRef, useState } from 'react';
 import { useOnClickOutside } from '../../hooks/useOnClickOutside';
-import { DropdownUserMenu } from '../Form/DropdownUserMenu';
+import { DropdownLanguageMenu } from '../Form/DropdownLanguageMenu';
 import Logo from '../Logos';
 import HamburgerButton from './HamburguerButton';
 import { HamburguerMenu } from './HamburguerMenu';
@@ -49,6 +49,9 @@ const NavBar = () => {
 
   return (
     <Container>
+      <a className="skip_main" href="#home" tabIndex={0}>
+        Skip to main content
+      </a>
       <Logo />
       <nav data-cy="nav-home">
         <ul className="navbar">
@@ -78,7 +81,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <DropdownUserMenu />
+            <DropdownLanguageMenu />
           </li>
           {/* <div className="vertical_line" /> */}
           <BurguerContainer className="navbar_mobile">

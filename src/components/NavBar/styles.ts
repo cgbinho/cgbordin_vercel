@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.nav`
+export const Container = styled.header`
   display: grid;
   grid-auto-flow: column;
   /* grid-area: header; */

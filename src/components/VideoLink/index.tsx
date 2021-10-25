@@ -16,7 +16,11 @@ export function VideoLink({ imgData, vidSrc }: VideoLinkProps) {
 
   return (
     <>
-      <a onClick={() => setOpenModal(!openModal)}>
+      <a
+        id="#projects_link"
+        href={'#projects_link'}
+        onClick={() => setOpenModal(!openModal)}
+      >
         <img src={imgData.imgSrc} alt={imgData.imgAlt} width="100%" />
       </a>
       <ModalPlayer

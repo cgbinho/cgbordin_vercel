@@ -13,8 +13,8 @@ export function ProjectsComponent({ content }) {
   return (
     <ProjectsContent>
       <h2 id="projects">{content.title}</h2>
-      <div className="projects_list">
-        <section>
+      <ul className="projects_list" role="list">
+        <li role="listitem">
           <Link href={`/articles/chocoanimato`} locale={false}>
             <a>
               <img
@@ -29,8 +29,8 @@ export function ProjectsComponent({ content }) {
             <p>{content.chocoanimato.description}</p>
             <p>{content.chocoanimato.tools}</p>
           </aside>
-        </section>
-        <section>
+        </li>
+        <li role="listitem">
           <Link href={`/aepzera`} locale={false}>
             <a>
               <img
@@ -45,8 +45,8 @@ export function ProjectsComponent({ content }) {
             <p>{content.aepzera.description}</p>
             <p>{content.aepzera.tools}</p>
           </aside>
-        </section>
-        <section>
+        </li>
+        <li role="listitem">
           <VideoLink
             {...{
               imgData: {
@@ -61,8 +61,8 @@ export function ProjectsComponent({ content }) {
             <p>{content.bayer.description}</p>
             <p>{content.bayer.tools}</p>
           </aside>
-        </section>
-        <section>
+        </li>
+        <li>
           <VideoLink
             {...{
               imgData: {
@@ -77,8 +77,8 @@ export function ProjectsComponent({ content }) {
             <p>{content.huawei.description}</p>
             <p>{content.huawei.tools}</p>
           </aside>
-        </section>
-        <section>
+        </li>
+        <li>
           <VideoLink
             {...{
               imgData: {
@@ -93,8 +93,8 @@ export function ProjectsComponent({ content }) {
             <p>{content.skoland.description}</p>
             <p>{content.skoland.tools}</p>
           </aside>
-        </section>
-        <section>
+        </li>
+        <li>
           <VideoLink
             {...{
               imgData: {
@@ -109,8 +109,8 @@ export function ProjectsComponent({ content }) {
             <p>{content.hostfiber.description}</p>
             <p>{content.hostfiber.tools}</p>
           </aside>
-        </section>
-      </div>
+        </li>
+      </ul>
     </ProjectsContent>
   );
 }
