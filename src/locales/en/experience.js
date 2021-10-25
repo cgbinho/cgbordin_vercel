@@ -16,6 +16,7 @@ export default {
     • Prismic
     • Styled-Components
     • Chakra UI
+    • Material UI
     • HTML5
     • CSS
     • SCSS
@@ -44,7 +45,9 @@ export default {
     title: 'Basic Knowledge',
     img: '/images/cgbordin_experience_rest.svg',
     excerpt: `• Rest API
+    • Cypress
     • AWS Amplify
+    • Vercel
     • Redux
     • Docker
     • FaunaDB
@@ -54,7 +57,7 @@ export default {
     • Sequelize
     • Redis
     • BullQueue
-    • Princípios SOLID
+    • SOLID Principles
     • JWT and others.`,
   },
 };
