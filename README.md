@@ -1,10 +1,12 @@
-# CGBORDIN.COM Personal Website - with AWS Amplify and Typescript with NextJS
+# CGBORDIN.COM Personal Website - with Vercel and Typescript with NextJS
 
-This is the repository for my personal website to showcase my latest projects.
-[cgbordin.com](https://www.cgbordin.com)
+This is the repository for my personal website [cgbordin.com](https://www.cgbordin.com).
 
-I decided to create my own website from the ground up to practice and learn more about Next.js, Aws Amplify.
-This website is made with Next.js using api routes, StyledComponents, Markdown for the Articles and soon to be fully implemented: Stripe payment.
+
+!['cgbordin_home'](https://res.cloudinary.com/cgbordin/image/upload/v1635184313/cgbordin_home_h4lmrw.png)
+
+I decided to create my own website from the ground up to practice and learn more about Next.js, Blogging, Internationalization and Vercel Deployment.
+This website is made with Next.js using api routes, StyledComponents and Markdown for the Articles.
 
 First install all dependencies
 ```bash
