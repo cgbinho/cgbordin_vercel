@@ -2,11 +2,16 @@
 
 This is the repository for my personal website [cgbordin.com](https://www.cgbordin.com).
 
+## Technologies
+Next.js using api routes, Typescript,Styled-Components and Markdown for the Articles.
 
 !['cgbordin_home'](https://res.cloudinary.com/cgbordin/image/upload/v1635184313/cgbordin_home_h4lmrw.png)
 
-I decided to create my own website from the ground up to practice and learn more about Next.js, Blogging, Internationalization and Vercel Deployment.
-This website is made with Next.js using api routes, StyledComponents and Markdown for the Articles.
+## Motivation
+I decided to create my own website from the ground up to showcase some projects I have worked on, practice and learn more about Next.js, Blogging, Internationalization, Accessibility and Vercel Deployment.
+
+Lighthouse Results:
+!['cgbordin_home_lighthouse'](https://res.cloudinary.com/cgbordin/image/upload/v1635194618/cgbordin_home_lighthouse_jhrpqb.png)
 
 First install all dependencies
 ```bash
