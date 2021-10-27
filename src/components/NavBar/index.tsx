@@ -1,3 +1,4 @@
+import { motion, Variants } from 'framer-motion';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useRef, useState } from 'react';
@@ -7,6 +8,37 @@ import Logo from '../Logos';
 import HamburgerButton from './HamburguerButton';
 import { HamburguerMenu } from './HamburguerMenu';
 import { BurguerContainer, Container } from './styles';
+
+const navItemVariants = {
+  hidden: {
+    translateX: '40%',
+    translateZ: '0px',
+    opacity: 0,
+  },
+  visible: {
+    translateX: '0px',
+    translateZ: '0px',
+    opacity: 1,
+  },
+};
+
+const navVariants: Variants = {
+  hidden: {
+    translateX: '40%',
+    translateZ: '0px',
+    opacity: 0,
+  },
+  visible: {
+    translateX: '0px',
+    translateZ: '0px',
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.2,
+      durationChildren: 0.5,
+    },
+  },
+};
 
 const NavBar = () => {
   const router = useRouter();
@@ -52,34 +84,48 @@ const NavBar = () => {
       <a className="skip_main" href="#home" tabIndex={0}>
         Skip to main content
       </a>
-      <Logo />
+      <motion.section
+        whileHover={{ scale: 1.02 }}
+        transition={{ type: 'tween' }}
+        initial="hidden"
+        animate="visible"
+        variants={navVariants}
+      >
+        <Logo />
+      </motion.section>
+
       <nav data-cy="nav-home">
-        <ul className="navbar">
-          <li className="navbar_desktop">
+        <motion.ul
+          className="navbar"
+          initial="hidden"
+          animate="visible"
+          variants={navVariants}
+        >
+          <motion.li variants={navItemVariants} className="navbar_desktop">
             <Link href="/#home">
               <a>{content.home}</a>
             </Link>
-          </li>
-          <li className="navbar_desktop">
+          </motion.li>
+          <motion.li variants={navItemVariants} className="navbar_desktop">
             <Link href="/#experience">
               <a>{content.experience}</a>
             </Link>
-          </li>
-          <li className="navbar_desktop">
+          </motion.li>
+          <motion.li variants={navItemVariants} className="navbar_desktop">
             <Link href="/articles">
               <a>{content.articles}</a>
             </Link>
-          </li>
-          <li className="navbar_desktop">
+          </motion.li>
+          <motion.li variants={navItemVariants} className="navbar_desktop">
             <Link href="/#projects">
               <a>{content.projects}</a>
             </Link>
-          </li>
-          <li className="navbar_desktop">
+          </motion.li>
+          <motion.li variants={navItemVariants} className="navbar_desktop">
             <Link href="/#about">
               <a>{content.about}</a>
             </Link>
-          </li>
+          </motion.li>
           <li>
             <DropdownLanguageMenu />
           </li>
@@ -88,7 +134,7 @@ const NavBar = () => {
             <HamburgerButton {...{ openBurguer, setOpenBurguer }} />
             <HamburguerMenu {...{ content }} />
           </BurguerContainer>
-        </ul>
+        </motion.ul>
       </nav>
     </Container>
   );

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const WelcomeCardContainer = styled.div`
@@ -5,22 +6,8 @@ export const WelcomeCardContainer = styled.div`
   grid-auto-flow: row;
   justify-items: center;
   margin: 3rem 0 1rem 0;
-  gap: 1rem;
-  max-width: 780px;
+  max-width: 800px;
   padding: 1rem;
-
-  h1 {
-    text-align: center;
-    letter-spacing: 0.15rem;
-    line-height: 1.5;
-  }
-
-  h2 {
-    text-align: center;
-    line-height: 1;
-    font-size: 1.2rem;
-    font-weight: 300;
-  }
 
   @media screen and (max-width: 800px) {
     margin: 3rem 0 1rem 0;
@@ -31,11 +18,32 @@ export const WelcomeCardContainer = styled.div`
   }
 `;
 
-export const WelcomeCardFooter = styled.div`
-  display: grid;
+export const WelcomeCardContent = styled(motion.section)`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h1 {
+    text-align: center;
+    letter-spacing: 0.15rem;
+    line-height: 1.5;
+  }
+
+  h2 {
+    text-align: center;
+    line-height: 1.2;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+`;
+
+export const WelcomeCardFooter = styled(motion.footer)`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  width: 70%;
+  width: 100%;
   justify-items: center;
 
   img {
@@ -54,10 +62,10 @@ export const WelcomeCardFooter = styled.div`
   }
 `;
 
-export const HorizontalLine = styled.div`
+export const HorizontalLine = styled(motion.div)`
   height: 3px;
   width: 100%;
-  background: var(--scent-450);
-  border-radius: 50%;
+  border: 2px solid var(--scent-450);
+  border-radius: 1rem;
   margin: 1rem 0;
 `;
