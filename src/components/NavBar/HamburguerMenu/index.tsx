@@ -23,7 +23,7 @@ export function HamburguerMenu({ content }) {
   };
 
   return (
-    <div ref={node}>
+    <div ref={node} className="navbar_mobile">
       <StyledMenu open={openBurguer}>
         <MenuItem {...{ label: `${content.home}`, path: '/#home' }} />
         <MenuItem

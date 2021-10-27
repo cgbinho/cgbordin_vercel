@@ -95,46 +95,40 @@ const NavBar = () => {
       </motion.section>
 
       <nav data-cy="nav-home">
-        <motion.ul
-          className="navbar"
-          initial="hidden"
-          animate="visible"
-          variants={navVariants}
-        >
-          <motion.li variants={navItemVariants} className="navbar_desktop">
+        <ul className="navbar">
+          <li className="navbar_desktop">
             <Link href="/#home">
               <a>{content.home}</a>
             </Link>
-          </motion.li>
-          <motion.li variants={navItemVariants} className="navbar_desktop">
+          </li>
+          <li className="navbar_desktop">
             <Link href="/#experience">
               <a>{content.experience}</a>
             </Link>
-          </motion.li>
-          <motion.li variants={navItemVariants} className="navbar_desktop">
+          </li>
+          <li className="navbar_desktop">
             <Link href="/articles">
               <a>{content.articles}</a>
             </Link>
-          </motion.li>
-          <motion.li variants={navItemVariants} className="navbar_desktop">
+          </li>
+          <li className="navbar_desktop">
             <Link href="/#projects">
               <a>{content.projects}</a>
             </Link>
-          </motion.li>
-          <motion.li variants={navItemVariants} className="navbar_desktop">
+          </li>
+          <li className="navbar_desktop">
             <Link href="/#about">
               <a>{content.about}</a>
             </Link>
-          </motion.li>
+          </li>
           <li>
             <DropdownLanguageMenu />
           </li>
-          {/* <div className="vertical_line" /> */}
           <BurguerContainer className="navbar_mobile">
             <HamburgerButton {...{ openBurguer, setOpenBurguer }} />
             <HamburguerMenu {...{ content }} />
           </BurguerContainer>
-        </motion.ul>
+        </ul>
       </nav>
     </Container>
   );
