@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const Container = styled.header`
@@ -53,7 +54,7 @@ export const Container = styled.header`
   }
 `;
 
-export const BurguerContainer = styled.li`
+export const BurguerContainer = styled(motion.li)`
   display: grid;
   grid-auto-flow: column;
   align-items: center;

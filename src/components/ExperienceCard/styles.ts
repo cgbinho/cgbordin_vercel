@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const ExperienceCardContainer = styled.div`
+export const ExperienceCardContainer = styled(motion.section)`
   display: grid;
   grid-auto-flow: row;
   justify-items: center;

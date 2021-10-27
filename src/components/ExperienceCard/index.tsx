@@ -1,16 +1,38 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import { ExperienceCardContainer } from './styles';
+import { motion } from 'framer-motion';
+
+const experienceVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const experienceItemVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  },
+};
 
 function ExperienceCardTech({ content }) {
   return (
-    <section>
+    <motion.section whileHover={{ scale: 1.1 }} transition={{ type: 'tween' }}>
       <img src={content.img} alt="" />
       <aside>
         <h3>{content.title}</h3>
         <p>{content.excerpt}</p>
       </aside>
-    </section>
+    </motion.section>
   );
 }
 

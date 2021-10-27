@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const AboutCardFooter = styled.div`
@@ -27,7 +28,7 @@ export const AboutContainer = styled.div`
   }
 `;
 
-export const AboutCardRightContainer = styled.div`
+export const AboutCardRightContainer = styled(motion.section)`
   display: grid;
   grid-template-columns: 140px 1fr;
   align-items: center;
