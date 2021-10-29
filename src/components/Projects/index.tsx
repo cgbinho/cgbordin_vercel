@@ -62,7 +62,8 @@ const ProjectCard = ({
       <aside>
         <strong>{title}</strong>
         <p>{content.description}</p>
-        <p>{content.tools}</p>
+        <div className="horizontal_line" />
+        <p className="italic">{content.tools}</p>
       </aside>
     </motion.li>
   );

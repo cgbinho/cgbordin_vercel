@@ -14,7 +14,7 @@ export const ExperienceCardContent = styled(motion.section) <IContainerProps>`
       `var(--design-scent)` : `var(--rest-scent)`};
 `;
 
-export const ExperienceCardContainer = styled(motion.div)`
+export const ExperienceCardContainer = styled(motion.section)`
   display: grid;
   grid-auto-flow: row;
   justify-items: center;

@@ -6,6 +6,9 @@ export default createGlobalStyle`
   --main-font: 400 16px Nunito, sans-serif;
   --font-size: 16px;
   --base-font-size:1rem;
+  --font-weight-light: 200;
+  --font-weight-normal: 400;
+  --font-weight-bold: 900;
   --base-line-height: 1.25 * --base-font-size;
   --maxWidth: 1200px;
   --scent-850: hsl(200, 100%, 85%);
@@ -51,7 +54,7 @@ body {
 
 p {
   letter-spacing: 1.1px;
-  line-height: 1.4;
+  /* line-height: 1.4; */
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -91,6 +94,63 @@ li {
   .border_scented {
     border-top: 2px solid var(--scent-550);
 }
+
+.italic {
+  font-style: italic;
+  font-size: .9rem;
+}
+
+
+.horizontal_line {
+  width: 100%;
+  background: hsl(200, 10%, 30%);
+  border: 1px solid hsl(200, 10%, 30%);
+  /* border-radius: 1rem; */
+  /* margin: 1rem 0; */
+}
+
+.tech_list {
+  ul li{
+  display: inline;
+  }
+
+  span {
+    color: var(--gray-400);
+  }
+}
+
+
+.text_underline {
+  span {
+    display: inline;
+    background-image: linear-gradient(to right, hsl(200, 100%, 40%,.8) 100%, hsl(200, 100%, 40%,.8) 100%);
+    background-position: 0 1.2rem;
+    background-repeat: repeat-x;
+    background-size: 2px;
+  }
+}
+
+.text_highlight {
+  span {
+    color: var(--primary);
+    background-color: none;
+    padding: 0px 6px;
+    border-radius: 4px;
+    animation: span_highlight 1000ms ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes span_highlight {
+    0% {
+      background-color: none;
+    }
+    100% {
+      background-color: hsl(200, 100%, 40%,.4);
+    }
+  }
+}
+
+
 
 .card {
   padding: 2rem;

@@ -26,7 +26,9 @@ export const ProjectsContent = styled.div`
 
   li {
     display: grid;
-    grid-auto-flow: row;
+    /* grid-auto-flow: row; */
+    grid-auto-rows: max-content;
+    /* grid-template-rows: 180px 1fr; */
     align-items: flex-start;
     justify-items: flex-start;
     align-items: flex-start;

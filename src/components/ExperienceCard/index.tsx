@@ -35,7 +35,12 @@ function ExperienceCardItem({ content }) {
       <img src={content.img} alt={content.title} />
       <aside>
         <h3>{content.title}</h3>
-        <p>{content.excerpt}</p>
+
+        <div
+          className="tech_list"
+          dangerouslySetInnerHTML={{ __html: content.excerpt }}
+        />
+        {/* <p>{content.excerpt}</p> */}
       </aside>
     </ExperienceCardContent>
   );
@@ -45,7 +50,14 @@ export function ExperienceCard({ content }) {
   return (
     <ExperienceCardContainer>
       <h2 id="experience">{content.title}</h2>
-      <p>{content.excerpt}</p>
+      <p>
+        Texto com underline, <span className="text_underline">funciona?</span>
+      </p>
+      <div
+        // className="text_highlight"
+        className="text_underline"
+        dangerouslySetInnerHTML={{ __html: content.excerpt }}
+      />
       <ExperienceCardItem {...{ content: content.coding }} />
       <ExperienceCardItem {...{ content: content.design }} />
       <ExperienceCardItem {...{ content: content.rest }} />

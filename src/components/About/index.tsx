@@ -19,7 +19,7 @@ type AboutCardData = {
     src: string;
     alt: string;
   };
-  content: string[];
+  content: string;
 };
 
 const aboutImageVariants: Variants = {
@@ -91,9 +91,10 @@ const AboutCardLeft = ({
         whileHover={{ scale: 1.02 }}
         transition={{ type: 'tween' }}
       >
-        {content.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
-        ))}
+        <div
+          className="text_underline"
+          dangerouslySetInnerHTML={{ __html: content }}
+        />
       </motion.aside>
       <motion.img
         initial="hidden"
@@ -135,9 +136,10 @@ const AboutCardRight = ({
         whileHover={{ scale: 1.02 }}
         transition={{ type: 'tween' }}
       >
-        {content.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
-        ))}
+        <div
+          className="text_underline"
+          dangerouslySetInnerHTML={{ __html: content }}
+        />
       </motion.aside>
     </AboutCardRightContainer>
   );
@@ -149,7 +151,6 @@ export function AboutComponent({ content }) {
   const [refAbout03, inViewAbout03] = useInView();
   const [refAbout04, inViewAbout04] = useInView();
   const [refAbout05, inViewAbout05] = useInView();
-  const [refAbout06, inViewAbout06] = useInView();
 
   return (
     <AboutContainer>
@@ -168,7 +169,10 @@ export function AboutComponent({ content }) {
         />
       </motion.section>
 
-      <p>{content.description}</p>
+      <div
+        className="text_underline"
+        dangerouslySetInnerHTML={{ __html: content.description }}
+      />
       <AboutCardRight
         {...{
           reference: refAbout01,
@@ -180,10 +184,7 @@ export function AboutComponent({ content }) {
             src: '/images/cgbordin_about_starwars.svg',
             alt: 'Starwars',
           },
-          content: [
-            content.experience.paragraph01,
-            content.experience.paragraph02,
-          ],
+          content: content.experience.paragraph01,
         }}
       />
       <AboutCardLeft
@@ -197,7 +198,7 @@ export function AboutComponent({ content }) {
             src: '/images/cgbordin_about_graduation.svg',
             alt: 'Graduation',
           },
-          content: [content.experience.paragraph03],
+          content: content.experience.paragraph02,
         }}
       />
       <AboutCardRight
@@ -211,7 +212,7 @@ export function AboutComponent({ content }) {
             src: '/images/cgbordin_about_motion.svg',
             alt: 'Motion',
           },
-          content: [content.experience.paragraph04],
+          content: content.experience.paragraph03,
         }}
       />
       <AboutCardLeft
@@ -225,10 +226,7 @@ export function AboutComponent({ content }) {
             src: '/images/cgbordin_about_javascript.svg',
             alt: 'Javascript',
           },
-          content: [
-            content.experience.paragraph05,
-            content.experience.paragraph06,
-          ],
+          content: content.experience.paragraph04,
         }}
       />
       <AboutCardRight
@@ -242,7 +240,7 @@ export function AboutComponent({ content }) {
             src: '/images/cgbordin_about_apps.svg',
             alt: 'Apps',
           },
-          content: [content.experience.paragraph07],
+          content: content.experience.paragraph05,
         }}
       />
       <AboutCardFooter>

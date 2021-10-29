@@ -33,12 +33,20 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
-          {/* <link rel="preconnect" href="https://fonts.gstatic.com" /> */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;900&display=swap"
             rel="stylesheet"
           />
+          {/* <link
+            href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+            rel="stylesheet"
+          /> */}
           <meta name="theme-color" content="hsl(200, 100%, 35%)" />
           <link
             rel="apple-touch-icon"
