@@ -33,7 +33,7 @@ export const WelcomeCardContent = styled(motion.section)`
     text-align: center;
     line-height: 1.2;
     font-size: 1.1rem;
-    font-weight: 300;
+    font-weight: 400;
   }
 `;
 

@@ -40,7 +40,6 @@ function ExperienceCardItem({ content }) {
           className="tech_list"
           dangerouslySetInnerHTML={{ __html: content.excerpt }}
         />
-        {/* <p>{content.excerpt}</p> */}
       </aside>
     </ExperienceCardContent>
   );
@@ -50,11 +49,7 @@ export function ExperienceCard({ content }) {
   return (
     <ExperienceCardContainer>
       <h2 id="experience">{content.title}</h2>
-      <p>
-        Texto com underline, <span className="text_underline">funciona?</span>
-      </p>
       <div
-        // className="text_highlight"
         className="text_underline"
         dangerouslySetInnerHTML={{ __html: content.excerpt }}
       />
