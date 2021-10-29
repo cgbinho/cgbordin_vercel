@@ -37,6 +37,7 @@ const ProjectCard = ({
 }: ProjectCardData) => {
   return (
     <motion.li
+      className="border_scented"
       role="listitem"
       whileHover={{ scale: 1.02 }}
       transition={{ type: 'tween' }}

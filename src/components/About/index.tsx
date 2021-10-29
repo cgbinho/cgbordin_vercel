@@ -163,8 +163,8 @@ export function AboutComponent({ content }) {
           alt="Cleber Galves Bordin"
           width="180px"
           height="180px"
-          className="border_radius_50"
           layout="fixed"
+          className="avatar_photo"
         />
       </motion.section>
 

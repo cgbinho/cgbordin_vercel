@@ -8,7 +8,7 @@ interface IContainerProps {
 
 export const ExperienceCardContent = styled(motion.section) <IContainerProps>`
 
-    /* Conditionally */
+    /* Conditionally change the border color*/
     border-bottom: 2px solid ${(props) => props.content.title === 'Coding' ? `var(--coding-scent)` :
     props.content.title === 'Design & Motion Design' ?
       `var(--design-scent)` : `var(--rest-scent)`};
@@ -38,5 +38,9 @@ export const ExperienceCardContainer = styled(motion.div)`
 
   @media screen and (max-width: 800px) {
     margin: 1rem;
+    /* gap: 3rem; */
+    section {
+      margin-top: 1rem;
+    }
   }
 `;

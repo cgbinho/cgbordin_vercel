@@ -61,7 +61,7 @@ export const AboutCardRightContainer = styled(motion.section) <IContainerProps>`
 
     aside {
       backdrop-filter: unset;
-      border-bottom: 2px solid ${(props) => props.scentColor};
+      border-top: 2px solid ${(props) => props.scentColor};
       border-left: none;
     }
   }
@@ -100,7 +100,7 @@ export const AboutCardLeftContainer = styled(motion.section) <IContainerProps>`
     aside {
       order: 3;
       backdrop-filter: unset;
-      border-bottom: 2px solid ${(props) => props.scentColor};
+      border-top: 2px solid ${(props) => props.scentColor};
       border-right: none;
     }
   }

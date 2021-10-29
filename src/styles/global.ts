@@ -42,7 +42,7 @@ export default createGlobalStyle`
 
 body {
   /* background: var(--gray-200); */
-  background: linear-gradient(0.25turn, hsl(0, 0%, 20%), hsl(180, 20%, 20%), hsl(0, 0%, 20%));
+  background: linear-gradient(0.25turn, hsl(0, 0%, 20%), hsl(180, 10%, 20%), hsl(0, 0%, 20%));
   color: var(--primary);
   font: var(--main-font);
   -webkit-font-smoothing: antialiased;
@@ -76,11 +76,20 @@ cursor: pointer;
   padding: .2rem;
   border-radius: 4px;
   border: 2px solid var(--scent-450);
-  }
+}
 }
 
 li {
   list-style-type: none;
+}
+
+.avatar_photo {
+  border-radius: 50%;
+  overflow: auto;
+}
+
+  .border_scented {
+    border-top: 2px solid var(--scent-550);
 }
 
 .card {

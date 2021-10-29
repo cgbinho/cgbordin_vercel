@@ -7,11 +7,7 @@ export const Container = styled.div`
   justify-items: center;
   align-items: flex-start;
   padding-top: 2rem;
-
-  /* background-image: url('images/background-annie-spratt-sE6lmWCsf_Q-unsplash.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed; */
+  overflow: hidden;
 
   .content {
     display: grid;
