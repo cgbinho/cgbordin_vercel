@@ -1,7 +1,20 @@
+/* eslint-disable prettier/prettier */
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const ExperienceCardContainer = styled(motion.section)`
+interface IContainerProps {
+  content: any;
+}
+
+export const ExperienceCardContent = styled(motion.section) <IContainerProps>`
+
+    /* Conditionally */
+    border-bottom: 2px solid ${(props) => props.content.title === 'Coding' ? `var(--coding-scent)` :
+    props.content.title === 'Design & Motion Design' ?
+      `var(--design-scent)` : `var(--rest-scent)`};
+`;
+
+export const ExperienceCardContainer = styled(motion.div)`
   display: grid;
   grid-auto-flow: row;
   justify-items: center;
@@ -16,12 +29,7 @@ export const ExperienceCardContainer = styled(motion.section)`
   section {
     display: grid;
     grid-auto-flow: row;
-    padding: 2rem;
-    background-color: var(--gray-170);
-    backdrop-filter: blur(20px);
-    border-radius: 4px;
     overflow: visible;
-    margin-bottom: 1rem;
   }
 
   img {
@@ -30,11 +38,5 @@ export const ExperienceCardContainer = styled(motion.section)`
 
   @media screen and (max-width: 800px) {
     margin: 1rem;
-
-    section {
-      padding: 1.5rem;
-      margin-bottom: 1rem;
-      backdrop-filter: unset;
-    }
   }
 `;

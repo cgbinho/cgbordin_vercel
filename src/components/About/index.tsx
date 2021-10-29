@@ -9,6 +9,19 @@ import {
 import { isValidMotionProp, motion, Variants } from 'framer-motion';
 import { InViewHookResponse, useInView } from 'react-intersection-observer';
 
+type AboutCardData = {
+  reference: any;
+  inView: boolean;
+  imageVariants: Variants;
+  textVariants: Variants;
+  scentColor: string;
+  image: {
+    src: string;
+    alt: string;
+  };
+  content: string[];
+};
+
 const aboutImageVariants: Variants = {
   hidden: {
     translateY: '40%',
@@ -60,18 +73,6 @@ const aboutTextLeftVariants: Variants = {
   },
 };
 
-type AboutCardData = {
-  reference: any;
-  inView: boolean;
-  imageVariants: Variants;
-  textVariants: Variants;
-  image: {
-    src: string;
-    alt: string;
-  };
-  content: string[];
-};
-
 const AboutCardLeft = ({
   reference,
   inView,
@@ -79,9 +80,10 @@ const AboutCardLeft = ({
   textVariants,
   image,
   content,
+  scentColor,
 }: AboutCardData) => {
   return (
-    <AboutCardLeftContainer ref={reference}>
+    <AboutCardLeftContainer scentColor={scentColor} ref={reference}>
       <motion.aside
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
@@ -105,6 +107,7 @@ const AboutCardLeft = ({
     </AboutCardLeftContainer>
   );
 };
+
 const AboutCardRight = ({
   reference,
   inView,
@@ -112,9 +115,10 @@ const AboutCardRight = ({
   textVariants,
   image,
   content,
+  scentColor,
 }: AboutCardData) => {
   return (
-    <AboutCardRightContainer ref={reference}>
+    <AboutCardRightContainer scentColor={scentColor} ref={reference}>
       <motion.img
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
@@ -171,6 +175,7 @@ export function AboutComponent({ content }) {
           inView: inViewAbout01,
           imageVariants: aboutImageVariants,
           textVariants: aboutTextRightVariants,
+          scentColor: '#00B5B5',
           image: {
             src: '/images/cgbordin_about_starwars.svg',
             alt: 'Starwars',
@@ -187,6 +192,7 @@ export function AboutComponent({ content }) {
           inView: inViewAbout02,
           imageVariants: aboutImageVariants,
           textVariants: aboutTextLeftVariants,
+          scentColor: '#3FC6FF',
           image: {
             src: '/images/cgbordin_about_graduation.svg',
             alt: 'Graduation',
@@ -196,10 +202,11 @@ export function AboutComponent({ content }) {
       />
       <AboutCardRight
         {...{
-          reference: refAbout04,
-          inView: inViewAbout04,
+          reference: refAbout03,
+          inView: inViewAbout03,
           imageVariants: aboutImageVariants,
           textVariants: aboutTextRightVariants,
+          scentColor: '#F16B32',
           image: {
             src: '/images/cgbordin_about_motion.svg',
             alt: 'Motion',
@@ -209,10 +216,11 @@ export function AboutComponent({ content }) {
       />
       <AboutCardLeft
         {...{
-          reference: refAbout05,
-          inView: inViewAbout05,
+          reference: refAbout04,
+          inView: inViewAbout04,
           imageVariants: aboutImageVariants,
           textVariants: aboutTextLeftVariants,
+          scentColor: '#ECD824',
           image: {
             src: '/images/cgbordin_about_javascript.svg',
             alt: 'Javascript',
@@ -225,10 +233,11 @@ export function AboutComponent({ content }) {
       />
       <AboutCardRight
         {...{
-          reference: refAbout06,
-          inView: inViewAbout06,
+          reference: refAbout05,
+          inView: inViewAbout05,
           imageVariants: aboutImageVariants,
           textVariants: aboutTextRightVariants,
+          scentColor: '#AA27D8',
           image: {
             src: '/images/cgbordin_about_apps.svg',
             alt: 'Apps',

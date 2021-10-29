@@ -1,5 +1,10 @@
+/* eslint-disable prettier/prettier */
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
+
+interface IContainerProps {
+  scentColor: string;
+}
 
 export const AboutCardFooter = styled.div`
   text-align: center;
@@ -28,22 +33,25 @@ export const AboutContainer = styled.div`
   }
 `;
 
-export const AboutCardRightContainer = styled(motion.section)`
+export const AboutCardRightContainer = styled(motion.section) <IContainerProps>`
   display: grid;
   grid-template-columns: 140px 1fr;
   align-items: center;
   justify-content: center;
   justify-items: center;
 
+  
   img {
     margin: 2rem;
   }
-
+  
   aside {
     padding: 2rem;
     background-color: var(--gray-170);
     border-radius: 4px;
     backdrop-filter: blur(20px);
+    /* Conditionally */
+    border-left: 2px solid ${(props) => props.scentColor};
   }
 
   @media (max-width: 800px) {
@@ -53,21 +61,26 @@ export const AboutCardRightContainer = styled(motion.section)`
 
     aside {
       backdrop-filter: unset;
+      border-bottom: 2px solid ${(props) => props.scentColor};
+      border-left: none;
     }
   }
 `;
 
-export const AboutCardLeftContainer = styled.div`
+export const AboutCardLeftContainer = styled(motion.section) <IContainerProps>`
   display: grid;
   grid-template-columns: 1fr 140px;
+  align-items: center;
   justify-content: center;
   justify-items: center;
-
+  
   aside {
     padding: 2rem;
     background-color: var(--gray-170);
     border-radius: 4px;
     backdrop-filter: blur(20px);
+    /* Conditionally */
+    border-right: 2px solid ${(props) => props.scentColor};
   }
 
   img {
@@ -87,6 +100,8 @@ export const AboutCardLeftContainer = styled.div`
     aside {
       order: 3;
       backdrop-filter: unset;
+      border-bottom: 2px solid ${(props) => props.scentColor};
+      border-right: none;
     }
   }
 `;

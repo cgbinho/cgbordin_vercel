@@ -25,6 +25,9 @@ export default createGlobalStyle`
   --gray-400: hsl(0, 0%, 40%);
   --gray-600: hsl(0, 0%, 60%);
   --success_color: #00e676;
+  --coding-scent: #32D218;
+  --design-scent: #F1672C;
+  --rest-scent: #F4C10D;
   --error_color: tomato;
 }
 
@@ -38,7 +41,8 @@ export default createGlobalStyle`
 }
 
 body {
-  background: var(--gray-200);
+  /* background: var(--gray-200); */
+  background: linear-gradient(0.25turn, hsl(0, 0%, 20%), hsl(180, 20%, 20%), hsl(0, 0%, 20%));
   color: var(--primary);
   font: var(--main-font);
   -webkit-font-smoothing: antialiased;
@@ -77,6 +81,21 @@ cursor: pointer;
 
 li {
   list-style-type: none;
+}
+
+.card {
+  padding: 2rem;
+  margin-bottom: 1rem;
+  background-color: var(--gray-170);
+  backdrop-filter: blur(20px);
+  border-radius: 4px;
+  transition: all 0.1s ease 0s;
+
+  @media screen and (max-width: 800px) {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    backdrop-filter: unset;
+  }
 }
 
 .vertical_line {

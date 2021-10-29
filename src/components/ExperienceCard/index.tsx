@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { ExperienceCardContainer } from './styles';
+import { ExperienceCardContainer, ExperienceCardContent } from './styles';
 import { motion } from 'framer-motion';
 
 const experienceVariants = {
@@ -24,15 +24,20 @@ const experienceItemVariants = {
   },
 };
 
-function ExperienceCardTech({ content }) {
+function ExperienceCardItem({ content }) {
   return (
-    <motion.section whileHover={{ scale: 1.1 }} transition={{ type: 'tween' }}>
-      <img src={content.img} alt="" />
+    <ExperienceCardContent
+      content={content}
+      className="card"
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: 'tween' }}
+    >
+      <img src={content.img} alt={content.title} />
       <aside>
         <h3>{content.title}</h3>
         <p>{content.excerpt}</p>
       </aside>
-    </motion.section>
+    </ExperienceCardContent>
   );
 }
 
@@ -41,9 +46,9 @@ export function ExperienceCard({ content }) {
     <ExperienceCardContainer>
       <h2 id="experience">{content.title}</h2>
       <p>{content.excerpt}</p>
-      <ExperienceCardTech {...{ content: content.coding }} />
-      <ExperienceCardTech {...{ content: content.design }} />
-      <ExperienceCardTech {...{ content: content.rest }} />
+      <ExperienceCardItem {...{ content: content.coding }} />
+      <ExperienceCardItem {...{ content: content.design }} />
+      <ExperienceCardItem {...{ content: content.rest }} />
     </ExperienceCardContainer>
   );
 }

@@ -63,8 +63,9 @@ export const WelcomeCardFooter = styled(motion.footer)`
 `;
 
 export const HorizontalLine = styled(motion.div)`
-  height: 3px;
+  /* height: 2px; */
   width: 100%;
+  background: var(--scent-450);
   border: 2px solid var(--scent-450);
   border-radius: 1rem;
   margin: 1rem 0;

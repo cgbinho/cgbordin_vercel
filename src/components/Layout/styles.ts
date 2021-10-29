@@ -18,5 +18,6 @@ export const Content = styled.main`
   background-repeat: repeat-x;
   background-attachment: fixed;
 
-  background-color: var(--gray-200);
+  /* background-color: var(--gray-200); */
+  /* background-color: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
 `;
