@@ -27,6 +27,7 @@ export const WelcomeCardContent = styled(motion.section)`
     text-align: center;
     letter-spacing: 0.15rem;
     line-height: 1.5;
+    font-size: 2rem;
   }
 
   h2 {
