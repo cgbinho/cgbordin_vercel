@@ -11,6 +11,7 @@ import { useLottie, Lottie, Renderer, EventListener } from 'react-lottie-hook';
 import animationData from '../../../public/cgbordin_avatar_data_v01.json';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { BirdAnimation } from '../BirdAnimation';
 
 const welcomeVariants = {
   hidden: {

@@ -4830,6 +4830,18 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+rive-js@0.7.31:
+  version "0.7.31"
+  resolved "https://registry.yarnpkg.com/rive-js/-/rive-js-0.7.31.tgz#4b5d03afe318b7c675758024b946181f16fc543b"
+  integrity sha512-T+Qo/YEl9h1vp3UR1Ekv1JDuQTAx3CZTygInwTusxDB4TH1CvurjzCy+kcT3nzp/IL0uO+E49mwehTTspc2pOQ==
+
+rive-react@^0.0.22:
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/rive-react/-/rive-react-0.0.22.tgz#872569be53f8db05ce9eb12f3069bf7263d262f0"
+  integrity sha512-/qwMQFnxxiQQCUhb46xRQZW03JkVO85LOee3+Lykp/CRysl7nTchDbNbnYthYSF4TmLGUsgI+F5xJ4E3h1c7DQ==
+  dependencies:
+    rive-js "0.7.31"
+
 run-parallel@^1.1.9:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/run-parallel/-/run-parallel-1.2.0.tgz#66d1368da7bdf921eb9d95bd1a9229e7f21a43ee"

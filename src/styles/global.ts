@@ -45,7 +45,7 @@ export default createGlobalStyle`
 
 body {
   /* background: var(--gray-200); */
-  background: linear-gradient(0.25turn, hsl(0, 0%, 20%), hsl(180, 10%, 20%), hsl(0, 0%, 20%));
+  background: linear-gradient(0.25turn, hsl(201, 50%, 26%), hsl(201, 30%, 26%), hsl(201, 50%, 26%));
   color: var(--primary);
   font: var(--main-font);
   -webkit-font-smoothing: antialiased;
@@ -57,11 +57,10 @@ p {
   /* line-height: 1.4; */
 }
 
-h1,h2,h3,h4,h5,h6 {
-  /* letter-spacing: 1.2px; */
+/* h1,h2,h3,h4,h5,h6 {
   letter-spacing: 0.1rem;
   line-height: 2;
-}
+} */
 
 a {
 text-decoration: none;
