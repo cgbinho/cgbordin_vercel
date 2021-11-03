@@ -1,7 +1,7 @@
 export default {
   title: 'Experience',
   excerpt: `<p>I started working with <span>Motion Design in 2003</span> for several advertising agencies from Brazil and from around the world, <span>Programming in Javascript & ExtendScript in 2013</span>, creating applications and expressions focused in Motion design, using web development technologies.</p>
-  <p>I took a <span>deep dive in web development in 2019</span> and today I work with all things related to Motion Design and Front-end development.</p>
+  <p>I took a <span>deep dive in web development in 2019</span> and today I work with all things related to Front-end and UX Motion Design.</p>
   <p>Below are some technologies I have experience:</p>`,
   coding: {
     title: 'Coding',
@@ -10,7 +10,6 @@ export default {
     <li><span>•</span> Javascript</li>
     <li><span>•</span> Typescript</li>
     <li><span>•</span> ES6</li>
-    <li><span>•</span> Typescript</li>
     <li><span>•</span> ExtendScript</li>
     <li><span>•</span> Node.js</li>
     <li><span>•</span> Express</li>
@@ -44,6 +43,8 @@ export default {
     <li><span>•</span> Figma</li>
     <li><span>•</span> Whimsical</li>
     <li><span>•</span> Google Docs & Spreadsheets</li>
+    <li><span>•</span> Lottie & Bodymovin</li>
+    <li><span>•</span> Rive</li>
     <li><span>•</span> Notion</li>
     <li><span>•</span> Slack and others.</li>
     </ul>`,

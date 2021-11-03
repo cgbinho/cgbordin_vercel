@@ -90,11 +90,13 @@ export function WelcomeCard() {
 
   const excerpt01 =
     locale !== 'en'
-      ? `Minha paixão e trabalho se dividem entre criatividade e lógica:`
-      : `My passion and work lives between creativity and logic:`;
+      ? `Minha paixão e trabalho se completam com criatividade e lógica:`
+      : `My passion and work are the union of creativity and logic:`;
 
   const excerpt02 =
-    locale !== 'en' ? `Código & Motion Design` : `Code & Motion Design.`;
+    locale !== 'en'
+      ? `Front-end & UX Motion Design.`
+      : `Front-end & UX Motion Design.`;
 
   const [lottieRef, { isPaused, isStopped }, controls] = useLottie({
     renderer: Renderer.svg,
