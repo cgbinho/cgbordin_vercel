@@ -1,9 +1,16 @@
 import styled from 'styled-components';
 
+export const ProjectsContainer = styled.div`
+  padding: 3rem 0;
+  margin: 3rem 0;
+  width: 100vw;
+  color: var(--font-accent);
+  background-color: hsl(190, 50%, 95%, 0.7);
+`;
 export const ProjectsContent = styled.div`
   display: grid;
   grid-auto-flow: row;
-  margin: 1rem 0;
+  margin: 0 auto;
   gap: 1rem;
   width: 100%;
   max-width: 850px;
@@ -26,9 +33,7 @@ export const ProjectsContent = styled.div`
 
   li {
     display: grid;
-    /* grid-auto-flow: row; */
     grid-auto-rows: max-content;
-    /* grid-template-rows: 180px 1fr; */
     align-items: flex-start;
     justify-items: flex-start;
     align-items: flex-start;
@@ -36,7 +41,8 @@ export const ProjectsContent = styled.div`
     height: 100%;
     gap: 2rem;
     padding: 2rem;
-    background-color: var(--gray-170);
+    /* background-color: var(--gray-170); */
+    background-color: hsl(190, 50%, 100%, 0.5);
     backdrop-filter: blur(20px);
     border-radius: 4px;
   }

@@ -11,6 +11,7 @@ export default createGlobalStyle`
   --font-weight-bold: 900;
   --base-line-height: 1.25 * --base-font-size;
   --maxWidth: 1200px;
+  --font-accent: hsl(200, 50%, 25%);
   --scent-850: hsl(200, 100%, 85%);
   --scent-750: hsl(200, 100%, 75%);
   --scent-650: hsl(200, 100%, 65%);
@@ -19,6 +20,7 @@ export default createGlobalStyle`
   --scent-350: hsl(200, 100%, 35%);
   --scent-250: hsl(200, 100%, 25%);
   --primary: hsl(0, 0%, 90%);
+  --primary-900: hsl(200, 10%, 90%);
   --gray-50: hsl(0, 0%, 5%);
   --gray-100: hsl(0, 0%, 10%);
   --gray-150: hsl(0, 0%, 15%);
@@ -62,6 +64,10 @@ p {
   line-height: 2;
 } */
 
+.background_light {
+  background: linear-gradient(180deg, hsl(200, 100%, 100%) 30%, hsl(190, 40%, 70%,.9) 100%);
+}
+
 a {
 text-decoration: none;
 transition: all 0.3s ease 0s;
@@ -91,6 +97,7 @@ li {
 }
 
   .border_scented {
+    /* border-top: 2px solid var(--scent-550); */
     border-top: 2px solid var(--scent-550);
 }
 
@@ -103,7 +110,9 @@ li {
 .horizontal_line {
   width: 100%;
   background: hsl(200, 10%, 30%);
-  border: 1px solid hsl(200, 10%, 30%);
+  /* border: 1px solid hsl(200, 10%, 30%); */
+  border: 1px solid var(--scent-550);
+  
   /* border-radius: 1rem; */
   /* margin: 1rem 0; */
 }
