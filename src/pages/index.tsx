@@ -6,6 +6,8 @@ import { ProjectsComponent } from '../components/Projects';
 import { WelcomeCard } from '../components/WelcomeCard';
 import { ExperienceCard } from '../components/ExperienceCard';
 import { Container } from '../styles/home';
+import { BirdAnimation } from '../components/BirdAnimation';
+import { Hero } from '../components/Hero';
 
 export default function Home({
   contentProjects,
@@ -20,7 +22,8 @@ export default function Home({
       </Head>
       <Container>
         <a className="anchor" id="home" />
-        <WelcomeCard />
+        <Hero />
+        {/* <WelcomeCard /> */}
         <a className="anchor" id="experience" />
         <ExperienceCard {...{ content: contentExperience }} />
         <a className="anchor" id="projects" />

@@ -23,12 +23,12 @@ export const Container = styled.button<IContainerProps>`
 
   border: none;
   border-radius: 0.4rem;
-  box-shadow: 1px 1px 8px var(--scent-250);
+  /* box-shadow: 1px 1px 8px var(--scent-850); */
   transition: background-color 0.2s;
 
   &:hover {
     background: ${(props) =>
-      props.primary ? `var(--scent-350)` : `var(--scent-650)`};
+    props.primary ? `var(--scent-350)` : `var(--scent-650)`};
     color: ${(props) => (props.primary ? 'white' : `var(--scent-250)`)};
   }
 

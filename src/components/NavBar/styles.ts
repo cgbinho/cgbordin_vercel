@@ -13,7 +13,7 @@ export const Container = styled.header`
   height: 80px;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
 
   @media (max-width: 920px) {
     grid-gap: 0.5rem;

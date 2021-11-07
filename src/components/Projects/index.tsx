@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import { Container } from '../../styles/home';
 import { VideoPlyr } from '../VideoPlyr';
-import { ProjectsContent } from './styles';
+import { ProjectsContainer, ProjectsContent } from './styles';
 import { VideoCard } from './VideoCard';
 import Image from 'next/image';
 import { ModalPlayer } from '../ModalPlayer';
@@ -71,76 +71,78 @@ const ProjectCard = ({
 
 export function ProjectsComponent({ content }) {
   return (
-    <ProjectsContent>
-      <h2 id="projects">{content.title}</h2>
-      <ul className="projects_list" role="list">
-        <ProjectCard
-          {...{
-            title: 'Choco Animato',
-            article: { link: '/articles/chocoanimato' },
-            content: content.chocoanimato,
-            image: {
-              src: 'images/articles/chocoanimato/chocoanimato_cover.jpg',
-              alt: 'Choco Animato Cover',
-            },
-          }}
-        />
-        <ProjectCard
-          {...{
-            title: 'Aepzera',
-            article: { link: '/aepzera' },
-            content: content.aepzera,
-            image: {
-              src: 'images/aepzera/aepzera_cover.jpg',
-              alt: 'Aepzera Cover',
-            },
-          }}
-        />
-        <ProjectCard
-          {...{
-            title: 'Bayer',
-            video: { src: 'deIBIR3sxcU' },
-            content: content.bayer,
-            image: {
-              src: 'images/projects/bayer_thumbnail.jpg',
-              alt: 'Bayer thumbnail',
-            },
-          }}
-        />
-        <ProjectCard
-          {...{
-            title: 'Huawei',
-            video: { src: '6UjcFtj92eU' },
-            content: content.huawei,
-            image: {
-              src: 'images/projects/huawei_thumbnail.jpg',
-              alt: 'Huawei Thumbnail',
-            },
-          }}
-        />
-        <ProjectCard
-          {...{
-            title: 'Skoland',
-            video: { src: 'j4FyLNfmpM4' },
-            content: content.skoland,
-            image: {
-              src: 'images/projects/skoland_thumbnail.jpg',
-              alt: 'Skoland thumbnail',
-            },
-          }}
-        />
-        <ProjectCard
-          {...{
-            title: 'Hostfiber',
-            video: { src: '-pXMLx54Qk0' },
-            content: content.hostfiber,
-            image: {
-              src: 'images/projects/hostfiber_thumbnail.jpg',
-              alt: 'Hostfiber thumbnail',
-            },
-          }}
-        />
-      </ul>
-    </ProjectsContent>
+    <ProjectsContainer>
+      <ProjectsContent>
+        <h2 id="projects">{content.title}</h2>
+        <ul className="projects_list" role="list">
+          <ProjectCard
+            {...{
+              title: 'Choco Animato',
+              article: { link: '/articles/chocoanimato' },
+              content: content.chocoanimato,
+              image: {
+                src: 'images/articles/chocoanimato/chocoanimato_cover.jpg',
+                alt: 'Choco Animato Cover',
+              },
+            }}
+          />
+          <ProjectCard
+            {...{
+              title: 'Aepzera',
+              article: { link: '/aepzera' },
+              content: content.aepzera,
+              image: {
+                src: 'images/aepzera/aepzera_cover.jpg',
+                alt: 'Aepzera Cover',
+              },
+            }}
+          />
+          <ProjectCard
+            {...{
+              title: 'Bayer',
+              video: { src: 'deIBIR3sxcU' },
+              content: content.bayer,
+              image: {
+                src: 'images/projects/bayer_thumbnail.jpg',
+                alt: 'Bayer thumbnail',
+              },
+            }}
+          />
+          <ProjectCard
+            {...{
+              title: 'Huawei',
+              video: { src: '6UjcFtj92eU' },
+              content: content.huawei,
+              image: {
+                src: 'images/projects/huawei_thumbnail.jpg',
+                alt: 'Huawei Thumbnail',
+              },
+            }}
+          />
+          <ProjectCard
+            {...{
+              title: 'Skoland',
+              video: { src: 'j4FyLNfmpM4' },
+              content: content.skoland,
+              image: {
+                src: 'images/projects/skoland_thumbnail.jpg',
+                alt: 'Skoland thumbnail',
+              },
+            }}
+          />
+          <ProjectCard
+            {...{
+              title: 'Hostfiber',
+              video: { src: '-pXMLx54Qk0' },
+              content: content.hostfiber,
+              image: {
+                src: 'images/projects/hostfiber_thumbnail.jpg',
+                alt: 'Hostfiber thumbnail',
+              },
+            }}
+          />
+        </ul>
+      </ProjectsContent>
+    </ProjectsContainer>
   );
 }

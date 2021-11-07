@@ -1,6 +1,5 @@
 import React, { ButtonHTMLAttributes } from 'react';
 import { Container, SpinnerContainer } from './styles';
-// type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
 type IButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   padding?: string;

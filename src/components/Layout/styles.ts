@@ -14,7 +14,7 @@ export const Content = styled.main`
   grid-area: main;
   overflow: auto;
 
-  background-image: url('images/background-annie-spratt-sE6lmWCsf_Q-unsplash.png');
+  /* background-image: url('images/background-annie-spratt-sE6lmWCsf_Q-unsplash.png'); */
   background-repeat: repeat-x;
   background-attachment: fixed;
 
