@@ -88,7 +88,7 @@ const AboutCardLeft = ({
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
         variants={textVariants}
-        whileHover={{ scale: 1.02 }}
+        whileHover={{ translateY: -8 }}
         transition={{ type: 'tween' }}
       >
         <div
@@ -100,7 +100,6 @@ const AboutCardLeft = ({
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
         variants={imageVariants}
-        whileHover={{ scale: 1.02 }}
         transition={{ type: 'tween' }}
         src={image.src}
         alt={image.alt}
@@ -124,7 +123,6 @@ const AboutCardRight = ({
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
         variants={imageVariants}
-        whileHover={{ scale: 1.02 }}
         transition={{ type: 'tween' }}
         src={image.src}
         alt={image.alt}
@@ -133,7 +131,7 @@ const AboutCardRight = ({
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
         variants={textVariants}
-        whileHover={{ scale: 1.02 }}
+        whileHover={{ translateY: -8 }}
         transition={{ type: 'tween' }}
       >
         <div

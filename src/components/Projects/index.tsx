@@ -3,7 +3,11 @@ import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import { Container } from '../../styles/home';
 import { VideoPlyr } from '../VideoPlyr';
-import { ProjectsContainer, ProjectsContent } from './styles';
+import {
+  ProjectCardContent,
+  ProjectsContainer,
+  ProjectsContent,
+} from './styles';
 import { VideoCard } from './VideoCard';
 import Image from 'next/image';
 import { ModalPlayer } from '../ModalPlayer';
@@ -36,10 +40,10 @@ const ProjectCard = ({
   video,
 }: ProjectCardData) => {
   return (
-    <motion.li
+    <ProjectCardContent
       className="border_scented"
       role="listitem"
-      whileHover={{ scale: 1.02 }}
+      whileHover={{ translateY: -8 }}
       transition={{ type: 'tween' }}
     >
       {video ? (
@@ -63,9 +67,12 @@ const ProjectCard = ({
         <strong>{title}</strong>
         <p>{content.description}</p>
         <div className="horizontal_line" />
+        Tech:
+        <span>Node.js</span>
+        <span>Express</span>
         <p className="italic">{content.tools}</p>
       </aside>
-    </motion.li>
+    </ProjectCardContent>
   );
 };
 

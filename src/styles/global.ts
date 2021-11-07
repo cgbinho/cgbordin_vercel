@@ -78,6 +78,7 @@ cursor: pointer;
 &:hover {
   color: var(--scent-550);
 }
+
 &:focus {
   color: var(--scent-550);
   background-color: black;

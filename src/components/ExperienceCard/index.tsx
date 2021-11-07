@@ -29,7 +29,7 @@ function ExperienceCardItem({ content }) {
     <ExperienceCardContent
       content={content}
       className="card"
-      whileHover={{ scale: 1.05 }}
+      whileHover={{ translateY: -8 }}
       transition={{ type: 'tween' }}
     >
       <img src={content.img} alt={content.title} />
