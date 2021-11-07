@@ -67,9 +67,6 @@ const ProjectCard = ({
         <strong>{title}</strong>
         <p>{content.description}</p>
         <div className="horizontal_line" />
-        Tech:
-        <span>Node.js</span>
-        <span>Express</span>
         <p className="italic">{content.tools}</p>
       </aside>
     </ProjectCardContent>
