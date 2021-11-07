@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
-  margin: 3rem auto;
+  margin: 2rem auto;
   width: 100vw;
 `;
 

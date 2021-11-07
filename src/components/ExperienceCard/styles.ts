@@ -19,7 +19,7 @@ export const ExperienceCardContainer = styled(motion.section)`
   grid-auto-flow: row;
   justify-items: center;
   max-width: 780px;
-  margin: 2rem;
+  /* margin: 2rem; */
   gap: 2rem;
 
   h3 {
