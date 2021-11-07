@@ -11,9 +11,6 @@ export const BirdAnimation = () => {
     src: '/animations/bird.riv',
     stateMachines: 'bird_state_machine',
     autoplay: true,
-    onStateChange: (event) => {
-      console.log(event.data[0]);
-    },
   });
 
   const grooveInput = useStateMachineInput(rive, 'bird_state_machine', 'sing');

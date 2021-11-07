@@ -43,7 +43,6 @@ export function getArticleBySlug(slug: string, fields: string[] = []) {
 
 export function getAllArticles(fields: string[] = []) {
   const slugs = getArticleSlugs();
-  // console.log({ slugs });
   const articles = slugs
     .map((slug) => getArticleBySlug(slug, fields))
     // sort articles by date in descending order
