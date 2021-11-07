@@ -245,7 +245,24 @@ export function AboutComponent({ content }) {
       />
       <AboutCardFooter>
         <p>{content.contact.title}</p>
-        <h3>cgbordin @ gmail.com</h3>
+        <a href="http://github.com/cgbinho" target="_blank" rel="noreferrer">
+          <Image
+            src="/images/cgbordin_github.svg"
+            alt="Cleber Galves Bordin GitHub"
+            width="24px"
+            height="24px"
+          />
+          <span>github.com/cgbinho</span>
+        </a>
+        <a href="mailto:cgbordin@gmail.com" target="_blank" rel="noreferrer">
+          <Image
+            src="/images/cgbordin_email.svg"
+            alt="Cleber Galves Bordin email"
+            width="24px"
+            height="24px"
+          />
+          <span>cgbordin @ gmail.com</span>
+        </a>
       </AboutCardFooter>
     </AboutContainer>
   );

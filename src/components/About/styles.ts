@@ -7,11 +7,19 @@ interface IContainerProps {
 }
 
 export const AboutCardFooter = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
+  gap: 1rem;
   margin: 2rem 0;
-  h3 {
-    margin-top: 1rem;
+
+  a{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
   }
+  
 `;
 
 export const AboutContainer = styled.div`
