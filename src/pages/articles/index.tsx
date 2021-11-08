@@ -6,6 +6,7 @@ import Layout from '../../components/Layout';
 import Head from 'next/head';
 
 import { ArticlesContent } from '../../styles/articles';
+import { ArticleCard } from '../../components/Articles/ArticleCard/ArticleCard';
 
 export default function Articles({ allArticles, content }) {
   return (
@@ -17,20 +18,11 @@ export default function Articles({ allArticles, content }) {
         <h1>{content.title}</h1>
         <div className="article_list">
           {allArticles.map(
-            ({ slug, date, title, excerpt, coverImage }, index) => (
-              <Link href={`/articles/${slug}`} key={index} locale={false}>
-                <a>
-                  <section>
-                    <img src={coverImage} alt={title} width="100%" />
-                    <aside>
-                      <h4>{title}</h4>
-                      <p>{excerpt}</p>
-                      <br />
-                      <DateFormatter dateString={date} />
-                    </aside>
-                  </section>
-                </a>
-              </Link>
+            ({ slug, date, title, excerpt, coverImage }, index: number) => (
+              <ArticleCard
+                key={index}
+                content={{ slug, date, title, excerpt, coverImage }}
+              />
             )
           )}
         </div>

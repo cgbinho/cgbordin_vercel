@@ -19,6 +19,10 @@ export const HeroContent = styled.div`
   background: url('/images/hero_bg_v03.svg') no-repeat center bottom;
   background-size: auto 12em;
 
+  p {
+    margin-bottom: 0;
+  }
+
   @media (max-width: 755px) {
     gap: 1rem;
     margin-top: -70px;

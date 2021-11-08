@@ -56,6 +56,7 @@ body {
 
 p {
   letter-spacing: 1.1px;
+  margin-bottom: 1rem;
   /* line-height: 1.4; */
 }
 
@@ -132,10 +133,11 @@ li {
 .text_underline {
   span {
     display: inline;
-    background-image: linear-gradient(to right, hsl(200, 100%, 40%,.8) 100%, hsl(200, 100%, 40%,.8) 100%);
-    background-position: 0 1.2rem;
+    background-image: linear-gradient(to right, hsl(150, 100%, 50%,.3) 100%, hsl(200, 100%, 40%,.8) 100%);
+    background-position: 0 0.8rem;
     background-repeat: repeat-x;
-    background-size: 2px;
+    border-radius: 4px;
+    /* background-size: 1px; */
   }
 }
 
@@ -234,6 +236,13 @@ li {
     position: relative;
     top: -100px;
     visibility: hidden;
+  }
+
+  .anchor_projects {
+    top: -30px;
+  }
+  .anchor_about {
+    top: -120px;
   }
   
 

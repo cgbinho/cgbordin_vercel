@@ -9,22 +9,6 @@ export const ProjectsContainer = styled.div`
   background-color: hsl(190, 50%, 95%, 0.7);
 `;
 
-export const ProjectCardContent = styled(motion.li)`
-  display: grid;
-  grid-auto-rows: max-content;
-  align-items: flex-start;
-  justify-items: flex-start;
-  align-items: flex-start;
-  width: 100%;
-  height: 100%;
-  gap: 2rem;
-  padding: 2rem;
-  /* background-color: var(--gray-170); */
-  background-color: hsl(190, 50%, 100%, 0.5);
-  backdrop-filter: blur(20px);
-  border-radius: 4px;
-`;
-
 export const ProjectsContent = styled.div`
   display: grid;
   grid-auto-flow: row;

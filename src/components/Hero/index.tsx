@@ -1,18 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { BirdAnimation } from '../BirdAnimation';
-import Rive, {
-  Layout,
-  Fit,
-  Alignment,
-  useRive,
-  useStateMachineInput,
-} from 'rive-react';
-import { HeroContainer, HeroContent } from './styles';
-import Button from '../Form/Button';
-import { CodeSnippet } from '../CodeSnippet';
 import { useRouter } from 'next/router';
-import { GiMusicalNotes } from 'react-icons/gi';
+import React from 'react';
+import { useRive, useStateMachineInput } from 'rive-react';
 import useSound from 'use-sound';
+import { HeroContainer, HeroContent } from './styles';
 
 export function Hero() {
   const router = useRouter();

@@ -26,9 +26,9 @@ export default function Home({
         {/* <WelcomeCard /> */}
         <a className="anchor" id="experience" />
         <ExperienceCard {...{ content: contentExperience }} />
-        <a className="anchor" id="projects" />
+        <a className="anchor anchor_projects" id="projects" />
         <ProjectsComponent {...{ content: contentProjects }} />
-        <a className="anchor" id="about" />
+        <a className="anchor anchor_about" id="about" />
         <AboutComponent {...{ content: contentAbout }} />
       </Container>
     </Layout>
