@@ -8,6 +8,8 @@ import {
 } from './styles';
 import { isValidMotionProp, motion, Variants } from 'framer-motion';
 import { InViewHookResponse, useInView } from 'react-intersection-observer';
+import { useLottie, Lottie, Renderer, EventListener } from 'react-lottie-hook';
+import animationData from '../../../public/cgbordin_avatar_data_v01.json';
 
 type AboutCardData = {
   reference: any;
@@ -150,23 +152,33 @@ export function AboutComponent({ content }) {
   const [refAbout04, inViewAbout04] = useInView();
   const [refAbout05, inViewAbout05] = useInView();
 
+  const [lottieRef, { isPaused, isStopped }, controls] = useLottie({
+    renderer: Renderer.svg,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+      progressiveLoad: true,
+    },
+    animationData,
+  });
+
   return (
     <AboutContainer>
       <h2>{content.title}</h2>
-      <motion.section
-        whileHover={{ scale: 1.02 }}
-        transition={{ type: 'tween' }}
-      >
-        <Image
-          src="/images/cgbordin_profile_02.jpg"
-          alt="Cleber Galves Bordin"
-          width="180px"
-          height="180px"
-          layout="fixed"
-          className="avatar_photo"
-        />
-      </motion.section>
-
+      <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
+            <Image
+              src="/images/cgbordin_profile_02.jpg"
+              alt="Cleber Galves Bordin"
+              layout="fill"
+              className="avatar_photo"
+            />
+          </div>
+          <div className="flip-card-back">
+            <Lottie lottieRef={lottieRef} width={240} height={240} />
+          </div>
+        </div>
+      </div>
       <div
         className="text_underline"
         dangerouslySetInnerHTML={{ __html: content.description }}
