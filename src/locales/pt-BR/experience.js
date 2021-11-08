@@ -1,7 +1,7 @@
 export default {
   title: 'Experiência',
   excerpt: `<p>Trabalhando com <span>Motion Design desde 2003</span> para agências de publicidade do Brasil e do mundo, comecei a <span>programar scripts e expressões em Javascript & ExtendScript em 2013</span>, criando aplicações e expressões focadas em Motion Design, usando tecnologias de Desenvolvimento Web.</p>
-  <p>Mergulhei em <span>Desenvolvimento Web em 2019</span> e hoje trabalho com tudo relacionado a Front-end e UX Motion Design.</p>
+  <p>Mergulhei em <span>React e Next.js em 2019</span> e hoje trabalho com tudo relacionado a Front-end e UX Motion Design.</p>
   <p>Abaixo estão algumas tecnologias que eu tenho experiência:</p>`,
   coding: {
     title: 'Coding',

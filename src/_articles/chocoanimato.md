@@ -1,6 +1,6 @@
 ---
 title: 'ChocoAnimato'
-excerpt: 'Como eu elaborei uma Plataforma de criação de vídeos online'
+excerpt: 'Como eu elaborei uma Plataforma de criação de vídeos online.'
 coverImage: '/images/articles/chocoanimato/chocoanimato_cover.jpg'
 date: '2020-08-19T05:35:07.322Z'
 ---
@@ -115,4 +115,4 @@ Aqui estão algumas telas dos layouts que produzi tanto para desktop, quanto par
 
 *Choco Animato - Layouts mobile dos Videos Explicativos, Filtros e Projetos do usuário*
 
-Se você se interessou pelo meu trabalho e quiser conversar comigo, me escreva em *cleber @ cgbordin.com*
+Se você se interessou pelo meu trabalho e quiser conversar comigo, me escreva em cleber @ cgbordin.com.

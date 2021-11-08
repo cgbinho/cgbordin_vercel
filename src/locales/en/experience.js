@@ -1,7 +1,7 @@
 export default {
   title: 'Experience',
   excerpt: `<p>I started working with <span>Motion Design in 2003</span> for several advertising agencies from Brazil and from around the world, <span>Programming in Javascript & ExtendScript in 2013</span>, creating applications and expressions focused in Motion design, using web development technologies.</p>
-  <p>I took a <span>deep dive in web development in 2019</span> and today I work with all things related to Front-end and UX Motion Design.</p>
+  <p>I took a <span>deep dive in React and Next.js in 2019</span> and today I work with all things related to Front-end and UX Motion Design.</p>
   <p>Below are some technologies I have experience:</p>`,
   coding: {
     title: 'Coding',

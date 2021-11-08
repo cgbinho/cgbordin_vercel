@@ -1,43 +1,125 @@
 export default {
   title: 'Projects',
-  aepzera: {
-    description: `Pipeline production tool for Adobe After Effects.`,
-    tools: `Development using the Adobe After Effects API with Typescript in the backend.
-    Front-end with React, React-Hook-Form, Yup, React-Query, CSS, Adobe-React-Spectrum (Adobe Design System), Markdown, Parcel and others`,
-  },
-  chocoanimato: {
-    description: `Online platform to create custom videos.`,
-    tools: `Back-end in Node.js with Express, PostgreSQL, TypeORM,
-    sending emails and transcoding videos with queue in Redis and BullQueue.
-    Front-end with Next.js, React Hooks and Context, JWT authentication, Lottie, and
-    payment via Pagar.me`,
-  },
-  bayer: {
-    description: `Project made by Motion Hand for Bayer, my role in production
-    was to create the setup of the compositions for each scene: creating 3D planes for scenarios, rig all characters, lights and grains.`,
-    tools: `Softwares: Adobe After Effects, Adobe Photoshop and Adobe Illustrator.
-    Tools / Scripts: Duik, puppet pin and custom scripts I created to speed up
-    the process of setting up arms, legs, fingers and scene lights.`,
-  },
-  huawei: {
-    description: `Project made by MotionHand for Huawei, my role in
-    production was very similar to the Bayer project: creating the setup
-    of the compositions of each scene, creating 3D planes for scenarios, rig all characters, lights and grains.`,
-    tools: `Softwares: Adobe After Effects, Adobe Photoshop and Adobe Illustrator.
-    Tools / Scripts: Duik, puppet pin and custom scripts I created to speed up
-    the process of setting up arms, legs, fingers and scene lights.`,
-  },
-  skoland: {
-    description: `Project made by F/Nazca, where I was responsible for the setup and animation of the stick 2D character, microphone, 3D creation, setup and animation of all cans.`,
-    tools: `Softwares: Autodesk 3DsMax, Adobe After Effects, Adobe Photoshop and Adobe Illustrator.
-    Tools / Scripts: Duik, puppet pin and custom scripts I created to speed up
-    the process.`,
-  },
-  hostfiber: {
-    description: `Project made by Pictovalley Studio, with the script sent by the client, I was responsible for creating the entire art direction, animation and finishing touches of the video.`,
-    tools: `Softwares: Adobe After Effects, Adobe Photoshop e Adobe
-    Illustrator.
-    Tools / Scripts: Duik, puppet pin, custom scripts I created to speed up
-    the creation of 2D lines.`,
-  },
+  cards: ['Technologies used:'],
+  projects: [
+    {
+      title: 'Aepzera',
+      description: `Pipeline production tool for Adobe After Effects.`,
+      article: { link: '/aepzera' },
+      image: {
+        src: 'images/aepzera/aepzera_cover.jpg',
+        alt: 'Aepzera Cover',
+      },
+      tools: [
+        'Typescript',
+        'ExtendScript',
+        'Node.js',
+        'React',
+        'React Hooks & Context',
+        'React-Hook-Form',
+        'React-Query',
+        'SCSS',
+        'Adobe-React-Spectrum',
+        'Markdown',
+        'Parcel',
+      ],
+    },
+    {
+      title: 'Marvel Universe',
+      description: `Code Challenge to create a Marvel Universe catalog using Marvel API.`,
+      article: { link: 'https://github.com/cgbinho/marvel_universe_vercel' },
+      image: {
+        src: 'images/marvel_universe_home.png',
+        alt: 'Marvel Universe Home',
+      },
+      tools: [
+        'Typescript',
+        'Next.js',
+        'React Hooks & Context',
+        'React-Query',
+        'Material UI',
+      ],
+    },
+    {
+      title: 'Choco Animato',
+      article: { link: '/articles/chocoanimato' },
+      image: {
+        src: 'images/articles/chocoanimato/chocoanimato_cover.jpg',
+        alt: 'Choco Animato Cover',
+      },
+      description: `Online platform to create custom videos.`,
+      tools: [
+        'Typescript',
+        'Node.js',
+        'Express',
+        'Next.js',
+        'React-Hook-Form',
+        'PostgreSQL',
+        'TypeOrm',
+        'Redis',
+        'BullQueue',
+        'React Hooks & Context',
+        'JWT',
+        'Lottie',
+        'Pagar.me Api',
+      ],
+    },
+    {
+      description: `Project made by Motion Hand for Bayer, my role in production
+      was to create the setup of the compositions for each scene: creating 3D planes for scenarios, rig all characters, lights and grains.`,
+      title: 'Bayer',
+      video: { src: 'deIBIR3sxcU' },
+      image: {
+        src: 'images/projects/bayer_thumbnail.jpg',
+        alt: 'Bayer thumbnail',
+      },
+      tools: [
+        'Javascript',
+        'ExtendScript',
+        'Adobe After Effects',
+        'DUIK',
+        'Puppet-Pin',
+        'Adobe Illustrator',
+        'Adobe Photoshop',
+      ],
+    },
+    {
+      description: `Project made by MotionHand for Huawei, my role in
+      production was very similar to the Bayer project: creating the setup
+      of the compositions of each scene, creating 3D planes for scenarios, rig all characters, lights and grains.`,
+      title: 'Huawei',
+      video: { src: '6UjcFtj92eU' },
+      image: {
+        src: 'images/projects/huawei_thumbnail.jpg',
+        alt: 'Huawei Thumbnail',
+      },
+      tools: [
+        'Javascript',
+        'ExtendScript',
+        'Adobe After Effects',
+        'DUIK',
+        'Puppet-Pin',
+        'Adobe Illustrator',
+        'Adobe Photoshop',
+      ],
+    },
+    {
+      description: `Project made by F/Nazca, where I was responsible for the setup and animation of the stick 2D character, microphone, 3D creation, setup and animation of all cans.`,
+      title: 'Skoland',
+      video: { src: 'j4FyLNfmpM4' },
+      image: {
+        src: 'images/projects/skoland_thumbnail.jpg',
+        alt: 'Skoland thumbnail',
+      },
+      tools: [
+        'Javascript',
+        'ExtendScript',
+        'Adobe After Effects',
+        'Autodesk 3dsMax',
+        'Puppet-Pin',
+        'Adobe Illustrator',
+        'Adobe Photoshop',
+      ],
+    },
+  ],
 };
