@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledHamburger = styled.button<{ open: boolean }>`
+export const StyledBurger = styled.button<{ open: boolean }>`
   position: fixed;
   right: 2rem;
   top: 1.5rem;
@@ -18,7 +18,16 @@ export const StyledHamburger = styled.button<{ open: boolean }>`
   outline: none;
   z-index: 1;
 
-  div {
+  &:hover {
+    color: var(--scent-600);
+  }
+
+  &:focus {
+    outline: 3px solid var(--scent-600);
+    border-radius: 2px;
+  }
+
+  span {
     position: relative;
     width: 2rem;
     height: 0.25rem;
@@ -39,9 +48,5 @@ export const StyledHamburger = styled.button<{ open: boolean }>`
     &:nth-child(3) {
       transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
     }
-
-    /* &:hover {
-      background-color: var(--secondary_dark);
-    } */
   }
 `;

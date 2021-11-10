@@ -94,7 +94,7 @@ const AboutCardLeft = ({
         transition={{ type: 'tween' }}
       >
         <div
-          className="text_underline"
+          className="text_highlight_green"
           dangerouslySetInnerHTML={{ __html: content }}
         />
       </motion.aside>
@@ -137,7 +137,7 @@ const AboutCardRight = ({
         transition={{ type: 'tween' }}
       >
         <div
-          className="text_underline"
+          className="text_highlight_green"
           dangerouslySetInnerHTML={{ __html: content }}
         />
       </motion.aside>
@@ -180,7 +180,7 @@ export function AboutComponent({ content }) {
         </div>
       </div>
       <div
-        className="text_underline"
+        className="text_highlight_green"
         dangerouslySetInnerHTML={{ __html: content.description }}
       />
       <AboutCardRight

@@ -28,6 +28,7 @@
     "plyr-react": "^3.0.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-focus-lock": "^2.6.0",
     "react-icons": "^4.2.0",
     "react-intersection-observer": "^8.32.2",
     "react-lottie-hook": "^0.5.0",

@@ -65,9 +65,22 @@ p {
 }
 
 .light_focus {
+  transition: all 0.3s ease 0s;
+  
   &:focus {
     outline: 3px solid var(--scent-400);
     border-radius: 2px;
+  }
+}
+
+.dark_focus {
+
+  transition: all 0.3s ease 0s;
+  a {
+    &:focus {
+      outline: 3px solid var(--scent-250);
+      border-radius: 2px;
+    }
   }
 }
 
@@ -131,16 +144,25 @@ li {
   }
 }
 
+.text_highlight_green {
+  span {
+    color: hsl(160, 110%, 60%,1);
+  }
+}
 
 .text_underline {
   span {
+    color: hsl(200, 100%, 40%,1);
+    font-weight: 400;
+  }
+  /* span {
     display: inline;
     background-image: linear-gradient(to right, hsl(150, 100%, 50%,.3) 100%, hsl(200, 100%, 40%,.8) 100%);
     background-position: 0 0.8rem;
     background-repeat: repeat-x;
     border-radius: 4px;
-    /* background-size: 1px; */
-  }
+    
+  } */
 }
 
 .text_highlight {
@@ -227,7 +249,7 @@ li {
   background: var(--scent-450);
 }
 
-.border_radius_50 {
+  .border_radius_50 {
     border-radius: 50%;
   }
 

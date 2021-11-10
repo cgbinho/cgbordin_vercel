@@ -6,8 +6,10 @@ export const Container = styled.div`
   justify-content: center;
   justify-items: center;
   align-items: flex-start;
-  padding-top: 2rem;
-  overflow: hidden;
+  grid-area: main;
+  overflow: auto;
+  overflow-x: hidden;
+  /* overflow-y: auto; */
 
   .content {
     display: grid;

@@ -7,7 +7,8 @@ import {
   MenuItem,
   SubMenu,
 } from '@szhsin/react-menu';
-import { HiChevronDown } from 'react-icons/hi';
+// import { HiChevronDown } from 'react-icons/hi';
+import { FaChevronDown } from 'react-icons/fa';
 import { DropdownContainer } from './styles';
 
 import { useRouter } from 'next/router';
@@ -36,7 +37,7 @@ export function DropdownLanguageMenu() {
               objectFit="cover"
               className="border_radius_50"
             />
-            <HiChevronDown />
+            <FaChevronDown />
           </MenuButton>
         }
         transition

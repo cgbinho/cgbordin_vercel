@@ -33,7 +33,7 @@ export const ProjectCard = ({ content }: ProjectCardData) => {
 
   return (
     <ProjectCardContent
-      className="border_scented"
+      className="border_scented dark_focus"
       role="projectitem"
       whileHover={{ translateY: -8 }}
       transition={{ type: 'tween' }}

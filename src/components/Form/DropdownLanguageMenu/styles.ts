@@ -5,10 +5,11 @@ export const DropdownContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
     background: none;
-    border: none;
+    border: 2px solid transparent;
     color: var(--primary);
+    transition: all 0.3s ease;
 
     &:hover {
       color: var(--scent-600);
@@ -18,18 +19,6 @@ export const DropdownContainer = styled.div`
       outline: 3px solid var(--scent-400);
       border-radius: 4px;
       border: 2px solid var(--scent-450);
-    }
-  }
-
-  // CSS classes
-  .dropdown_menu {
-    &:hover {
-      color: var(--scent-600);
-    }
-
-    &:focus {
-      outline: 3px solid var(--scent-400);
-      border-radius: 2px;
     }
   }
 
@@ -44,9 +33,11 @@ export const DropdownContainer = styled.div`
     color: var(--scent-600);
     background-color: var(--gray-100);
   }
-
-  .dropdown_menu_item {
-    gap: 0.5rem;
+  .szh-menu__item--focus {
+    color: var(--scent-600);
+    background-color: var(--gray-100);
+    outline: 3px solid var(--scent-400);
+    border-radius: 2px;
   }
 `;
 
