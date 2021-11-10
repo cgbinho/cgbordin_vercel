@@ -7,7 +7,7 @@ export const ArticleCard = ({ content }) => {
   return (
     <ArticleCardContent
       className="border_scented"
-      role="listitem"
+      role="articleitem"
       whileHover={{ translateY: -8 }}
       transition={{ type: 'tween' }}
     >

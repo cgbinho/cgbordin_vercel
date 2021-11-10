@@ -164,9 +164,9 @@ export function AboutComponent({ content }) {
   return (
     <AboutContainer>
       <h2>{content.title}</h2>
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
+      <div className="flip_card">
+        <div className="flip_card_inner">
+          <div className="flip_card_front">
             <Image
               src="/images/cgbordin_profile_02.jpg"
               alt="Cleber Galves Bordin"
@@ -174,7 +174,7 @@ export function AboutComponent({ content }) {
               className="avatar_photo"
             />
           </div>
-          <div className="flip-card-back">
+          <div className="flip_card_back">
             <Lottie lottieRef={lottieRef} width={240} height={240} />
           </div>
         </div>
@@ -255,7 +255,7 @@ export function AboutComponent({ content }) {
       />
       <AboutCardFooter>
         <p>{content.contact.title}</p>
-        <a href="http://github.com/cgbinho" target="_blank" rel="noreferrer">
+        <a href="https://github.com/cgbinho" target="_blank" rel="noreferrer">
           <Image
             src="/images/cgbordin_github.svg"
             alt="Cleber Galves Bordin GitHub"

@@ -7,7 +7,7 @@ export function ProjectsComponent({ content }) {
     <ProjectsContainer>
       <ProjectsContent>
         <h2 id="projects">{content.title}</h2>
-        <ul className="projects_list" role="list">
+        <ul className="projects_list" role="projectslist">
           {content.projects.map((project: ProjectData) => (
             <ProjectCard key={project.title} content={project} />
           ))}

@@ -59,8 +59,4 @@ export const BurguerContainer = styled(motion.li)`
   grid-auto-flow: column;
   align-items: center;
   gap: 4rem;
-
-  /* @media (min-width: 921px) {
-    display: none;
-  } */
 `;

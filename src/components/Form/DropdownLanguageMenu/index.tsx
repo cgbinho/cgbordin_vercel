@@ -27,11 +27,6 @@ export function DropdownLanguageMenu() {
       <Menu
         menuClassName="dropdown_menu"
         menuButton={
-          // <a
-          //   // href="#language_dropdown"
-          //   // id="#language_dropdown"
-          //   className="dropdown_button"
-          // >
           <MenuButton className="dropdown_button">
             <Image
               src={`/images/${imageName}`}
@@ -43,7 +38,6 @@ export function DropdownLanguageMenu() {
             />
             <HiChevronDown />
           </MenuButton>
-          // </a>
         }
         transition
         theming="dark"

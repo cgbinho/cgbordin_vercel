@@ -11,13 +11,11 @@ export const DropdownContainer = styled.div`
     color: var(--primary);
 
     &:hover {
-      color: var(--scent-550);
+      color: var(--scent-600);
     }
 
     &:focus {
-      color: var(--scent-550);
-      background-color: black;
-      padding: 0.2rem;
+      outline: 3px solid var(--scent-400);
       border-radius: 4px;
       border: 2px solid var(--scent-450);
     }
@@ -25,9 +23,14 @@ export const DropdownContainer = styled.div`
 
   // CSS classes
   .dropdown_menu {
-    /* border: 2px solid #dc3545; */
-    border-radius: 0;
-    box-shadow: none;
+    &:hover {
+      color: var(--scent-600);
+    }
+
+    &:focus {
+      outline: 3px solid var(--scent-400);
+      border-radius: 2px;
+    }
   }
 
   .szh-menu--dir-bottom {
@@ -38,7 +41,7 @@ export const DropdownContainer = styled.div`
   }
 
   .szh-menu__item--hover {
-    color: var(--scent-450);
+    color: var(--scent-600);
     background-color: var(--gray-100);
   }
 

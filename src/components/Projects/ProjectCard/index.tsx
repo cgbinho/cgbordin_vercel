@@ -34,7 +34,7 @@ export const ProjectCard = ({ content }: ProjectCardData) => {
   return (
     <ProjectCardContent
       className="border_scented"
-      role="listitem"
+      role="projectitem"
       whileHover={{ translateY: -8 }}
       transition={{ type: 'tween' }}
     >

@@ -12,13 +12,14 @@ export default createGlobalStyle`
   --base-line-height: 1.25 * --base-font-size;
   --maxWidth: 1200px;
   --font-accent: hsl(200, 50%, 25%);
-  --scent-850: hsl(200, 100%, 85%);
-  --scent-750: hsl(200, 100%, 75%);
-  --scent-650: hsl(200, 100%, 65%);
-  --scent-550: hsl(200, 100%, 55%);
-  --scent-450: hsl(200, 100%, 45%);
-  --scent-350: hsl(200, 100%, 35%);
-  --scent-250: hsl(200, 100%, 25%);
+  --scent-850: hsl(191, 100%, 85%);
+  --scent-750: hsl(191, 100%, 75%);
+  --scent-650: hsl(191, 100%, 65%);
+  --scent-600: hsl(191, 100%, 50%);
+  --scent-550: hsl(191, 100%, 55%);
+  --scent-450: hsl(191, 100%, 45%);
+  --scent-350: hsl(191, 100%, 35%);
+  --scent-250: hsl(191, 100%, 25%);
   --primary: hsl(0, 0%, 90%);
   --primary-900: hsl(200, 10%, 90%);
   --gray-50: hsl(0, 0%, 5%);
@@ -46,7 +47,6 @@ export default createGlobalStyle`
 }
 
 body {
-  /* background: var(--gray-200); */
   background: linear-gradient(0.25turn, hsl(201, 50%, 26%), hsl(201, 30%, 26%), hsl(201, 50%, 26%));
   color: var(--primary);
   font: var(--main-font);
@@ -55,38 +55,40 @@ body {
 }
 
 p {
-  letter-spacing: 1.1px;
+  letter-spacing: 1.1;
   margin-bottom: 1rem;
   /* line-height: 1.4; */
 }
 
-/* h1,h2,h3,h4,h5,h6 {
-  letter-spacing: 0.1rem;
-  line-height: 2;
-} */
-
 .background_light {
   background: linear-gradient(180deg, hsl(200, 100%, 100%) 30%, hsl(190, 40%, 70%,.9) 100%);
+}
+
+.light_focus {
+  &:focus {
+    outline: 3px solid var(--scent-400);
+    border-radius: 2px;
+  }
 }
 
 a {
 text-decoration: none;
 transition: all 0.3s ease 0s;
 color: var(--primary);
-font-weight: normal;
 cursor: pointer;
 
-&:hover {
-  color: var(--scent-550);
-}
+  &:hover {
+    color: var(--scent-600);
+  }
 
-&:focus {
-  color: var(--scent-550);
-  background-color: black;
-  padding: .2rem;
-  border-radius: 4px;
-  border: 2px solid var(--scent-450);
-}
+  &:focus {
+    /* color: var(--scent-600); */
+    outline: 3px solid var(--scent-600);
+    /* background-color: black; */
+    /* padding: .2rem; */
+    border-radius: 2px;
+    /* border: 2px solid var(--scent-450); */
+  }
 }
 
 li {
@@ -160,8 +162,6 @@ li {
     }
   }
 }
-
-
 
 .card {
   padding: 2rem;
@@ -284,24 +284,20 @@ li {
 }
 
 .skip_main:focus, .skip_main:active {
-  color: var(--scent-550);
-  background-color: black;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 4px;
-  border: 2px solid var(--scent-450);
-
-  left: auto;
+  left: 20px;
   top: 70px;
   width: 30%;
   height: auto;
-  overflow:auto;  
-  border: 2px solid var(--scent-450);
+  overflow:auto;
   text-align:center;
   z-index:999;
+  background: black;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
+.flip_card {
   background-color: transparent;
   width: 200px;
   height: 200px;
@@ -311,7 +307,7 @@ li {
 }
 
 /* This container is needed to position the front and back side */
-.flip-card-inner {
+.flip_card_inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -321,12 +317,12 @@ li {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flip_card:hover .flip_card_inner {
   transform: rotateY(180deg);
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip_card_front, .flip_card_back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -335,14 +331,14 @@ li {
 }
 
 /* Style the front side (fallback if image is missing) */
-.flip-card-front {
+.flip_card_front {
   /* background-color: #bbb; */
   display: flex;
   place-items: center;
 }
 
 /* Style the back side */
-.flip-card-back {
+.flip_card_back {
   display: flex;
   place-items: center;
   /* background-color: dodgerblue; */
