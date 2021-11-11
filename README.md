@@ -11,7 +11,7 @@ Next.js using api routes, Typescript,Styled-Components and Markdown for the Arti
 I decided to create my own website from the ground up to showcase some projects I have worked on, practice and learn more about Next.js, Blogging, Internationalization, Accessibility and Vercel Deployment.
 
 Lighthouse Results:
-!['cgbordin_home_lighthouse'](https://res.cloudinary.com/cgbordin/image/upload/v1635194618/cgbordin_home_lighthouse_jhrpqb.png)
+!['cgbordin_home_lighthouse'](https://res.cloudinary.com/cgbordin/image/upload/v1636657369/cgbordin_home_lighthouse_v02_nkcayu.png)
 
 First install all dependencies
 ```bash
