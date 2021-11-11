@@ -21,14 +21,14 @@ export default function Home({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
-        <a className="anchor" id="home" />
+        <a href="#" className="anchor" id="home" />
         <Hero />
         {/* <WelcomeCard /> */}
-        <a className="anchor" id="experience" />
+        <a href="#" className="anchor" id="experience" />
         <ExperienceCard {...{ content: contentExperience }} />
-        <a className="anchor anchor_projects" id="projects" />
+        <a href="#" className="anchor anchor_projects" id="projects" />
         <ProjectsComponent {...{ content: contentProjects }} />
-        <a className="anchor anchor_about" id="about" />
+        <a href="#" className="anchor anchor_about" id="about" />
         <AboutComponent {...{ content: contentAbout }} />
       </Container>
     </Layout>
