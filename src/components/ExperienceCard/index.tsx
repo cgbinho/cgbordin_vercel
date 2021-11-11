@@ -48,7 +48,7 @@ function ExperienceCardItem({ content }) {
 export function ExperienceCard({ content }) {
   return (
     <ExperienceCardContainer>
-      <h2 id="experience">{content.title}</h2>
+      <h2>{content.title}</h2>
       <div
         className="text_highlight_green"
         dangerouslySetInnerHTML={{ __html: content.excerpt }}

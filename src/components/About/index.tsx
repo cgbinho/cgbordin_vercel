@@ -255,7 +255,11 @@ export function AboutComponent({ content }) {
       />
       <AboutCardFooter>
         <p>{content.contact.title}</p>
-        <a href="https://github.com/cgbinho" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/cgbinho"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <Image
             src="/images/cgbordin_github.svg"
             alt="Cleber Galves Bordin GitHub"
@@ -264,7 +268,11 @@ export function AboutComponent({ content }) {
           />
           <span>github.com/cgbinho</span>
         </a>
-        <a href="mailto:cgbordin@gmail.com" target="_blank" rel="noreferrer">
+        <a
+          href="mailto:cgbordin@gmail.com"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <Image
             src="/images/cgbordin_email.svg"
             alt="Cleber Galves Bordin email"
