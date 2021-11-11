@@ -51,15 +51,13 @@ export const ArticlesContent = styled.div`
 export const ArticleContainer = styled.div`
   display: grid;
   grid-auto-flow: row;
-  margin: 5rem 1rem;
-  justify-content: center;
-  align-items: center;
+  margin: 7rem auto;
   max-width: 650px;
 
   .video_container {
     position: relative;
     padding-top: 56.25%;
-    margin: 2rem 0;
+    margin: 3rem 0;
   }
 
   .video_content {
@@ -76,7 +74,8 @@ export const ArticleContainer = styled.div`
   }
 
   p {
-    margin: 1rem 0;
+    margin-block: 1rem;
+    /* margin: 1rem 0; */
     line-height: 1.4;
   }
 
@@ -98,7 +97,8 @@ export const ArticleContainer = styled.div`
   figure {
     width: 100%;
     display: block;
-    margin: 1rem auto;
+    margin-top: 4rem;
+    margin-inline: auto;
     border: 2px solid var(--gray-100);
     box-shadow: 4px 4px 16px var(--gray-100);
   }
@@ -124,6 +124,7 @@ export const ArticleContainer = styled.div`
 
   em {
     padding-bottom: 0.5rem;
+    /* margin-bottom: 1rem; */
     display: block;
     text-align: center;
   }

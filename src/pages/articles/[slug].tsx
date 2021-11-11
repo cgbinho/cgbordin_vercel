@@ -18,17 +18,15 @@ export default function ArticlePage({ article }) {
           <title>CGBORDIN.com - {article.title}</title>
         </Head>
         <ArticleContainer>
-          <main>
+          <section>
             <div>
               <DateFormatter dateString={article.date} />
               <h2>
                 {article.title} - {article.excerpt}
               </h2>
             </div>
-            <div>
-              <div dangerouslySetInnerHTML={{ __html: article.content }} />
-            </div>
-          </main>
+            <div dangerouslySetInnerHTML={{ __html: article.content }} />
+          </section>
         </ArticleContainer>
       </Container>
     </Layout>

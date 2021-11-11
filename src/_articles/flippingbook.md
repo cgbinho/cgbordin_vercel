@@ -1,7 +1,7 @@
 ---
 title: 'FlippingBook'
 excerpt: 'Como eu criei uma aplicação em Javascript que gera um livro em After Effects.'
-coverImage: '/images/articles/flippingbook/flippingbook_cover.jpg'
+coverImage: '/images/articles/flippingbook/flippingbook_cover.webp'
 date: '2020-03-16T05:35:07.322Z'
 ---
 
@@ -13,8 +13,8 @@ Então comecei a estudar uma forma de criar um livro inteiramente no After Effec
 
 Depois de alguns testes, a melhor forma que encontrei de simular as páginas virando, foi com o efeito **"CC Page Turn"** e o **"Drop Shadow"**, nativos do After Effects.
 
-<a href="https://www.cgbordin.com/images/articles/flippingbook/flippingbook_ccpageturn.png" target="_blank">
-<img src="/images/articles/flippingbook/flippingbook_ccpageturn.png" alt="Efeito CC Page Turn e Drop Shadow" />
+<a href="https://www.cgbordin.com/images/articles/flippingbook/flippingbook_ccpageturn.webp" target="_blank">
+<img src="/images/articles/flippingbook/flippingbook_ccpageturn.webp" alt="Efeito CC Page Turn e Drop Shadow" />
 </a>
 
 *Efeito CC Page Turn e Drop Shadow.*
@@ -33,8 +33,8 @@ Daí surgiu o **Flipping Book**.
 
 ## Flipping Book
 
-<a href="https://www.cgbordin.com/images/articles/flippingbook/flippingbook_create.png#width_auto" target="_blank">
-<img src="/images/articles/flippingbook/flippingbook_create.png#width_auto" alt="Flipping Book User Interface" />
+<a href="https://www.cgbordin.com/images/articles/flippingbook/flippingbook_create.webp#width_auto" target="_blank">
+<img src="/images/articles/flippingbook/flippingbook_create.webp#width_auto" alt="Flipping Book User Interface" />
 </a>
 
 *Flipping Book User Interface*
@@ -43,16 +43,16 @@ Na aba **'Create'**, o usuário escolhe a quantidade de páginas que o livro ter
 
 Ao clicar no **'Create'**, uma composição chamada **'Flipping Book'** é criada, bem como as composições de cada página alinhadas, sendo folheadas num intervalo de tempo de 1 segundo.
 
-<a href="https://www.cgbordin.com/images/articles/flippingbook/flippingbook_timeline.png" target="_blank">
-<img src="/images/articles/flippingbook/flippingbook_timeline.png alt="Composição gerada pelo Flipping Book" />
+<a href="https://www.cgbordin.com/images/articles/flippingbook/flippingbook_timeline.webp" target="_blank">
+<img src="/images/articles/flippingbook/flippingbook_timeline.webp alt="Composição gerada pelo Flipping Book" />
 </a>
 
 *Composição gerada pelo Flipping Book*
 
 Como um livro pode ter várias páginas, fica fácil se perder em meio a tantas composições na timeline, portanto para isso criei uma aba 'Edit' onde o usuário pode aumentar ou diminuir o tempo de duração da página que desejar.
 
-<a href="https://www.cgbordin.com/images/articles/flippingbook/flippingbook_edit.png#width_auto" target="_blank">
-<img src="/images/articles/flippingbook/flippingbook_edit.png#width_auto alt="Aba Edit permite ajustar o tempo de duração de cada página" />
+<a href="https://www.cgbordin.com/images/articles/flippingbook/flippingbook_edit.webp#width_auto" target="_blank">
+<img src="/images/articles/flippingbook/flippingbook_edit.webp#width_auto alt="Aba Edit permite ajustar o tempo de duração de cada página" />
 </a>
 
 *Aba Edit permite ajustar o tempo de duração de cada página*

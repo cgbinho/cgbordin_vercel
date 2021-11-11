@@ -168,7 +168,7 @@ export function AboutComponent({ content }) {
         <div className="flip_card_inner">
           <div className="flip_card_front">
             <Image
-              src="/images/cgbordin_profile_02.jpg"
+              src="/images/cgbordin_profile_02.webp"
               alt="Cleber Galves Bordin"
               layout="fill"
               className="avatar_photo"

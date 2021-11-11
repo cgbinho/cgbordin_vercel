@@ -7,7 +7,7 @@ export default {
       description: `Pipeline production tool for Adobe After Effects.`,
       article: { link: '/aepzera' },
       image: {
-        src: 'images/aepzera/aepzera_cover.jpg',
+        src: 'images/aepzera/aepzera_cover.webp',
         alt: 'Aepzera Cover',
       },
       tools: [
@@ -29,7 +29,7 @@ export default {
       description: `Code Challenge to create a Marvel Universe catalog using Marvel API.`,
       article: { link: 'https://github.com/cgbinho/marvel_universe_vercel' },
       image: {
-        src: 'images/marvel_universe_home.png',
+        src: 'images/marvel_universe_home.webp',
         alt: 'Marvel Universe Home',
       },
       tools: [
@@ -44,7 +44,7 @@ export default {
       title: 'Choco Animato',
       article: { link: '/articles/chocoanimato' },
       image: {
-        src: 'images/articles/chocoanimato/chocoanimato_cover.jpg',
+        src: 'images/articles/chocoanimato/chocoanimato_cover.webp',
         alt: 'Choco Animato Cover',
       },
       description: `Online platform to create custom videos.`,
@@ -70,7 +70,7 @@ export default {
       title: 'Bayer',
       video: { src: 'deIBIR3sxcU' },
       image: {
-        src: 'images/projects/bayer_thumbnail.jpg',
+        src: 'images/projects/bayer_thumbnail.webp',
         alt: 'Bayer thumbnail',
       },
       tools: [
@@ -90,7 +90,7 @@ export default {
       title: 'Huawei',
       video: { src: '6UjcFtj92eU' },
       image: {
-        src: 'images/projects/huawei_thumbnail.jpg',
+        src: 'images/projects/huawei_thumbnail.webp',
         alt: 'Huawei Thumbnail',
       },
       tools: [
@@ -108,7 +108,7 @@ export default {
       title: 'Skoland',
       video: { src: 'j4FyLNfmpM4' },
       image: {
-        src: 'images/projects/skoland_thumbnail.jpg',
+        src: 'images/projects/skoland_thumbnail.webp',
         alt: 'Skoland thumbnail',
       },
       tools: [

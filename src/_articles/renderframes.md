@@ -1,14 +1,14 @@
 ---
 title: 'RenderFrames'
 excerpt: 'Aplicação em Javascript que salva vários frames de uma composição de uma só vez.'
-coverImage: '/images/articles/renderframes/renderframes_cover.jpg'
+coverImage: '/images/articles/renderframes/renderframes_cover.webp'
 date: '2020-03-15T05:35:07.322Z'
 ---
 
 Para salvar um frame da sua composição, você precisa deixar a agulha da timeline no ponto em que deseja, e então acessar o menu '**Composition > Save Frame As > File**' ou simplesmente usar o atalho '**Ctrl + Alt + S**'. Fazendo isto, o Render Queue se abre, e nele você pode escolher onde salvar o frame e então renderizá-lo.
 
-<a href="https://www.cgbordin.com/images/articles/renderframes/renderframes_save.png" target="_blank">
-<img src="/images/articles/renderframes/renderframes_save.png" alt="Efeito CC Page Turn e Drop Shadow" />
+<a href="https://www.cgbordin.com/images/articles/renderframes/renderframes_save.webp" target="_blank">
+<img src="/images/articles/renderframes/renderframes_save.webp" alt="Efeito CC Page Turn e Drop Shadow" />
 </a>
 
 *Caminho para salvar um frame da composição.*
@@ -23,8 +23,8 @@ Sentei um dia que estava mais tranquilo e escrevi o script RenderFrames para aut
 
 O script RenderFrames salva vários frames de forma rápida e simples.
 
-<a href="https://www.cgbordin.com/images/articles/renderframes/renderframes_interface.png#width_auto" target="_blank">
-<img src="/images/articles/renderframes/renderframes_interface.png#width_auto" alt="RenderFrames interface" />
+<a href="https://www.cgbordin.com/images/articles/renderframes/renderframes_interface.webp#width_auto" target="_blank">
+<img src="/images/articles/renderframes/renderframes_interface.webp#width_auto" alt="RenderFrames interface" />
 </a>
 
 *RenderFrames interface.*
@@ -33,8 +33,8 @@ O script RenderFrames salva vários frames de forma rápida e simples.
 
 Crio um null layer e posiciono markers nos tempos em que preciso salvar os frames.
 
-<a href="https://www.cgbordin.com/images/articles/renderframes/renderframes_layer.png" target="_blank">
-<img src="/images/articles/renderframes/renderframes_layer.png" alt="Null Layer com os markers posicionados onde preciso dos frames." />
+<a href="https://www.cgbordin.com/images/articles/renderframes/renderframes_layer.webp" target="_blank">
+<img src="/images/articles/renderframes/renderframes_layer.webp" alt="Null Layer com os markers posicionados onde preciso dos frames." />
 </a>
 
 *Null Layer com os markers posicionados onde preciso dos frames.*

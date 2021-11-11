@@ -7,7 +7,7 @@ export default {
       description: `Aplicação de pipeline de produção para o Adobe After Effects.`,
       article: { link: '/aepzera' },
       image: {
-        src: 'images/aepzera/aepzera_cover.jpg',
+        src: 'images/aepzera/aepzera_cover.webp',
         alt: 'Aepzera Cover',
       },
       tools: [
@@ -29,7 +29,7 @@ export default {
       description: `Desafio de código onde criei um catálogo do Marvel Universe usando a Marvel API.`,
       article: { link: 'https://github.com/cgbinho/marvel_universe_vercel' },
       image: {
-        src: 'images/marvel_universe_home.png',
+        src: 'images/marvel_universe_home.webp',
         alt: 'Marvel Universe Home',
       },
       tools: [
@@ -44,7 +44,7 @@ export default {
       title: 'Choco Animato',
       article: { link: '/articles/chocoanimato' },
       image: {
-        src: 'images/articles/chocoanimato/chocoanimato_cover.jpg',
+        src: 'images/articles/chocoanimato/chocoanimato_cover.webp',
         alt: 'Choco Animato Cover',
       },
       description: `Projeto conceito de uma Plataforma de criação de vídeos customizados.`,
@@ -70,7 +70,7 @@ export default {
     cenários, rig de todos os personagens, luzes e granulados.`,
       video: { src: 'deIBIR3sxcU' },
       image: {
-        src: 'images/projects/bayer_thumbnail.jpg',
+        src: 'images/projects/bayer_thumbnail.webp',
         alt: 'Bayer thumbnail',
       },
       tools: [
@@ -91,7 +91,7 @@ export default {
     rig de todos os personagens, luzes e granulados.`,
       video: { src: '6UjcFtj92eU' },
       image: {
-        src: 'images/projects/huawei_thumbnail.jpg',
+        src: 'images/projects/huawei_thumbnail.webp',
         alt: 'Huawei Thumbnail',
       },
       tools: [
@@ -109,7 +109,7 @@ export default {
       description: `Projeto realizado pela F/Nazca, onde fui responsável pelo setup e animação do personagem, microfone, criação do 3D e animação das latas fantasiadas.`,
       video: { src: 'j4FyLNfmpM4' },
       image: {
-        src: 'images/projects/skoland_thumbnail.jpg',
+        src: 'images/projects/skoland_thumbnail.webp',
         alt: 'Skoland thumbnail',
       },
       tools: [

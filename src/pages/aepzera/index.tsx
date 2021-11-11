@@ -25,7 +25,7 @@ const Aepzera = ({ content, currency }) => {
           <h3>{content.how_it_works.title}</h3>
           <p>{content.how_it_works.description}</p>
           <img
-            src="/images/aepzera/aepzera_interface_home.png"
+            src="/images/aepzera/aepzera_interface_home.webp"
             alt="Aepzera Home Interface"
           />
           <div>
@@ -39,13 +39,13 @@ const Aepzera = ({ content, currency }) => {
                 </ol>
               </aside>
               <img
-                src="/images/aepzera/aepzera_create_master_aep.png"
+                src="/images/aepzera/aepzera_create_master_aep.webp"
                 alt="Create Master Aep"
               />
             </section>
             <section>
               <img
-                src="/images/aepzera/aepzera_save_aep_file.png"
+                src="/images/aepzera/aepzera_save_aep_file.webp"
                 alt="Save Aep File"
               />
               <aside>
@@ -59,13 +59,13 @@ const Aepzera = ({ content, currency }) => {
                 <p>{content.remove_aep_metadata.description_01}</p>
               </aside>
               <img
-                src="/images/aepzera/aepzera_remove_metadata_from_aep.png"
+                src="/images/aepzera/aepzera_remove_metadata_from_aep.webp"
                 alt="Remove Aep Metadata"
               />
             </section>
             <section>
               <img
-                src="/images/aepzera/aepzera_create_comment_thread.png"
+                src="/images/aepzera/aepzera_create_comment_thread.webp"
                 alt="Create Comment Thread"
               />
               <aside>
@@ -73,7 +73,7 @@ const Aepzera = ({ content, currency }) => {
                 <p>{content.new_comment_thread.description_01}</p>
               </aside>
               <img
-                src="/images/aepzera/aepzera_comments.png"
+                src="/images/aepzera/aepzera_comments.webp"
                 alt="Create Comment"
               />
               <p>{content.new_comment_thread.description_02}</p>
@@ -88,7 +88,7 @@ const Aepzera = ({ content, currency }) => {
                 <p>{content.new_aep_render.description_03}</p>
               </aside>
               <img
-                src="/images/aepzera/aepzera_create_render.png"
+                src="/images/aepzera/aepzera_create_render.webp"
                 alt="Create Render"
               />
               <aside>
@@ -97,13 +97,13 @@ const Aepzera = ({ content, currency }) => {
                 <p>{content.new_aep_render.description_05}</p>
               </aside>
               <img
-                src="/images/aepzera/aepzera_create_render_select.png"
+                src="/images/aepzera/aepzera_create_render_select.webp"
                 alt="Create Render Select"
               />
             </section>
             <section>
               <img
-                src="/images/aepzera/aepzera_set_custom_folders_aep.png"
+                src="/images/aepzera/aepzera_set_custom_folders_aep.webp"
                 alt="Set Custom Project Folders"
               />
               <aside>
@@ -117,13 +117,13 @@ const Aepzera = ({ content, currency }) => {
                 <p>{content.projects_navigator.description_01}</p>
               </aside>
               <img
-                src="/images/aepzera/aepzera_projects.png"
+                src="/images/aepzera/aepzera_projects.webp"
                 alt="Projects Navigator"
               />
             </section>
             <section>
               <img
-                src="/images/aepzera/aepzera_set_custom_folders_aep.png"
+                src="/images/aepzera/aepzera_set_custom_folders_aep.webp"
                 alt="Set Custom Folders Aep"
               />
               <aside>
@@ -131,7 +131,7 @@ const Aepzera = ({ content, currency }) => {
                 <p>{content.settings.description_01}</p>
               </aside>
               <img
-                src="/images/aepzera/aepzera_set_custom_folders_renders.png"
+                src="/images/aepzera/aepzera_set_custom_folders_renders.webp"
                 alt="Set Custom Folders Renders"
               />
               <aside>

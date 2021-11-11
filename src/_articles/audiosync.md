@@ -1,12 +1,12 @@
 ---
 title: 'AudioSync'
 excerpt: 'Script em Javascript que mantem o audio dentro de uma precomp, sincronizado com o tempo da comp principal.'
-coverImage: '/images/articles/audiosync/audiosync_cover.jpg'
+coverImage: '/images/articles/audiosync/audiosync_cover.webp'
 date: '2020-03-14T05:35:07.322Z'
 ---
 
-<a href="https://www.cgbordin.com/images/articles/audiosync/audiosync_interface.png#width_auto" target="_blank">
-<img src="/images/articles/audiosync/audiosync_interface.png#width_auto alt="AudioSync Interface" />
+<a href="https://www.cgbordin.com/images/articles/audiosync/audiosync_interface.webp#width_auto" target="_blank">
+<img src="/images/articles/audiosync/audiosync_interface.webp#width_auto alt="AudioSync Interface" />
 </a>
 
 *AudioSync Interface*
@@ -39,8 +39,8 @@ MainT = time + L.startTime;
 
 Curta e eficiente, esta expressão garante que o áudio da pre-composição estará sempre alinhado com o áudio da composição principal.
 
-<a href="https://www.cgbordin.com/images/articles/audiosync/audiosync_precomp_com_expression.png" target="_blank">
-<img src="/images/articles/audiosync/audiosync_precomp_com_expression.png" alt="Audio dentro da Pre-Composição com a expressão aplicada" />
+<a href="https://www.cgbordin.com/images/articles/audiosync/audiosync_precomp_com_expression.webp" target="_blank">
+<img src="/images/articles/audiosync/audiosync_precomp_com_expression.webp" alt="Audio dentro da Pre-Composição com a expressão aplicada" />
 </a>
 
 *Audio dentro da Pre-Composição com a expressão aplicada.*
