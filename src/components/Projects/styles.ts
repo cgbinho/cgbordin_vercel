@@ -9,7 +9,7 @@ export const ProjectsContainer = styled.div`
   background-image: linear-gradient(
     to bottom,
     hsl(100, 100%, 100%) 0%,
-    hsl(190, 40%, 80%, 0.9) 60%
+    hsl(190, 60%, 94%, 0.9) 60%
   );
   background-repeat: no-repeat;
   background-position: center;

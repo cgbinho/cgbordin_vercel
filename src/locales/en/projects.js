@@ -4,11 +4,12 @@ export default {
     viewCode: 'View Code',
     readArticle: 'Read Article',
     watchVideo: 'Watch Video',
+    viewLiveDemo: 'View Live Demo',
   },
   projects: [
     {
       title: 'Aepzera',
-      description: `Pipeline production tool for Adobe After Effects.`,
+      description: `Aepzera is a web application developed as an Adobe After Effects extension, with a focus on Motion Design project organization and teamwork.`,
       article: { link: '/aepzera' },
       image: {
         src: 'images/aepzera/aepzera_cover.webp',
@@ -32,6 +33,7 @@ export default {
       title: 'Marvel Universe',
       description: `Code Challenge to create a Marvel Universe catalog using Marvel API.`,
       github: { link: 'https://github.com/cgbinho/marvel_universe_vercel' },
+      liveDemo: { link: 'https://marvel-universe-cgbordin.vercel.app/' },
       image: {
         src: 'images/marvel_universe_home.webp',
         alt: 'Marvel Universe Home',
@@ -69,8 +71,7 @@ export default {
       ],
     },
     {
-      description: `Project made by Motion Hand for Bayer, my role in production
-      was to create the setup of the compositions for each scene: creating 3D planes for scenarios, rig all characters, lights and grains.`,
+      description: `I was responsible for creating all scenes and characters technical aspects: body and facial rigs, grain filter expressions and camera setups. Project made by Motion Hand Studio.`,
       title: 'Bayer',
       video: { src: 'deIBIR3sxcU' },
       image: {
@@ -88,9 +89,7 @@ export default {
       ],
     },
     {
-      description: `Project made by MotionHand for Huawei, my role in
-      production was very similar to the Bayer project: creating the setup
-      of the compositions of each scene, creating 3D planes for scenarios, rig all characters, lights and grains.`,
+      description: `I had pretty much the same role as the Bayer project on this one: I was responsible for creating all scenes and characters technical aspects: body and facial rigs, grain filter expressions and camera setups. Project made by Motion Hand Studio.`,
       title: 'Huawei',
       video: { src: '6UjcFtj92eU' },
       image: {

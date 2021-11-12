@@ -33,14 +33,14 @@ function ExperienceCardItem({ content }) {
       transition={{ type: 'tween' }}
     >
       <img src={content.img} alt={content.title} />
-      <aside>
+      <section>
         <h3>{content.title}</h3>
 
-        <div
+        <ul
           className="tech_list"
           dangerouslySetInnerHTML={{ __html: content.excerpt }}
         />
-      </aside>
+      </section>
     </ExperienceCardContent>
   );
 }

@@ -4,7 +4,7 @@ export const HeroContainer = styled.div`
   display: flex;
   margin: 0rem auto;
   width: 100vw;
-  min-height: 460px;
+  min-height: 450px;
   margin-bottom: 2rem;
 
   /* Background image and gradient */
@@ -23,7 +23,7 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  margin: 0 auto;
+  margin: 5rem auto;
   align-items: center;
   align-content: flex-end;
   justify-content: center;
@@ -43,6 +43,10 @@ export const HeroContent = styled.div`
   .hero_text {
     flex-basis: 30rem;
     margin: 0 1rem;
+
+    span {
+      display: inline-flex;
+    }
   }
 
   .rive {
@@ -52,7 +56,8 @@ export const HeroContent = styled.div`
   }
 
   @media (max-width: 840px) {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    margin: 1rem auto;
     gap: 1rem;
     text-align: center;
     background-size: auto 12em;

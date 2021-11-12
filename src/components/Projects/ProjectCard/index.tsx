@@ -6,6 +6,7 @@ import { tools } from '../../../data/tags';
 import Button from '../../Form/Button';
 import { AiOutlineRead, AiFillGithub } from 'react-icons/ai';
 import { CgPlayButtonO } from 'react-icons/cg';
+import { RiPagesLine } from 'react-icons/ri';
 import { ModalPlayer } from '../../ModalPlayer';
 import { useRouter } from 'next/router';
 
@@ -17,6 +18,9 @@ type ProjectCardData = {
 export type ProjectData = {
   title: string;
   github?: {
+    link: string;
+  };
+  liveDemo?: {
     link: string;
   };
   article?: {
@@ -46,6 +50,8 @@ export const ProjectCard = ({ content, project }: ProjectCardData) => {
   const projectTools = project.tools.map((tool) => getTool(tools, tool));
 
   const handleViewCode = () => window.open(project.github.link);
+
+  const handleViewLiveDemo = () => window.open(project.liveDemo.link);
 
   const handleViewArticle = () =>
     router.push(`${project.article.link}`, `${project.article.link}`, {
@@ -92,7 +98,7 @@ export const ProjectCard = ({ content, project }: ProjectCardData) => {
             onClick={handleWatchVideo}
           >
             <CgPlayButtonO size={20} />
-            {content.cards.watchVideo}
+            <span>{content.cards.watchVideo}</span>
           </Button>
         )}
         {project?.article && (
@@ -103,7 +109,18 @@ export const ProjectCard = ({ content, project }: ProjectCardData) => {
             onClick={handleViewArticle}
           >
             <AiOutlineRead size={20} />
-            {content.cards.readArticle}
+            <span>{content.cards.readArticle}</span>
+          </Button>
+        )}
+        {project?.liveDemo && (
+          <Button
+            width="100%"
+            height="40px"
+            padding="0 1rem"
+            onClick={handleViewLiveDemo}
+          >
+            <RiPagesLine size={20} />
+            <span> {content.cards.viewLiveDemo}</span>
           </Button>
         )}
         {project?.github && (
@@ -114,7 +131,7 @@ export const ProjectCard = ({ content, project }: ProjectCardData) => {
             onClick={handleViewCode}
           >
             <AiFillGithub size={20} />
-            {content.cards.viewCode}
+            <span>{content.cards.viewCode}</span>
           </Button>
         )}
       </section>

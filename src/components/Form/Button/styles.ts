@@ -30,6 +30,10 @@ export const Container = styled.button<IContainerProps>`
     margin: 0.2em;
   }
 
+  span {
+    font-weight: bold;
+  }
+
   &:hover {
     background: ${(props) =>
     props.primary

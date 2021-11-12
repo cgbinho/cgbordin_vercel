@@ -4,12 +4,13 @@ export default {
     viewCode: 'Ver Código',
     readArticle: 'Ler Artigo',
     watchVideo: 'Ver Vídeo',
+    viewLiveDemo: 'Ver Demonstração',
   },
   projects: [
     {
       title: 'Aepzera',
-      description: `Aplicação de pipeline de produção para o Adobe After Effects.`,
-      article: { link: '/aepzera', isExternal: false },
+      description: `Aepzera é uma aplicação com foco em organização de produção de projetos em Motion Design. Foi criada para ser utilizada como uma extensão do After Effects.`,
+      article: { link: '/aepzera' },
       image: {
         src: 'images/aepzera/aepzera_cover.webp',
         alt: 'Aepzera Cover',
@@ -31,10 +32,8 @@ export default {
     {
       title: 'Marvel Universe',
       description: `Desafio de código onde criei um catálogo do Marvel Universe usando a Marvel API.`,
-      article: {
-        link: 'https://github.com/cgbinho/marvel_universe_vercel',
-        isExternal: true,
-      },
+      github: { link: 'https://github.com/cgbinho/marvel_universe_vercel' },
+      liveDemo: { link: 'https://marvel-universe-cgbordin.vercel.app/' },
       image: {
         src: 'images/marvel_universe_home.webp',
         alt: 'Marvel Universe Home',
@@ -49,7 +48,7 @@ export default {
     },
     {
       title: 'Choco Animato',
-      article: { link: '/articles/chocoanimato', isExternal: false },
+      article: { link: '/articles/chocoanimato' },
       image: {
         src: 'images/articles/chocoanimato/chocoanimato_cover.webp',
         alt: 'Choco Animato Cover',

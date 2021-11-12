@@ -1,12 +1,14 @@
 export default {
   title: 'Experience',
-  excerpt: `<p>I started working with <span>Motion Design in 2003</span> for several advertising agencies from Brazil and from around the world, <span>Programming in Javascript & ExtendScript in 2013</span>, creating applications and expressions focused in Motion design, using web development technologies.</p>
-  <p>I took a <span>deep dive in React and Next.js in 2019</span> and today I work with all things related to Front-end and UX Motion Design.</p>
-  <p>Below are some technologies I have experience:</p>`,
+  excerpt: `<p>
+  I started working with <span>Motion Design</span> in 2003 for several advertising agencies from Brazil and from around the world. In 2013, I started developing for Adobe After Effects and really loved what could be done! <span>Html, CSS and Javascript</span> helped me to automate scenes, rigged characters, lights, and other magic stuff!</p>
+  <p>I was really immersed in the Javascript ecosystem, so I took a deep dive in <span>Node.js, React and Next.js</span> in 2019, and today I work with all things related to Front-end and UX Motion Design.
+   and today I work with all things related to Front-end and UX Motion Design.</p>
+  <p>Below are some technologies I had the chance to work or study:</p>`,
   coding: {
     title: 'Coding',
     img: '/images/cgbordin_experience_code.svg',
-    excerpt: `<ul>
+    excerpt: `
     <li><span>•</span> Javascript</li>
     <li><span>•</span> Typescript</li>
     <li><span>•</span> ES6</li>
@@ -16,30 +18,24 @@ export default {
     <li><span>•</span> React.js - Hooks e Context</li>
     <li><span>•</span> Next.js</li>
     <li><span>•</span> React-query</li>
-    <li><span>•</span> Prismic</li>
     <li><span>•</span> Styled-Components</li>
-    <li><span>•</span> Chakra UI</li>
-    <li><span>•</span> Material UI</li>
     <li><span>•</span> HTML5</li>
     <li><span>•</span> CSS</li>
     <li><span>•</span> SCSS</li>
     <li><span>•</span> Git</li>
     <li><span>•</span> Github</li>
-    <li><span>•</span> Babel</li>
-    <li><span>•</span> Rollup</li>
-    <li><span>•</span> Stripe API</li>
-    <li><span>•</span> Pagar.me API and others.</li>
-    </ul>`,
+    <li><span>•</span> Stripe API and others.</li>
+    `,
   },
   design: {
     title: `Design & Motion Design`,
     img: '/images/cgbordin_experience_design.svg',
     excerpt: `<ul>
     <li><span>•</span> Adobe After Effects</li>
-    <li><span>•</span> Illustrator</li>
-    <li><span>•</span> Photoshop</li>
-    <li><span>•</span> Premiere</li>
-    <li><span>•</span> 3dsMax</li>
+    <li><span>•</span> Adobe Illustrator</li>
+    <li><span>•</span> Adobe Photoshop</li>
+    <li><span>•</span> Adobe Premiere</li>
+    <li><span>•</span> Autodesk 3dsMax</li>
     <li><span>•</span> Figma</li>
     <li><span>•</span> Whimsical</li>
     <li><span>•</span> Google Docs & Spreadsheets</li>
@@ -50,7 +46,7 @@ export default {
     </ul>`,
   },
   rest: {
-    title: 'More tech I had contact with',
+    title: 'Tech I had contact with',
     img: '/images/cgbordin_experience_rest.svg',
     excerpt: `<ul>
     <li><span>•</span> Rest API</li>
@@ -60,12 +56,10 @@ export default {
     <li><span>•</span> Redux</li>
     <li><span>•</span> Docker</li>
     <li><span>•</span> FaunaDB</li>
-    <li><span>•</span> MongoDB</li>
     <li><span>•</span> PostgreSQL</li>
     <li><span>•</span> TypeORM</li>
     <li><span>•</span> Sequelize</li>
     <li><span>•</span> Redis</li>
-    <li><span>•</span> BullQueue</li>
     <li><span>•</span> SOLID Principles</li>
     <li><span>•</span> JWT and others.</li>
     </ul>`,
