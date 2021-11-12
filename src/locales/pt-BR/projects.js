@@ -1,6 +1,10 @@
 export default {
   title: 'Projetos',
-  cards: { viewProject: 'Ver Projeto' },
+  cards: {
+    viewCode: 'Ver Código',
+    readArticle: 'Ler Artigo',
+    watchVideo: 'Ver Vídeo',
+  },
   projects: [
     {
       title: 'Aepzera',
@@ -50,7 +54,7 @@ export default {
         src: 'images/articles/chocoanimato/chocoanimato_cover.webp',
         alt: 'Choco Animato Cover',
       },
-      description: `Projeto conceito de uma Plataforma de criação de vídeos customizados.`,
+      description: `ChocoAnimato é um Projeto Conceito de uma Plataforma de criação de vídeos customizados. Você pode conferir o layout de algumas páginas e ler mais sobre o projeto clicando no Artigo.`,
       tools: [
         'Typescript',
         'Node.js',

@@ -12,9 +12,9 @@ export const ProjectCardContent = styled(motion.li)`
   gap: 1rem;
   border-radius: 4px;
   padding-bottom: 1rem;
-  background-color: hsl(190, 50%, 100%, 0.5);
-  background-color: hsl(200, 19%, 95%);
-  backdrop-filter: blur(20px);
+  /* background-color: hsl(200, 19%, 95%); */
+  background-color: hsl(100, 100%, 100%);
+  /* backdrop-filter: blur(20px); */
 
   img {
     border-radius: 4px 4px 0 0;
@@ -26,6 +26,15 @@ export const ProjectCardContent = styled(motion.li)`
 
   .project_info {
     padding-inline: 1.5rem;
+  }
+
+  .project_button_group {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 0 1rem;
   }
 
   .tag {

@@ -1,11 +1,15 @@
 export default {
   title: 'Projects',
-  cards: { viewProject: 'View Project' },
+  cards: {
+    viewCode: 'View Code',
+    readArticle: 'Read Article',
+    watchVideo: 'Watch Video',
+  },
   projects: [
     {
       title: 'Aepzera',
       description: `Pipeline production tool for Adobe After Effects.`,
-      article: { link: '/aepzera', isExternal: false },
+      article: { link: '/aepzera' },
       image: {
         src: 'images/aepzera/aepzera_cover.webp',
         alt: 'Aepzera Cover',
@@ -27,10 +31,7 @@ export default {
     {
       title: 'Marvel Universe',
       description: `Code Challenge to create a Marvel Universe catalog using Marvel API.`,
-      article: {
-        link: 'https://github.com/cgbinho/marvel_universe_vercel',
-        isExternal: true,
-      },
+      github: { link: 'https://github.com/cgbinho/marvel_universe_vercel' },
       image: {
         src: 'images/marvel_universe_home.webp',
         alt: 'Marvel Universe Home',
@@ -45,12 +46,12 @@ export default {
     },
     {
       title: 'Choco Animato',
-      article: { link: '/articles/chocoanimato', isExternal: false },
+      article: { link: '/articles/chocoanimato' },
       image: {
         src: 'images/articles/chocoanimato/chocoanimato_cover.webp',
         alt: 'Choco Animato Cover',
       },
-      description: `Online platform to create custom videos.`,
+      description: `ChocoAnimato is a case study on a Platform to create videos based on templates. You can check some page layouts and read more about them on the Article page.`,
       tools: [
         'Typescript',
         'Node.js',

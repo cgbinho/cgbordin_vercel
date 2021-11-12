@@ -6,7 +6,14 @@ export const ProjectsContainer = styled.div`
   margin: 3rem 0;
   width: 100vw;
   color: var(--font-accent);
-  background-color: hsl(190, 50%, 95%, 0.7);
+  background-image: linear-gradient(
+    to bottom,
+    hsl(100, 100%, 100%) 0%,
+    hsl(190, 40%, 80%, 0.9) 60%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 `;
 
 export const ProjectsContent = styled.div`
@@ -19,7 +26,7 @@ export const ProjectsContent = styled.div`
 
   .projects_list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     align-items: center;
     justify-items: flex-start;
     align-items: flex-start;

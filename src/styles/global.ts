@@ -17,6 +17,8 @@ export default createGlobalStyle`
   --button-secondary: hsl(191, 50%, 75%);
   --button-secondary-hover: hsl(191, 50%, 70%);
   --button-secondary-text: hsl(198, 36%, 21%);
+  --icon-primary: hsl(155, 100%, 25%);
+  --icon-primary-hover: hsl(155, 100%, 15%);
   --scent-850: hsl(191, 100%, 85%);
   --scent-750: hsl(191, 100%, 75%);
   --scent-650: hsl(191, 100%, 65%);
@@ -62,11 +64,10 @@ body {
 p {
   letter-spacing: 1.1;
   margin-bottom: 1rem;
-  /* line-height: 1.4; */
 }
 
 .background_light {
-  background: linear-gradient(180deg, hsl(200, 100%, 100%) 30%, hsl(190, 40%, 70%,.9) 100%);
+  background: linear-gradient(180deg, hsl(200, 100%, 100%) 0%, hsl(190, 40%, 70%,.9) 100%);
 }
 
 .light_focus {
@@ -123,9 +124,7 @@ li {
 }
 
 .box_shadow_soft {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 4px;
-  /* border-bottom: 2px solid var(--scent-250); */
-
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 .italic {
@@ -165,14 +164,7 @@ li {
     color: hsl(200, 100%, 40%,1);
     font-weight: 400;
   }
-  /* span {
-    display: inline;
-    background-image: linear-gradient(to right, hsl(150, 100%, 50%,.3) 100%, hsl(200, 100%, 40%,.8) 100%);
-    background-position: 0 0.8rem;
-    background-repeat: repeat-x;
-    border-radius: 4px;
-    
-  } */
+ 
 }
 
 .text_highlight {
@@ -376,4 +368,46 @@ li {
   /* background-color: dodgerblue; */
   transform: rotateY(180deg);
 }
+
+.social_networks {
+    display: flex;
+    height: auto;
+    align-items: center;
+    margin-top: 0.5rem;
+
+    a:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+
+.svg_anchor_dark {
+    a {
+      svg {
+        transition: all 0.3s ease;
+        fill: var(--scent-350);
+      }
+
+      svg {
+        &:hover {
+          fill: var(--scent-250);
+        }
+      }
+    }
+  }
+
+  .svg_anchor_light {
+
+    a {
+      svg {
+        transition: all 0.3s ease;
+        fill: var(--scent-650);
+      }
+
+      svg {
+        &:hover {
+          fill: var(--scent-450);
+        }
+      }
+    }
+  }
 `;

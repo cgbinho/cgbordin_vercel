@@ -15,6 +15,6 @@ export default {
     paragraph05: `<p>This is my continuous, moldable state where I keep learning more to complement my skills, <span>seeking for ways to incorporate creativity and problem solving</span> along the way in my day to day work.</p>`,
   },
   contact: {
-    title: `I'm always looking for new projects and challenges, being inspired, perhaps inspiring other professionals and promoting the exchange of knowledge and experiences. Feel free to contact me!`,
+    title: `I'm always looking for new projects and challenges, feel free to contact me - `,
   },
 };

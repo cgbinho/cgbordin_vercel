@@ -4,7 +4,8 @@ import { ProjectCardContent } from './styles';
 import Link from 'next/link';
 import { tools } from '../../../data/tags';
 import Button from '../../Form/Button';
-import { MdOpenInNew } from 'react-icons/md';
+import { AiOutlineRead, AiFillGithub } from 'react-icons/ai';
+import { CgPlayButtonO } from 'react-icons/cg';
 import { ModalPlayer } from '../../ModalPlayer';
 import { useRouter } from 'next/router';
 
@@ -15,6 +16,9 @@ type ProjectCardData = {
 
 export type ProjectData = {
   title: string;
+  github?: {
+    link: string;
+  };
   article?: {
     link: string;
     isExternal: boolean;
@@ -41,21 +45,14 @@ export const ProjectCard = ({ content, project }: ProjectCardData) => {
 
   const projectTools = project.tools.map((tool) => getTool(tools, tool));
 
-  // TO DO: handle click de um link de vídeo, página ou página externa.
-  const handleClick = () => {
-    // video:
-    if (project?.video) {
-      return setOpenModal(!openModal);
-    }
-    // página externa:
-    if (project?.article?.isExternal) {
-      return window.open(project.article.link);
-    }
-    // página:
-    return router.push(`${project.article.link}`, `${project.article.link}`, {
+  const handleViewCode = () => window.open(project.github.link);
+
+  const handleViewArticle = () =>
+    router.push(`${project.article.link}`, `${project.article.link}`, {
       locale: false,
     });
-  };
+
+  const handleWatchVideo = () => setOpenModal(!openModal);
 
   return (
     <ProjectCardContent
@@ -86,10 +83,41 @@ export const ProjectCard = ({ content, project }: ProjectCardData) => {
           ))}
         </div>
       </section>
-      <Button primary width="90%" height="40px" onClick={handleClick}>
-        <MdOpenInNew size={20} />
-        {content.cards.viewProject}
-      </Button>
+      <section className="project_button_group">
+        {project?.video && (
+          <Button
+            width="100%"
+            height="40px"
+            padding="0 1rem"
+            onClick={handleWatchVideo}
+          >
+            <CgPlayButtonO size={20} />
+            {content.cards.watchVideo}
+          </Button>
+        )}
+        {project?.article && (
+          <Button
+            width="100%"
+            height="40px"
+            padding="0 1rem"
+            onClick={handleViewArticle}
+          >
+            <AiOutlineRead size={20} />
+            {content.cards.readArticle}
+          </Button>
+        )}
+        {project?.github && (
+          <Button
+            width="100%"
+            height="40px"
+            padding="0 1rem"
+            onClick={handleViewCode}
+          >
+            <AiFillGithub size={20} />
+            {content.cards.viewCode}
+          </Button>
+        )}
+      </section>
       {project?.video && (
         <ModalPlayer
           {...{
