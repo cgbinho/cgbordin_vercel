@@ -1,11 +1,11 @@
 export default {
   title: 'Projects',
-  cards: ['Technologies used:'],
+  cards: { viewProject: 'View Project' },
   projects: [
     {
       title: 'Aepzera',
       description: `Pipeline production tool for Adobe After Effects.`,
-      article: { link: '/aepzera' },
+      article: { link: '/aepzera', isExternal: false },
       image: {
         src: 'images/aepzera/aepzera_cover.webp',
         alt: 'Aepzera Cover',
@@ -27,7 +27,10 @@ export default {
     {
       title: 'Marvel Universe',
       description: `Code Challenge to create a Marvel Universe catalog using Marvel API.`,
-      article: { link: 'https://github.com/cgbinho/marvel_universe_vercel' },
+      article: {
+        link: 'https://github.com/cgbinho/marvel_universe_vercel',
+        isExternal: true,
+      },
       image: {
         src: 'images/marvel_universe_home.webp',
         alt: 'Marvel Universe Home',
@@ -42,7 +45,7 @@ export default {
     },
     {
       title: 'Choco Animato',
-      article: { link: '/articles/chocoanimato' },
+      article: { link: '/articles/chocoanimato', isExternal: false },
       image: {
         src: 'images/articles/chocoanimato/chocoanimato_cover.webp',
         alt: 'Choco Animato Cover',

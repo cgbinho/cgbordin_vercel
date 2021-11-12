@@ -13,28 +13,40 @@ export const Container = styled.button<IContainerProps>`
   justify-content: center;
   align-items: center;
   font-size: 14px;
-
+  margin: 0 auto;
   padding: ${(props) => props.padding};
   width: ${(props) => props.width};
   height: ${(props) => props.height};
-  color: ${(props) => (props.primary ? 'white' : `var(--scent-250)`)};
+  color: ${(props) =>
+    props.primary ? 'white' : `var(--button-secondary-text)`};
   background: ${(props) =>
-    props.primary ? `var(--scent-450)` : `hsl(200, 100%, 90%)`};
+    props.primary ? `var(--button-primary)` : `var(--button-secondary)`};
 
   border: none;
-  border-radius: 0.4rem;
-  /* box-shadow: 1px 1px 8px var(--scent-850); */
+  border-radius: 0.2rem;
   transition: background-color 0.2s;
+
+  svg {
+    margin: 0.2em;
+  }
 
   &:hover {
     background: ${(props) =>
-    props.primary ? `var(--scent-350)` : `var(--scent-650)`};
-    color: ${(props) => (props.primary ? 'white' : `var(--scent-250)`)};
+    props.primary
+      ? `var(--button-primary-hover)`
+      : `var(--button-secondary-hover)`};
+    color: ${(props) =>
+    props.primary ? 'white' : `var(--button-secondary-text)`};
   }
 
   &:active {
     transform: translateY(1px);
     transition: all 0.2s ease 0s;
+  }
+
+  &:focus {
+    outline: 3px solid var(--gray-100);
+    border-radius: 2px;
   }
 
   &:disabled {

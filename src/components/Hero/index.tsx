@@ -34,11 +34,7 @@ export function Hero() {
         <section>
           <p>{content[locale][0]}</p>
           <h1>Cleber Galves Bordin</h1>
-          <p>
-            <span>
-              Front-end Developer {content[locale][1]} UX Motion Designer
-            </span>
-          </p>
+          <p>Front-end Developer {content[locale][1]} UX Motion Designer</p>
         </section>
         <section className="rive">
           <RiveComponent

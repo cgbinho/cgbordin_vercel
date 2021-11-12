@@ -12,6 +12,11 @@ export default createGlobalStyle`
   --base-line-height: 1.25 * --base-font-size;
   --maxWidth: 1200px;
   --font-accent: hsl(200, 50%, 25%);
+  --button-primary: hsl(204, 41%, 32%);
+  --button-primary-hover: hsl(204, 31%, 28%);
+  --button-secondary: hsl(191, 50%, 75%);
+  --button-secondary-hover: hsl(191, 50%, 70%);
+  --button-secondary-text: hsl(198, 36%, 21%);
   --scent-850: hsl(191, 100%, 85%);
   --scent-750: hsl(191, 100%, 75%);
   --scent-650: hsl(191, 100%, 65%);
@@ -113,9 +118,14 @@ li {
   /* overflow: auto; */
 }
 
-  .border_scented {
-    /* border-top: 2px solid var(--scent-550); */
-    border-top: 2px solid var(--scent-550);
+.border_scented {
+  border-top: 2px solid var(--scent-550);
+}
+
+.border_scented_dark {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 4px;
+  /* border-bottom: 2px solid var(--scent-250); */
+
 }
 
 .italic {

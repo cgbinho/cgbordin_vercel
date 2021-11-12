@@ -33,45 +33,12 @@ export const ProjectsContent = styled.div`
     text-align: center;
   }
 
-  li {
-    display: grid;
-    grid-auto-rows: max-content;
-    align-items: flex-start;
-    justify-items: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    height: 100%;
-    gap: 2rem;
-    padding: 2rem;
-    /* background-color: var(--gray-170); */
-    background-color: hsl(190, 50%, 100%, 0.5);
-    backdrop-filter: blur(20px);
-    border-radius: 4px;
-  }
-
-  p {
-    margin: 1rem 0;
-  }
-
-  strong {
-    font-size: 1.2rem;
-  }
-
-  img {
-    border-radius: 8px;
-  }
-
   @media screen and (max-width: 800px) {
     padding: 1rem;
 
     .projects_list {
       padding: 0rem;
       gap: 1rem;
-
-      li {
-        padding: 1.5rem;
-        backdrop-filter: unset;
-      }
     }
   }
 `;
