@@ -1,59 +1,75 @@
 import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
-  margin: 2rem auto;
+  display: flex;
+  margin: 0rem auto;
   width: 100vw;
+  min-height: 460px;
+  margin-bottom: 2rem;
+
+  /* Background image and gradient */
+  background-image: url('/images/hero_bg_v03.svg'),
+    linear-gradient(
+      to bottom,
+      hsl(100, 100%, 100%) 50%,
+      hsl(190, 40%, 80%, 0.9) 100%
+    );
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center;
+  background-size: auto 9em, cover;
 `;
 
 export const HeroContent = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
+  margin: 0 auto;
   align-items: center;
   align-content: flex-end;
   justify-content: center;
-  gap: 1rem;
-  min-height: 500px;
   color: var(--font-accent);
-  margin: 0 auto;
-  background: url('/images/hero_bg_v03.svg') no-repeat center bottom;
-  background-size: auto 12em;
 
-  p {
-    margin-bottom: 0;
+  h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.15rem;
   }
 
-  @media (max-width: 755px) {
+  p {
+    margin-bottom: 0.5rem;
+    line-height: 1.25;
+  }
+
+  .hero_text {
+    flex-basis: 30rem;
+    margin: 0 1rem;
+  }
+
+  .rive {
+    flex-basis: 20rem;
+    max-width: 450px;
+    z-index: 0;
+  }
+
+  @media (max-width: 840px) {
+    margin-top: 2rem;
     gap: 1rem;
-    margin-top: -70px;
     text-align: center;
     background-size: auto 12em;
-    min-height: 680px;
+    height: 42rem;
+    align-content: flex-end;
+
+    .social_networks {
+      justify-content: center;
+    }
+
+    h1,
+    p {
+      text-align: center;
+    }
 
     section {
       margin-bottom: 0rem;
     }
-  }
-
-  section .rive {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    padding: 0;
-  }
-
-  section {
-    padding: 0 1em;
-    z-index: 1;
-  }
-
-  h1 {
-    text-align: center;
-    letter-spacing: 0.15rem;
-    font-size: 2rem;
-  }
-
-  p {
-    line-height: 1.25;
   }
 `;
