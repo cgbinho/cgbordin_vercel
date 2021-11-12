@@ -122,7 +122,7 @@ li {
   border-top: 2px solid var(--scent-550);
 }
 
-.border_scented_dark {
+.box_shadow_soft {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 4px;
   /* border-bottom: 2px solid var(--scent-250); */
 

@@ -60,7 +60,7 @@ export const ProjectCard = ({ content, project }: ProjectCardData) => {
   return (
     <ProjectCardContent
       id={`#projects_link_${project.image.alt}`}
-      className="border_scented_dark dark_focus"
+      className="box_shadow_soft dark_focus"
       role="listitem"
       whileHover={{ translateY: -4 }}
       transition={{ type: 'tween' }}
@@ -90,12 +90,12 @@ export const ProjectCard = ({ content, project }: ProjectCardData) => {
         <MdOpenInNew size={20} />
         {content.cards.viewProject}
       </Button>
-      {content?.video && (
+      {project?.video && (
         <ModalPlayer
           {...{
             isOpen: openModal,
             setOpen: setOpenModal,
-            vidSrc: content.video.src,
+            vidSrc: project.video.src,
           }}
         />
       )}
