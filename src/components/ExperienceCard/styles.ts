@@ -8,10 +8,14 @@ interface IContainerProps {
 
 export const ExperienceCardContent = styled(motion.section) <IContainerProps>`
 
-    /* Conditionally change the border color*/
-    border-bottom: 2px solid ${(props) => props.content.title === 'Coding' ? `var(--coding-scent)` :
+  /* Conditionally change the border color*/
+  border-bottom: 2px solid ${(props) => props.content.title === 'Coding' ? `var(--coding-scent)` :
     props.content.title === 'Design & Motion Design' ?
       `var(--design-scent)` : `var(--rest-scent)`};
+
+  h3 {
+    line-height: 3rem;
+  }
 `;
 
 export const ExperienceCardContainer = styled(motion.section)`

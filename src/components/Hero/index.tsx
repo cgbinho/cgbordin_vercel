@@ -33,8 +33,8 @@ export function Hero() {
   const { locale } = router;
 
   const content = {
-    en: ['Hi! I am', 'and'],
-    'pt-BR': ['Olá! Eu sou o', 'e'],
+    en: ['Hi, I am', 'and'],
+    'pt-BR': ['Olá! Sou o', 'e'],
   };
 
   const [refWelcome, inViewWelcome] = useInView();
@@ -58,7 +58,9 @@ export function Hero() {
     <HeroContainer>
       <HeroContent>
         <section className="hero_text">
-          <p>{content[locale][0]} Cleber!</p>
+          <p>
+            {content[locale][0]} <strong>Cleber Bordin</strong>!
+          </p>
           <h1>Front-end Developer {content[locale][1]} UX Motion Designer.</h1>
           <div className="social_networks svg_anchor_dark dark_focus">
             <a
@@ -76,7 +78,7 @@ export function Hero() {
               <IoLogoLinkedin size={30} color={'var(--icon-primary)'} />
             </a>
             <a
-              href="mailto:cgbordin@gmail.com"
+              href="mailto:cgbordin@gmail.com?subject=Hello from a cgbordin.com visitor!"
               target="_blank"
               rel="noreferrer"
             >

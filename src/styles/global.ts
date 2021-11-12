@@ -144,8 +144,13 @@ li {
 }
 
 .tech_list {
-  ul li{
-  display: inline;
+ 
+  li {
+    display: inline-flex;
+
+    span {
+      margin-right: .3rem;
+    }
   }
 
   span {

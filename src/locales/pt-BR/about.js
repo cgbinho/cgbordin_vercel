@@ -15,6 +15,6 @@ export default {
     paragraph05: `<p>Este é o meu estado contínuo, moldável, onde estou sempre <span>buscando incorporar criatividade e a habilidade de resolver problemas</span> no meu trabalho do dia a dia.</p>`,
   },
   contact: {
-    title: `Estou sempre buscando novos projetos e desafios, entre em contato comigo - `,
+    title: `Estou sempre buscando novos projetos e desafios, entre em contato comigo`,
   },
 };
