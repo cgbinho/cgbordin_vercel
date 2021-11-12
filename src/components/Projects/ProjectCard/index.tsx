@@ -68,7 +68,7 @@ export const ProjectCard = ({ content, project }: ProjectCardData) => {
       <section>
         <img src={project.image.src} alt={project.image.alt} width="100%" />
         <div className="project_info">
-          <h2>{project.title}</h2>
+          <h3>{project.title}</h3>
           <p>{project.description}</p>
           {projectTools.map((tool) => (
             <span

@@ -20,7 +20,7 @@ export const ProjectCardContent = styled(motion.li)`
     border-radius: 4px 4px 0 0;
   }
 
-  h2 {
+  h3 {
     margin-top: 0.5rem;
   }
 
