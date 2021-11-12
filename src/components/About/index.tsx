@@ -10,6 +10,9 @@ import { isValidMotionProp, motion, Variants } from 'framer-motion';
 import { InViewHookResponse, useInView } from 'react-intersection-observer';
 import { useLottie, Lottie, Renderer, EventListener } from 'react-lottie-hook';
 import animationData from '../../../public/cgbordin_avatar_data_v01.json';
+import { AiFillGithub } from 'react-icons/ai';
+import { IoLogoLinkedin } from 'react-icons/io';
+import { MdEmail } from 'react-icons/md';
 
 type AboutCardData = {
   reference: any;
@@ -254,33 +257,22 @@ export function AboutComponent({ content }) {
         }}
       />
       <AboutCardFooter>
-        <p>{content.contact.title}</p>
-        <a
-          href="https://github.com/cgbinho"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <Image
-            src="/images/cgbordin_github.svg"
-            alt="Cleber Galves Bordin GitHub"
-            width="24px"
-            height="24px"
-          />
-          <span>github.com/cgbinho</span>
-        </a>
-        <a
-          href="mailto:cgbordin@gmail.com"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <Image
-            src="/images/cgbordin_email.svg"
-            alt="Cleber Galves Bordin email"
-            width="24px"
-            height="24px"
-          />
-          <span>cgbordin @ gmail.com</span>
-        </a>
+        <p>{content.contact.title} - cgbordin @ gmail.com</p>
+        <div className="social_networks svg_anchor_light">
+          <a href="https://github.com/cgbinho" target="_blank" rel="noreferrer">
+            <AiFillGithub size={28} color={'var(--icon-primary)'} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/cleberbordin/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <IoLogoLinkedin size={30} color={'var(--icon-primary)'} />
+          </a>
+          <a href="mailto:cgbordin@gmail.com" target="_blank" rel="noreferrer">
+            <MdEmail size={30} color={'var(--icon-primary)'} />
+          </a>
+        </div>
       </AboutCardFooter>
     </AboutContainer>
   );

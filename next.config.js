@@ -1,7 +1,3 @@
-// const stripe_env = process.env.STRIPE_ENV;
-
-// console.log({ nextconfig: stripe_env });
-
 module.exports = {
   eslint: {
     // Warning: Dangerously allow production builds to successfully complete even if
