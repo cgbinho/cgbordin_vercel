@@ -73,7 +73,7 @@ Criei uma composição principal com o aspecto de retrato ( 9:16 ) em full HD, c
 <img src="/images/articles/whatsafter/whatsafter_bg.webp#width_auto" alt="Imagem de fundo" />
 </a>
 
-*Imagem de fundo*
+*Imagem de fundo imitando o WhatsApp*
 
 A partir deste ponto, eu já tinha o necessário para começar a criar a sequência de diálogo, então comecei a escrever um script que foi evoluindo, se transformando e depois de várias revisões, ajustes, bugs esmagados e incrementos... funciona da seguinte forma:
 

@@ -5,7 +5,15 @@ coverImage: '/images/articles/flippingbook/flippingbook_cover.webp'
 date: '2020-03-16T05:35:07.322Z'
 ---
 
-Durante a produção [deste vídeo](https://www.youtube.com/watch?v=atW0cztyxso) para o CEJAM, me surgiu a necessidade de criar um livro animado que faria parte da história do vídeo. O conteúdo das páginas foi animado em After Effects, então renderizado a parte e aplicado como textura em um livro 3D.
+Aqui está um exemplo de livro animado criado com a aplicação FlippingBook, simulando uma revista em quadrinhos:
+
+<figure class="video_container">
+  <iframe class="video_content" src="https://www.youtube.com/embed/Iw-_NJp3neI" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+
+## Origem da Aplicação
+
+Durante a produção de um vídeo explicativo, me surgiu a necessidade de criar um livro animado que faria parte da história do vídeo. O conteúdo das páginas foi animado em After Effects, então renderizado à parte e aplicado como textura em um livro 3D.
 
 Durante este processo todo, eu precisei pular de um programa para o outro, lidar com as texturas das páginas, renderizar o 3D, substituir…e logo percebi que para um próximo projeto, teria que pensar uma forma mais eficiente e prática.
 

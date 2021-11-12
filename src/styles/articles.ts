@@ -83,6 +83,7 @@ export const ArticleContainer = styled.div`
     background-color: var(--gray-100);
     border-radius: 4px;
     padding: 1rem;
+    margin-bottom: 1rem;
   }
 
   a {

@@ -5,6 +5,10 @@ coverImage: '/images/articles/chocoanimato/chocoanimato_cover.webp'
 date: '2020-08-19T05:35:07.322Z'
 ---
 
+[GitHub Repo - Back-end](https://github.com/cgbinho/chocoanimato-backend-public)
+
+[GitHub Repo - Front-end](https://github.com/cgbinho/chocoanimato-frontend-public)
+
 ChocoAnimato surgiu de uma idéia de produzir uma plataforma online, onde o usuário escolhe um template de vídeo dentre diversas categorias, personaliza os textos e imagens de cada trecho do vídeo e exporta seu vídeo. Tudo isso de uma forma simples, para usuários que não tem familiaridade com edição de vídeos mais elaborada.
 
 <a href="https://www.cgbordin.com/images/articles/chocoanimato/chocoanimato_home.webp" target="_blank">
@@ -21,9 +25,11 @@ A partir desta idéia inicial, eu comecei rascunhando algumas telas principais e
 
 *Choco Animato - Interface da Customização de Vídeo*
 
-### Backend
+### Back-end
 
-Para o Backend, utilizei Node.js com Express, autenticação de usuários com token JWT, TypeORM para acessar o banco de dados PostgreSQL, Lottie como o player dos vídeos, Redis para enfileirar processos (transcodificação dos vídeos e envio de emails, por exemplo) e uma combinação do Pupeteer com o Lottie para gerar uma sequência de imagens  que por fim é combinada em vídeo e som, com a biblioteca ffmpeg. Depois de estudar algum tempo as implementações de pagamento do PagSeguro e MercadoPago, optei pela Pagar.me pela facilidade que ofereceu, mesmo tendo uma taxa diferente das outras.
+Para o Back-end, utilizei Node.js com Express, autenticação de usuários com token JWT, TypeORM para acessar o banco de dados PostgreSQL, Lottie como o player dos vídeos, Redis para enfileirar processos (transcodificação dos vídeos e envio de emails, por exemplo) e uma combinação do Pupeteer com o Lottie para gerar uma sequência de imagens  que por fim é combinada em vídeo e som, com a biblioteca ffmpeg. Depois de estudar algum tempo as implementações de pagamento do PagSeguro e MercadoPago, optei pela Pagar.me pela facilidade que ofereceu, mesmo tendo uma taxa diferente das outras.
+
+ 
 
 <a href="https://www.cgbordin.com/images/articles/chocoanimato/chocoanimato_schematic01.webp" target="_blank">
 <img src="/images/articles/chocoanimato/chocoanimato_schematic01.webp" alt="Choco Animato - Esquema de rotas" />
@@ -55,7 +61,7 @@ Enquanto o usuário modifica os campos de texto e cor da personalização do ví
 
 #### Fluxo de compra
 
-Ao final do processo de personalização do vídeo, o usuário tem a possibilidade de gerar um preview do vídeo customizado. Neste momento, o backend cria um trabalho na fila do Redis para processar a transcodificação do vídeo em uma qualidade média para o usuário conferir como ficou o resultado.
+Ao final do processo de personalização do vídeo, o usuário tem a possibilidade de gerar um preview do vídeo customizado. Neste momento, o back-end cria um trabalho na fila do Redis para processar a transcodificação do vídeo em uma qualidade média para o usuário conferir como ficou o resultado.
 
 <a href="https://www.cgbordin.com/images/articles/chocoanimato/chocoanimato_mobile_05.webp" target="_blank">
 <img src="/images/articles/chocoanimato/chocoanimato_mobile_05.webp" alt="Choco Animato - Layouts mobile do Carrinho e Processo de compra" />
