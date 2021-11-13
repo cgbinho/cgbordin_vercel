@@ -5,7 +5,7 @@ export default createGlobalStyle`
 :root {
   --main-font: 400 16px Nunito, sans-serif;
   --font-size: 16px;
-  --base-font-size:1rem;
+  --base-font-size: 1rem;
   --font-weight-light: 200;
   --font-weight-normal: 400;
   --font-weight-bold: 900;
@@ -176,8 +176,8 @@ li {
   span {
     color: var(--primary);
     background-color: none;
-    padding: 0px 6px;
-    border-radius: 4px;
+    padding: 0 0.4rem;
+    border-radius: 0.3rem;
     animation: span_highlight 1000ms ease-out;
     animation-delay: 1s;
     animation-fill-mode: forwards;
@@ -196,8 +196,8 @@ li {
   padding: 2rem;
   margin-bottom: 1rem;
   background-color: var(--gray-170);
-  backdrop-filter: blur(20px);
-  border-radius: 4px;
+  /* backdrop-filter: blur(20px); */
+  border-radius:0.3rem;
   transition: all 0.1s ease 0s;
 
   @media screen and (max-width: 800px) {
@@ -291,7 +291,7 @@ li {
 }
 
 ::-webkit-scrollbar-thumb {
-  /* border-radius: 4px; */
+  /* border-radius:0.3rem; */
   -webkit-box-shadow: inset 0 0 6px var(--dark_gray);
   box-shadow: inset 0 0 1px var(--dark_gray);
   background-color: hsl(0, 0%, 33%);
@@ -314,7 +314,7 @@ li {
 
 .skip_main:focus, .skip_main:active {
   padding: 0.5rem;
-  border-radius: 4px;
+  border-radius:0.3rem;
   left: 20px;
   top: 70px;
   width: 30%;

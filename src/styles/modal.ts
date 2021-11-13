@@ -7,7 +7,7 @@ export const ModalContainer = styled.div`
   justify-self: center;
   align-self: flex-start;
 
-  margin: 40px 0;
+  margin: 2.5rem 0;
   padding: 2rem;
 
   width: 350px;
@@ -15,7 +15,7 @@ export const ModalContainer = styled.div`
   background: white;
   border-radius: 0.5rem;
   border: 1px solid #ebebeb;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0.3rem0.3rem 10px rgba(0, 0, 0, 0.08);
 
   > p {
     margin-top: 2rem;

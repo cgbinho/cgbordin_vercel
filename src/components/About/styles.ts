@@ -56,8 +56,8 @@ export const AboutCardRightContainer = styled(motion.section) <IContainerProps>`
   aside {
     padding: 2rem;
     background-color: var(--gray-170);
-    border-radius: 4px;
-    backdrop-filter: blur(20px);
+    border-radius:0.3rem;
+    /* backdrop-filter: blur(20px); */
     /* Conditionally */
     border-left: 2px solid ${(props) => props.scentColor};
   }
@@ -85,8 +85,8 @@ export const AboutCardLeftContainer = styled(motion.section) <IContainerProps>`
   aside {
     padding: 2rem;
     background-color: var(--gray-170);
-    border-radius: 4px;
-    backdrop-filter: blur(20px);
+    border-radius:0.3rem;
+    /* backdrop-filter: blur(20px); */
     /* Conditionally */
     border-right: 2px solid ${(props) => props.scentColor};
   }

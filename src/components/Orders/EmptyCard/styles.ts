@@ -8,12 +8,12 @@ export const EmptyOrderCardContainer = styled.div`
   width: 100%;
   max-width: 950px;
   background-color: var(--gray-170);
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
   padding: 2rem;
   border-radius: 8px;
 
   svg {
-    margin: 0 4px;
+    margin: 0 0.25rem;
     fill: var(--error_color);
   }
 `;

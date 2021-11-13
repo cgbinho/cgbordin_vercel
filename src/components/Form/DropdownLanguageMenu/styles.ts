@@ -17,7 +17,7 @@ export const DropdownContainer = styled.div`
 
     &:focus {
       outline: 3px solid var(--scent-400);
-      border-radius: 4px;
+      border-radius:0.3rem;
       border: 2px solid var(--scent-450);
     }
   }

@@ -16,15 +16,15 @@ export const InputContainer = styled.div`
   display: flex;
   align-items: center;
 
-  padding: 14px;
+  padding: 0.9rem;
   width: 100%;
-  margin-top: 4px;
+  margin-top: 0.25rem;
 
-  border: 2px solid var(--gray-400);
+  border: 0.13rem solid var(--gray-400);
   border-radius: 0.5rem;
 
   color: var(--primary);
-  font-size: 14px;
+  font-size: 0.9rem;
   background: var(--gray-100);
   transition: border 0.2s;
 

@@ -148,8 +148,8 @@ export function WelcomeCard() {
           <Image
             src="/images/cgbordin_github.svg"
             alt="Cleber Galves Bordin GitHub"
-            width="24px"
-            height="24px"
+            width="1.5rem"
+            height="1.5rem"
           />
           <span>github.com/cgbinho</span>
         </motion.a>
@@ -161,8 +161,8 @@ export function WelcomeCard() {
           <Image
             src="/images/cgbordin_email.svg"
             alt="Cleber Galves Bordin email"
-            width="24px"
-            height="24px"
+            width="1.5rem"
+            height="1.5rem"
           />
           <span>cgbordin @gmail.com</span>
         </motion.a>

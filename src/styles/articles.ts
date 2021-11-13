@@ -22,8 +22,8 @@ export const ArticlesContent = styled.div`
     gap: 2rem;
     padding: 2rem;
     background-color: var(--gray-170);
-    backdrop-filter: blur(20px);
-    border-radius: 4px;
+    /* backdrop-filter: blur(20px); */
+    border-radius: 0.3rem;
     grid-auto-rows: 1fr;
   }
 
@@ -81,7 +81,7 @@ export const ArticleContainer = styled.div`
 
   pre {
     background-color: var(--gray-100);
-    border-radius: 4px;
+    border-radius: 0.3rem;
     padding: 1rem;
     margin-bottom: 1rem;
   }
@@ -101,7 +101,7 @@ export const ArticleContainer = styled.div`
     margin-top: 4rem;
     margin-inline: auto;
     border: 2px solid var(--gray-100);
-    box-shadow: 4px 4px 16px var(--gray-100);
+    box-shadow: 0.3rem0.3rem 16px var(--gray-100);
   }
 
   img[src*='width_auto'] {

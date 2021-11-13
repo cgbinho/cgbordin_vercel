@@ -12,7 +12,7 @@ export const Container = styled.button<IContainerProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 0.9rem;
   margin: 0 auto;
   padding: ${(props) => props.padding};
   width: ${(props) => props.width};
@@ -81,8 +81,8 @@ export const SpinnerContainer = styled.div`
   border-bottom: 2px solid white;
   border-left: 2px solid white;
   background: transparent;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
 `;
 

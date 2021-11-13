@@ -15,7 +15,7 @@ export const StyledModal = styled(Modal)`
   align-items: center;
   justify-content: center;
   background-color: white;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.08);
+  box-shadow:0.3rem0.3rem 10px rgba(0, 0, 0, 0.08);
 `;
 
 export const Content = styled.div`

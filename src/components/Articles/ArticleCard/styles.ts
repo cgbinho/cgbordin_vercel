@@ -14,8 +14,8 @@ export const ArticleCardContent = styled(motion.li)`
   /* background-color: var(--gray-170); */
   /* background-color: hsl(190, 50%, 100%, 0.5); */
   background-color: var(--gray-170);
-  backdrop-filter: blur(20px);
-  border-radius: 4px;
+  /* backdrop-filter: blur(20px); */
+  border-radius: 0.3rem;
   /* color: var(--font-accent); */
 
   time {
@@ -28,7 +28,7 @@ export const ArticleCardContent = styled(motion.li)`
   .tag {
     padding: 0.1rem 0.8rem;
     background: white;
-    border-radius: 4px;
+    border-radius: 0.3rem;
     margin-right: 0.3rem;
   }
 `;
