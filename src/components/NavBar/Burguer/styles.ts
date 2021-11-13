@@ -24,14 +24,14 @@ export const StyledBurger = styled.button<{ open: boolean }>`
 
   &:focus {
     outline: 3px solid var(--scent-600);
-    border-radius: 2px;
+    border-radius: 0.13rem;
   }
 
   span {
     position: relative;
     width: 2rem;
     height: 0.25rem;
-    border-radius: 10px;
+    border-radius: 0.6rem;
     transition: all 0.3s linear;
     transform-origin: 1px;
     background-color: var(--primary);

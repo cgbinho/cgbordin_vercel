@@ -1,13 +1,11 @@
 import Head from 'next/head';
 import React from 'react';
 import { AboutComponent } from '../components/About';
+import { ExperienceCard } from '../components/ExperienceCard';
+import { Hero } from '../components/Hero';
 import Layout from '../components/Layout';
 import { ProjectsComponent } from '../components/Projects';
-import { WelcomeCard } from '../components/WelcomeCard';
-import { ExperienceCard } from '../components/ExperienceCard';
 import { Container } from '../styles/home';
-import { BirdAnimation } from '../components/BirdAnimation';
-import { Hero } from '../components/Hero';
 
 export default function Home({
   contentProjects,
@@ -23,7 +21,6 @@ export default function Home({
       <Container>
         <a href="#" className="anchor" id="home" />
         <Hero />
-        {/* <WelcomeCard /> */}
         <a href="#" className="anchor" id="experience" />
         <ExperienceCard {...{ content: contentExperience }} />
         <a href="#" className="anchor anchor_projects" id="projects" />

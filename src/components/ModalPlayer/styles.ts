@@ -15,14 +15,14 @@ export const StyledModal = styled(Modal)`
   align-items: center;
   justify-content: center;
   background-color: white;
-  box-shadow:0.3rem0.3rem 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0.3rem0.3rem 10px rgba(0, 0, 0, 0.08);
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   margin: 2rem;
   width: 100%;
   max-width: 950px;

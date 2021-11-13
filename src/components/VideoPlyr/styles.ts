@@ -5,6 +5,6 @@ export const VideoContainer = styled.div`
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   overflow: hidden;
 `;

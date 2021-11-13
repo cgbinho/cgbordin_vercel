@@ -49,8 +49,8 @@ export const Container = styled.button<IContainerProps>`
   }
 
   &:focus {
-    outline: 3px solid var(--gray-100);
-    border-radius: 2px;
+    outline: 0.19rem solid var(--gray-100);
+    border-radius: 0.13rem;
   }
 
   &:disabled {
@@ -58,7 +58,7 @@ export const Container = styled.button<IContainerProps>`
     transform: translateY(0px);
     color: var(--dark_gray);
     box-shadow: 0px 0px 0px var(--scent-250);
-    border: 2px solid var(--light_gray);
+    border: 0.13rem solid var(--light_gray);
     background: #efefef;
   }
 `;

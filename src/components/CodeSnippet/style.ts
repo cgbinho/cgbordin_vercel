@@ -9,7 +9,7 @@ export const CodeSnippetContainer = styled.div`
   color: white;
 
   padding: 1rem 1rem 2rem 2rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   margin: 1rem 0;
   min-width: 250px;
 

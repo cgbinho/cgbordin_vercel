@@ -10,7 +10,7 @@ export const SuccessCardContainer = styled.div`
   background-color: var(--gray-170);
   /* backdrop-filter: blur(20px); */
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 
   h2 {
     line-height: 2rem;

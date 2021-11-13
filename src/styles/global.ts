@@ -75,7 +75,7 @@ p {
   
   &:focus {
     outline: 3px solid var(--scent-400);
-    border-radius: 2px;
+    border-radius: 0.13rem;
   }
 }
 
@@ -85,7 +85,7 @@ p {
   a {
     &:focus {
       outline: 3px solid var(--scent-250);
-      border-radius: 2px;
+      border-radius: 0.13rem;
     }
   }
 }
@@ -105,7 +105,7 @@ cursor: pointer;
     outline: 3px solid var(--scent-600);
     /* background-color: black; */
     /* padding: .2rem; */
-    border-radius: 2px;
+    border-radius: 0.13rem;
     /* border: 2px solid var(--scent-450); */
   }
 }
@@ -279,7 +279,7 @@ li {
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px var(--dark_gray);
   box-shadow: inset 0 0 6px var(--dark_gray);
-  border-radius: 0px;
+  border-radius: 0;
   background-color: hsl(0, 0%, 15%);
   /* background-color: var(--gray-150); */
 }

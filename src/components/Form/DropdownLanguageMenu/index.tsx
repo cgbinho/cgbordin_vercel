@@ -32,8 +32,8 @@ export function DropdownLanguageMenu() {
             <Image
               src={`/images/${imageName}`}
               alt="Language flag"
-              width="1.5rem"
-              height="1.5rem"
+              width="24px"
+              height="24px"
               objectFit="cover"
               className="border_radius_50"
             />
@@ -52,8 +52,8 @@ export function DropdownLanguageMenu() {
           <Image
             src="/images/flag_pt-br.svg"
             alt="Language flag"
-            width="1.5rem"
-            height="1.5rem"
+            width="24px"
+            height="24px"
             objectFit="cover"
             className="border_radius_50"
           />
@@ -69,8 +69,8 @@ export function DropdownLanguageMenu() {
           <Image
             src="/images/flag_en.svg"
             alt="Language flag"
-            width="1.5rem"
-            height="1.5rem"
+            width="24px"
+            height="24px"
             objectFit="cover"
             className="border_radius_50"
           />

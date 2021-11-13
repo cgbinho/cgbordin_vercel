@@ -17,7 +17,7 @@ export const DropdownContainer = styled.div`
 
     &:focus {
       outline: 3px solid var(--scent-400);
-      border-radius:0.3rem;
+      border-radius: 0.3rem;
       border: 2px solid var(--scent-450);
     }
   }
@@ -37,7 +37,7 @@ export const DropdownContainer = styled.div`
     color: var(--scent-600);
     background-color: var(--gray-100);
     outline: 3px solid var(--scent-400);
-    border-radius: 2px;
+    border-radius: 0.13rem;
   }
 `;
 
