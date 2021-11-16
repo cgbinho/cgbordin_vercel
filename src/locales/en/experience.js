@@ -1,8 +1,7 @@
 export default {
   title: 'Experience',
   excerpt: `<p>I started working with <span>Motion Design</span> in 2003 for several advertising agencies from Brazil and from around the world. In 2013, I started developing for Adobe After Effects and really loved what could be done! <span>Html, CSS and Javascript</span> helped me to automate scenes, rigged characters, lights, and other magic stuff!</p>
-  <p>I was really immersed in the Javascript ecosystem, so I took a deep dive in <span>Node.js, React and Next.js</span> in 2019, and today I work with all things related to Front-end and UX Motion Design.</p>
-  <p>Below are some technologies I had the chance to work or study:</p>`,
+  <p>I was really immersed in the Javascript ecosystem, so I took a deep dive in <span>Node.js, React and Next.js</span> in 2019, and today I work with all things related to Front-end and UX Motion Design.</p>`,
   coding: {
     title: 'Coding',
     img: '/images/cgbordin_experience_code.svg',

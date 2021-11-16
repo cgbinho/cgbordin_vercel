@@ -1,8 +1,7 @@
 export default {
   title: 'Experiência',
   excerpt: `<p>Comecei a trabalhar com <span>Motion Design</span> desde 2003, para agências de publicidade do Brasil e do mundo. Em 2013, comecei a desenvolver ferramentas para o Adobe After Effects e fiquei realmente empolgado com o que poderia ser feito! Html, CSS e Javascript me ajudaram a automatizar cenas, construir personagens, luzes e outras coisas mágicas!</p>
-  <p>Eu estava completamente imerso no ecossistema Javascript, então mergulhei em <span>Node.js, React e Next.js</span> em 2019, e hoje trabalho com tudo relacionado a Front-end e UX Motion Design.</p>
-  <p>Abaixo estão algumas tecnologias que eu já tive a oportunidade de trabalhar ou estudar:</p>`,
+  <p>Eu estava completamente imerso no ecossistema Javascript, então mergulhei em <span>Node.js, React e Next.js</span> em 2019, e hoje trabalho com tudo relacionado a Front-end e UX Motion Design.</p>`,
   coding: {
     title: 'Coding',
     img: '/images/cgbordin_experience_code.svg',
