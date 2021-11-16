@@ -3,6 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.label`
   display: flex;
   flex-direction: column;
+  width: 100%;
+
+  p {
+    margin: 0;
+  }
   /* margin-top: 8px; */
 `;
 
@@ -20,23 +25,23 @@ export const InputContainer = styled.div`
   width: 100%;
   margin-top: 0.25rem;
 
-  border: 0.13rem solid var(--gray-400);
-  border-radius: 0.5rem;
+  border: 0.13rem solid hsl(191, 50%, 85%);
+  border-radius: 0.2rem;
 
-  color: var(--primary);
+  color: var(--font-accent);
   font-size: 0.9rem;
-  background: var(--gray-100);
+  background: white;
   transition: border 0.2s;
 
   input {
-    width: 90%;
+    width: 100%;
     border: 0;
     background: transparent;
     font-size: 1rem;
-    color: var(--primary);
+    color: var(--font-accent);
 
     &::placeholder {
-      color: var(--gray-400);
+      color: var(--gray-170);
     }
   }
 
@@ -49,6 +54,6 @@ export const InputContainer = styled.div`
 
   svg {
     flex-shrink: 0;
-    margin-right: 8px;
+    margin-right: 0.6em;
   }
 `;

@@ -5,12 +5,14 @@ import { ExperienceCard } from '../components/ExperienceCard';
 import { Hero } from '../components/Hero';
 import Layout from '../components/Layout';
 import { ProjectsComponent } from '../components/Projects';
+import { ContactComponent } from '../components/Contact';
 import { Container } from '../styles/home';
 
 export default function Home({
   contentProjects,
   contentAbout,
   contentExperience,
+  contentContact,
 }) {
   return (
     <Layout>
@@ -27,6 +29,8 @@ export default function Home({
         <ProjectsComponent {...{ content: contentProjects }} />
         <a href="#" className="anchor anchor_about" id="about" />
         <AboutComponent {...{ content: contentAbout }} />
+        <a href="#" className="anchor anchor_contact" id="contact" />
+        <ContactComponent {...{ content: contentContact }} />
       </Container>
     </Layout>
   );
@@ -39,12 +43,15 @@ export async function getStaticProps({ locale }) {
   const contentAbout = (await import(`../locales/${locale}/about.js`)).default;
   const contentExperience = (await import(`../locales/${locale}/experience.js`))
     .default;
+  const contentContact = (await import(`../locales/${locale}/contact.js`))
+    .default;
 
   return {
     props: {
       contentProjects,
       contentAbout,
       contentExperience,
+      contentContact,
     },
   };
 }
