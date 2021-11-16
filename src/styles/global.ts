@@ -37,11 +37,11 @@ export default createGlobalStyle`
   --gray-300: hsl(0, 0%, 30%);
   --gray-400: hsl(0, 0%, 40%);
   --gray-600: hsl(0, 0%, 60%);
-  --success_color: #00e676;
-  --coding-scent: #32D218;
-  --design-scent: #F1672C;
-  --rest-scent: #F4C10D;
-  --error_color: tomato;
+  --success_color: hsl(151, 70%, 25%);
+  --coding-scent: hsl(112, 79%, 46%);
+  --design-scent: hsl(18, 88%, 56%);
+  --rest-scent: hsl(47, 91%, 50%);
+  --error_color: hsl(9, 100%, 50%);
 }
 
 * {
@@ -212,11 +212,6 @@ li {
   height: 28px;
 }
 
-.error_message {
-    color: var(--error_color);
-    padding-top: 0.2rem;
-  }
-
   .underline {
   text-decoration: none;
   position: relative;
@@ -376,9 +371,12 @@ li {
 
 .social_networks {
     display: flex;
-    height: auto;
+    flex-direction: row;
+    /* height: auto; */
+    margin-top: 2rem;
+    
     align-items: center;
-    margin-top: 0.5rem;
+    justify-content: center;
 
     a:not(:last-child) {
       margin-right: 0.5rem;
