@@ -112,8 +112,10 @@ export function ContactComponent({ content }) {
           >
             {content.form.submit}
           </Button>
-          {isError && <ErrorComponent message={content.errorMessage} />}
-          {isSuccess && <SuccessComponent message={content.successMessage} />}
+          {isError && <ErrorComponent message={content.form.errorMessage} />}
+          {isSuccess && (
+            <SuccessComponent message={content.form.successMessage} />
+          )}
         </form>
       </ContactContent>
       <div className="social_networks svg_anchor_dark dark_focus">

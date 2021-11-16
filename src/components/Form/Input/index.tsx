@@ -31,7 +31,9 @@ const Input: React.FC<InputProps> = (props) => {
           <input {...register(name)} placeholder={placeholder} type={type} />
         </InputContainer>
       </Content>
-      {errors && <p className="error_message">{errors.message}</p>}
+      {errors && (
+        <p style={{ color: `var(--error_color)` }}>{errors.message}</p>
+      )}
     </Container>
   );
 };
