@@ -50,6 +50,14 @@ export const Menu = ({ open, setOpen, content, ...props }) => {
       <MenuItem
         {...{ label: `${content.about}`, path: '/#about', setOpen, tabIndex }}
       />
+      <MenuItem
+        {...{
+          label: `${content.contact}`,
+          path: '/#contact',
+          setOpen,
+          tabIndex,
+        }}
+      />
     </StyledMenu>
   );
 };

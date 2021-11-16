@@ -17,24 +17,16 @@ const NavBar = () => {
       articles: 'Articles',
       projects: 'Projects',
       experience: 'Experience',
-      aepzera: 'Aepzera',
       about: 'About',
-      sign_in: 'Sign In',
-      sign_up: 'Sign Up',
-      orders: 'Orders',
-      sign_out: 'Sign Out',
+      contact: 'Contact',
     },
     'pt-BR': {
       home: 'Início',
       articles: 'Artigos',
       experience: 'Experiência',
       projects: 'Projetos',
-      aepzera: 'Aepzera',
       about: 'Sobre',
-      sign_in: 'Entrar',
-      sign_up: 'Cadastrar',
-      orders: 'Pedidos',
-      sign_out: 'Sair',
+      contact: 'Contato',
     },
   };
 
@@ -60,18 +52,23 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="navbar_desktop">
-            <Link href="/articles">
-              <a>{content.articles}</a>
-            </Link>
-          </li>
-          <li className="navbar_desktop">
             <Link href="/#projects">
               <a>{content.projects}</a>
             </Link>
           </li>
           <li className="navbar_desktop">
+            <Link href="/articles">
+              <a>{content.articles}</a>
+            </Link>
+          </li>
+          <li className="navbar_desktop">
             <Link href="/#about">
               <a>{content.about}</a>
+            </Link>
+          </li>
+          <li className="navbar_desktop">
+            <Link href="/#contact">
+              <a>{content.contact}</a>
             </Link>
           </li>
           <li>

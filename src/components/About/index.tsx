@@ -1,18 +1,17 @@
-import React, { forwardRef } from 'react';
+import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
-import {
-  AboutContainer,
-  AboutCardLeftContainer,
-  AboutCardRightContainer,
-  AboutCardFooter,
-} from './styles';
-import { isValidMotionProp, motion, Variants } from 'framer-motion';
-import { InViewHookResponse, useInView } from 'react-intersection-observer';
-import { useLottie, Lottie, Renderer, EventListener } from 'react-lottie-hook';
-import animationData from '../../../public/cgbordin_avatar_data_v01.json';
+import React from 'react';
 import { AiFillGithub } from 'react-icons/ai';
 import { IoLogoLinkedin } from 'react-icons/io';
 import { MdEmail } from 'react-icons/md';
+import { useInView } from 'react-intersection-observer';
+import { Lottie, Renderer, useLottie } from 'react-lottie-hook';
+import animationData from '../../../public/cgbordin_avatar_data_v01.json';
+import {
+  AboutCardLeftContainer,
+  AboutCardRightContainer,
+  AboutContainer,
+} from './styles';
 
 type AboutCardData = {
   reference: any;
@@ -182,10 +181,6 @@ export function AboutComponent({ content }) {
           </div>
         </div>
       </div>
-      <div
-        className="text_highlight_green"
-        dangerouslySetInnerHTML={{ __html: content.description }}
-      />
       <AboutCardRight
         {...{
           reference: refAbout01,
@@ -256,24 +251,6 @@ export function AboutComponent({ content }) {
           content: content.experience.paragraph05,
         }}
       />
-      <AboutCardFooter>
-        <p>{content.contact.title} - cgbordin @ gmail.com</p>
-        <div className="social_networks svg_anchor_light">
-          <a href="https://github.com/cgbinho" target="_blank" rel="noreferrer">
-            <AiFillGithub size={28} color={'var(--icon-primary)'} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/cleberbordin/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <IoLogoLinkedin size={30} color={'var(--icon-primary)'} />
-          </a>
-          <a href="mailto:cgbordin@gmail.com" target="_blank" rel="noreferrer">
-            <MdEmail size={30} color={'var(--icon-primary)'} />
-          </a>
-        </div>
-      </AboutCardFooter>
     </AboutContainer>
   );
 }

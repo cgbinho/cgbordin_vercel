@@ -6,28 +6,14 @@ interface IContainerProps {
   scentColor: string;
 }
 
-export const AboutCardFooter = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-  gap: 1rem;
-  margin: 2rem 0;
-
-  a{
-    display: flex;
-    gap: .5rem;
-    align-items: center;
-  }
-  
-`;
 
 export const AboutContainer = styled.div`
   display: grid;
   grid-auto-flow: row;
   align-items: center;
   justify-items: center;
-  margin: 0 2rem;
+  margin: 2rem;
+  margin-bottom: 4rem;
   max-width: 850px;
   gap: 2rem;
 
@@ -37,7 +23,7 @@ export const AboutContainer = styled.div`
 
   @media (max-width: 800px) {
     gap: 1rem;
-    margin: 0 1rem;
+    margin: 3rem 1rem;
   }
 `;
 

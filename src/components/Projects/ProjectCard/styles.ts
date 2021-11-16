@@ -10,14 +10,12 @@ export const ProjectCardContent = styled(motion.li)`
   width: 100%;
   height: 100%;
   gap: 1rem;
-  border-radius:0.3rem;
+  border-radius: 0.3rem;
   padding-bottom: 1rem;
-  /* background-color: hsl(200, 19%, 95%); */
   background-color: hsl(100, 100%, 100%);
-  /* backdrop-filter: blur(20px); */
 
   img {
-    border-radius:0.3rem0.3rem 0 0;
+    border-radius: 0.3rem0.3rem 0 0;
   }
 
   h3 {
@@ -40,7 +38,7 @@ export const ProjectCardContent = styled(motion.li)`
   .tag {
     padding: 0.1rem 0.8rem;
     background: white;
-    border-radius:0.3rem;
+    border-radius: 0.3rem;
     margin-right: 0.3rem;
   }
 `;

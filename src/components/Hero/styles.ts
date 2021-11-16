@@ -55,6 +55,10 @@ export const HeroContent = styled.div`
     z-index: 0;
   }
 
+  .social_networks {
+    justify-content: left;
+  }
+
   @media (max-width: 840px) {
     /* margin-top: 2rem; */
     margin: 1rem auto;

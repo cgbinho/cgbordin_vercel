@@ -33,7 +33,7 @@ export const ProjectsContent = styled.div`
     width: 100%;
     gap: 2rem;
     padding: 2rem;
-    border-radius:0.3rem;
+    border-radius: 0.3rem;
   }
 
   > h2 {
